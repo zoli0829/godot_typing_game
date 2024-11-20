@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cytrmphmb360s"]
+
+[ext_resource type="PackedScene" uid="uid://csga3vb5ujqxq" path="res://scenes/input_manager/input_manager.tscn" id="1_6otvr"]
+[ext_resource type="Texture2D" uid="uid://ndm42eyfbxlu" path="res://icon.svg" id="2_0yfhs"]
+
+[node name="Sandbox" type="Node2D"]
+
+[node name="InputManager" parent="." instance=ExtResource("1_6otvr")]
+
+[node name="Wall" type="Node2D" parent="."]
+position = Vector2(576, 320)
+scale = Vector2(9, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wall"]
+texture = ExtResource("2_0yfhs")
