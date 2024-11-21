@@ -1,0 +1,5 @@
+res://scenes/enemies/base_enemy.tscn
+res://scenes/enemies/base_enemy.gd
+res://scenes/buildings/wall/wall.tscn
+res://scenes/input_manager/input_manager.tscn
+res://scenes/sandbox/sandbox.tscn
