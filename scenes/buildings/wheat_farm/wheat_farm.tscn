@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvaoko167cplk"]
+
+[ext_resource type="Texture2D" uid="uid://cvig8p2cdetvy" path="res://scenes/buildings/wheat_farm/wheat_farm.png" id="1_r2veg"]
+
+[node name="wheat_farm" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r2veg")

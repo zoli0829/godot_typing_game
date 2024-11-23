@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ccq4gaw470acc" path="res://scenes/buildings/wall/wall.png" id="1_kmxfh"]
 
-[node name="Wall" type="Node2D"]
+[node name="wall" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_kmxfh")

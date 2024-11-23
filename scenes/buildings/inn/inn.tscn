@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bquu0i4xiot3l"]
+
+[ext_resource type="Texture2D" uid="uid://b4fx0p30if46f" path="res://scenes/buildings/inn/inn.png" id="1_qvf31"]
+
+[node name="inn" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qvf31")

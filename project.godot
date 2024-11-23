@@ -11,10 +11,15 @@ config_version=5
 [application]
 
 config/name="TowerDefenceTypingGame"
-run/main_scene="res://scenes/input_manager/input_manager.tscn"
+run/main_scene="res://scenes/sandbox/sandbox.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"
+
+[autoload]
+
+InputManager="*res://scenes/input_manager/input_manager.tscn"
+GameManager="*res://scenes/game_manager/game_manager.tscn"
 
 [rendering]
 

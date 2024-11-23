@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://baqi56nyndsqi"]
+
+[ext_resource type="Texture2D" uid="uid://dr2qg8vdqoriu" path="res://scenes/buildings/woodcutter_camp/woodcutter_camp.png" id="1_dcpxu"]
+
+[node name="woodcutter_camp" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dcpxu")

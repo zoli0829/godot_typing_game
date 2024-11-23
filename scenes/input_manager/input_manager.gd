@@ -7,26 +7,21 @@ var commands = [
 "build iron mine", "upgrade iron mine",
 "build quarry", "upgrade quarry",
 "build wall","upgrade wall",
-"build woodcutter camp", "upgrade woodcutter camp"
+"build woodcutter camp", "upgrade woodcutter camp",
+"build apple farm", "upgrade apple farm",
+"build wheat farm", "upgrade wheat farm"
 ]
 var current_input = ""
-#FLAGS
-var is_market_built = false
-var is_inn_built = false
-var is_iron_mine_built = false
-var is_quarry_built = false
-var is_wall_built = false
-var is_woodcutter_camp_built = false
 
-@onready var text_edit = $TextEdit
+var text_edit: TextEdit
 
 
 func _ready():
 	Engine.max_fps = 60
+	text_edit = $TextEdit
 
 
 func _process(_delta):
-	# Check if the player has typed anything, and update the display
 	update_text_display()
 	check_for_word_match()
 
@@ -85,78 +80,10 @@ func check_for_word_match():
 		var command_name = current_input.replace(" ", "_")
 		
 		# Check if a function with the modified name exists and call it dynamically
-		if has_method(command_name):
-			call(command_name)
+		if GameManager.has_method(command_name):
+			GameManager.call(command_name)
 		else:
 			print("No matching function for: " + command_name)
 		
 		# Reset everything after successful word match
 		clear_input()
-
-'''
-FUNCTIONS FOR BUILDINGS
-'''
-func build_market():
-	if is_market_built:
-		return
-	print("Market built")
-	is_market_built = true
-
-
-func upgrade_market():
-	print("Market upgraded")
-
-
-func build_inn():
-	if is_inn_built:
-		return
-	print("Inn built")
-	is_inn_built = true
-
-
-func upgrade_inn():
-	print("Inn upgraded")
-
-
-func build_iron_mine():
-	if is_iron_mine_built:
-		return
-	print("Iron mine built")
-	is_iron_mine_built = true
-
-
-func upgrade_iron_mine():
-	print("Iron mine upgraded")
-
-
-func build_quarry():
-	if is_quarry_built:
-		return
-	print("Quarry built")
-	is_quarry_built = true
-
-
-func upgrade_quarry():
-	print("Quarry upgraded")
-
-
-func build_wall():
-	if is_wall_built:
-		return
-	print("Wall built")
-	is_wall_built = true
-
-
-func upgrade_wall():
-	print("Walls upgraded")
-
-
-func build_woodcutter_camp():
-	if is_woodcutter_camp_built:
-		return
-	print("Woodcutter built")
-	is_woodcutter_camp_built = true
-
-
-func upgrade_woodcutter_camp():
-	print("Woodcutter upgraded")
