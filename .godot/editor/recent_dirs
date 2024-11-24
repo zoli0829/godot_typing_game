@@ -1,3 +1,5 @@
+res://scripts
+res://scenes/managers/enemy_spawner
 res://scenes/sandbox
 res://scenes/buildings/woodcutter_camp
 res://scenes/buildings/wheat_farm
@@ -6,6 +8,4 @@ res://scenes/buildings/market
 res://scenes/buildings/iron_mine
 res://scenes/buildings/inn
 res://scenes/buildings/apple_farm
-res://scenes/game_manager
-res://scenes/input_manager
 res://scenes

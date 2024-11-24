@@ -1,0 +1,60 @@
+[gd_scene load_steps=13 format=3 uid="uid://cytrmphmb360s"]
+
+[ext_resource type="PackedScene" uid="uid://csga3vb5ujqxq" path="res://scenes/managers/input_manager/input_manager.tscn" id="1_s1tn8"]
+[ext_resource type="PackedScene" uid="uid://cfpesebldigch" path="res://scenes/managers/game_manager/game_manager.tscn" id="2_hm3up"]
+[ext_resource type="PackedScene" uid="uid://bhw7ruw2botti" path="res://scenes/managers/enemy_spawner/enemy_spawner.tscn" id="3_4c1gy"]
+[ext_resource type="PackedScene" uid="uid://cabwucp6owa6t" path="res://scenes/buildings/wall/wall.tscn" id="4_hhpj5"]
+[ext_resource type="PackedScene" uid="uid://bov0jjotk2hnq" path="res://scenes/buildings/apple_farm/apple_farm.tscn" id="5_jvugp"]
+[ext_resource type="PackedScene" uid="uid://bquu0i4xiot3l" path="res://scenes/buildings/inn/inn.tscn" id="6_qd12v"]
+[ext_resource type="PackedScene" uid="uid://ypxw3ilqoi6m" path="res://scenes/buildings/iron_mine/iron_mine.tscn" id="7_cs8uk"]
+[ext_resource type="PackedScene" uid="uid://d0pdt84x50pww" path="res://scenes/buildings/market/market.tscn" id="8_14mjg"]
+[ext_resource type="PackedScene" uid="uid://c24y2a0m6hv8j" path="res://scenes/buildings/quarry/quarry.tscn" id="9_w1osd"]
+[ext_resource type="PackedScene" uid="uid://dvaoko167cplk" path="res://scenes/buildings/wheat_farm/wheat_farm.tscn" id="10_uun1g"]
+[ext_resource type="PackedScene" uid="uid://baqi56nyndsqi" path="res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn" id="11_2sh0e"]
+
+[sub_resource type="GDScript" id="GDScript_6j2my"]
+script/source = "extends Node
+"
+
+[node name="game" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(574.685, 328.39)
+
+[node name="InputManager" parent="." instance=ExtResource("1_s1tn8")]
+script = SubResource("GDScript_6j2my")
+
+[node name="GameManager" parent="." instance=ExtResource("2_hm3up")]
+
+[node name="EnemySpawner" parent="." instance=ExtResource("3_4c1gy")]
+position = Vector2(576, 192)
+
+[node name="Buildings" type="Node2D" parent="."]
+position = Vector2(0, 40)
+
+[node name="wall" parent="Buildings" instance=ExtResource("4_hhpj5")]
+position = Vector2(584, 320)
+scale = Vector2(4, 1)
+
+[node name="apple_farm" parent="Buildings" instance=ExtResource("5_jvugp")]
+position = Vector2(64, 416)
+
+[node name="inn" parent="Buildings" instance=ExtResource("6_qd12v")]
+position = Vector2(192, 416)
+
+[node name="iron_mine" parent="Buildings" instance=ExtResource("7_cs8uk")]
+position = Vector2(320, 416)
+
+[node name="market" parent="Buildings" instance=ExtResource("8_14mjg")]
+position = Vector2(448, 416)
+
+[node name="quarry" parent="Buildings" instance=ExtResource("9_w1osd")]
+position = Vector2(576, 416)
+
+[node name="wheat_farm" parent="Buildings" instance=ExtResource("10_uun1g")]
+position = Vector2(704, 416)
+
+[node name="woodcutter_camp" parent="Buildings" instance=ExtResource("11_2sh0e")]
+position = Vector2(832, 416)
+
+[node name="Enemies" type="Node" parent="."]

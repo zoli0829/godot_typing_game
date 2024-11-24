@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c24y2a0m6hv8j"]
 
-[ext_resource type="Texture2D" uid="uid://dhh2cc6ut5gb7" path="res://scenes/buildings/quarry/quarry.png" id="1_tsha3"]
+[ext_resource type="Texture2D" uid="uid://dhh2cc6ut5gb7" path="res://assets/images/buildings/quarry.png" id="1_tsha3"]
 
 [node name="quarry" type="Node2D"]
 
