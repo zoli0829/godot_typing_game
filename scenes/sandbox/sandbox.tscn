@@ -18,6 +18,7 @@ script/source = "extends Node
 [node name="Sandbox" type="Node"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(574.685, 328.39)
 
 [node name="InputManager" parent="." instance=ExtResource("1_6otvr")]
 script = SubResource("GDScript_6j2my")
@@ -25,7 +26,7 @@ script = SubResource("GDScript_6j2my")
 [node name="GameManager" parent="." instance=ExtResource("2_f5dlb")]
 
 [node name="Buildings" type="Node2D" parent="."]
-position = Vector2(-574.685, -288.39)
+position = Vector2(0, 40)
 
 [node name="wall" parent="Buildings" instance=ExtResource("3_2w5x5")]
 position = Vector2(584, 320)

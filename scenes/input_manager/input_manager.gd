@@ -78,6 +78,7 @@ func clear_input():
 func check_for_word_match():
 	if current_input in commands:
 		var command_name = current_input.replace(" ", "_")
+		command_name = "on_" + command_name + "_typed"
 		
 		# Check if a function with the modified name exists and call it dynamically
 		if GameManager.has_method(command_name):
