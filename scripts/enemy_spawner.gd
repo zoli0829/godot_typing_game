@@ -10,6 +10,11 @@ func _ready() -> void:
 	spawn_enemy(get_random_index(), get_random_spawn_location())
 	spawn_enemy(get_random_index(), get_random_spawn_location())
 	spawn_enemy(get_random_index(), get_random_spawn_location())
+	spawn_enemy(get_random_index(), get_random_spawn_location())
+	spawn_enemy(get_random_index(), get_random_spawn_location())
+	spawn_enemy(get_random_index(), get_random_spawn_location())
+	spawn_enemy(get_random_index(), get_random_spawn_location())
+	spawn_enemy(get_random_index(), get_random_spawn_location())
 
 
 func spawn_enemy(index:int, spawn_position: Vector2):

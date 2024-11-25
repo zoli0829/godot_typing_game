@@ -15,19 +15,33 @@ func pick_random_word_and_append_to_enemy_commands():
 	)
 	
 	if available_commands.size() > 0:
-		enemy_command = available_commands.pick_random()
+		enemy_command = available_commands.pick_random().to_lower()
 		InputManager.enemy_commands.append(enemy_command)
+		print(enemy_command + " was added to the commands")
 		update_label(enemy_command)
-		print(InputManager.enemy_commands)
 	else:
 		print("No more unique commands available!")
 
+
 func add_enemy_to_game_manager():
 	GameManager.enemies.append(self)
-	print(GameManager.enemies)
 
 
 func update_label(_text):
 	if label == null:
 		return
 	label.text = _text
+
+
+func get_enemy_command():
+	return enemy_command
+
+
+func kill_enemy():
+	# play death animation
+	# we will queue free from anim, so the anim can play
+	# play sfx
+	# but for now:
+	print("Unit destroyed!")
+	queue_free()
+	pass

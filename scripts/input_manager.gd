@@ -1,5 +1,8 @@
 extends Node
 
+signal enemy_destroyed(enemy)
+signal enemy_remove_request(enemy)
+
 var typed_text = ""
 var commands = [
 "build market", "upgrade market",
@@ -26,6 +29,7 @@ func _ready():
 func _process(_delta):
 	update_text_display()
 	check_for_word_match()
+	check_for_word_in_enemy_commands()
 
 
 # Capture key input using _input()
@@ -90,3 +94,21 @@ func check_for_word_match():
 		
 		# Reset everything after successful word match
 		clear_input()
+
+
+func remove_enemy_commmand_from_enemy_commmands_array(enemy_command: String):
+	enemy_commands.erase(enemy_command)
+	print("Enemy command: " + enemy_command + " erased from array!")
+	print(enemy_commands)
+
+
+func check_for_word_in_enemy_commands():
+	if current_input in enemy_commands:
+		for enemy in GameManager.get_enemies():
+			if enemy.get_enemy_command() == current_input:
+				emit_signal("enemy_destroyed", enemy)
+				emit_signal("enemy_remove_requested", enemy)
+				GameManager.remove_enemy_from_enemies_array(enemy)
+				remove_enemy_commmand_from_enemy_commmands_array(enemy.get_enemy_command())
+				clear_input()
+				break

@@ -1,8 +1,57 @@
-[gd_scene load_steps=2 format=3 uid="uid://bov0jjotk2hnq"]
+[gd_scene load_steps=3 format=3 uid="uid://bov0jjotk2hnq"]
 
-[ext_resource type="Texture2D" uid="uid://74oxo2ju8dtm" path="res://assets/images/buildings/apple_farm.png" id="1_byr4o"]
+[ext_resource type="Texture2D" uid="uid://btlamiyeje6v4" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png" id="1_7cl8o"]
+[ext_resource type="Texture2D" uid="uid://dgj3mks24lk7a" path="res://assets/images/trees/apple_tree.png" id="2_8tfme"]
 
 [node name="apple_farm" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_byr4o")
+[node name="building" type="Sprite2D" parent="."]
+texture = ExtResource("1_7cl8o")
+
+[node name="apple_orchard" type="Node2D" parent="."]
+position = Vector2(0, 88)
+scale = Vector2(0.6, 0.6)
+
+[node name="apple_tree" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(0, -40)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree2" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(-93.3333, -40)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree3" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(93.3333, -40)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree10" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(93.3333, -160)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree11" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(-93.3333, -160)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree4" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(1.5, 74.3333)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree5" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(-91.8333, 74.3333)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree6" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(94.8333, 74.3333)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree7" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(1.5, 194.333)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree8" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(-91.8333, 194.333)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree9" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(94.8333, 194.333)
+texture = ExtResource("2_8tfme")

@@ -37,7 +37,7 @@ position = Vector2(584, 320)
 scale = Vector2(4, 1)
 
 [node name="apple_farm" parent="Buildings" instance=ExtResource("5_jvugp")]
-position = Vector2(64, 416)
+position = Vector2(16, 408)
 
 [node name="inn" parent="Buildings" instance=ExtResource("6_qd12v")]
 position = Vector2(192, 416)
@@ -52,9 +52,9 @@ position = Vector2(448, 416)
 position = Vector2(576, 416)
 
 [node name="wheat_farm" parent="Buildings" instance=ExtResource("10_uun1g")]
-position = Vector2(704, 416)
+position = Vector2(744, 416)
 
 [node name="woodcutter_camp" parent="Buildings" instance=ExtResource("11_2sh0e")]
-position = Vector2(832, 416)
+position = Vector2(904, 416)
 
 [node name="Enemies" type="Node" parent="."]

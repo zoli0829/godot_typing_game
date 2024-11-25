@@ -1,8 +1,38 @@
-[gd_scene load_steps=2 format=3 uid="uid://baqi56nyndsqi"]
+[gd_scene load_steps=5 format=3 uid="uid://baqi56nyndsqi"]
 
-[ext_resource type="Texture2D" uid="uid://dr2qg8vdqoriu" path="res://assets/images/buildings/woodcutter_camp.png" id="1_dcpxu"]
+[ext_resource type="Texture2D" uid="uid://crho2d1dii48k" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png" id="1_x23xd"]
+[ext_resource type="Texture2D" uid="uid://dylsw2v0n7fwh" path="res://assets/Ninja Adventure - Asset Pack/props/logs_01.png" id="2_oxs4t"]
+[ext_resource type="Texture2D" uid="uid://cja8v5ek0llt3" path="res://assets/Ninja Adventure - Asset Pack/props/logs_03.png" id="3_ryics"]
+[ext_resource type="Texture2D" uid="uid://deqgg8njbrmem" path="res://assets/Ninja Adventure - Asset Pack/props/logs_04.png" id="4_73qj1"]
 
 [node name="woodcutter_camp" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_dcpxu")
+[node name="building" type="Sprite2D" parent="."]
+texture = ExtResource("1_x23xd")
+
+[node name="logs" type="Node2D" parent="."]
+position = Vector2(0, 32)
+
+[node name="log" type="Sprite2D" parent="logs"]
+position = Vector2(32, -24)
+texture = ExtResource("2_oxs4t")
+
+[node name="log2" type="Sprite2D" parent="logs"]
+position = Vector2(48, -24)
+texture = ExtResource("2_oxs4t")
+
+[node name="log3" type="Sprite2D" parent="logs"]
+position = Vector2(16, -8)
+texture = ExtResource("3_ryics")
+
+[node name="log4" type="Sprite2D" parent="logs"]
+position = Vector2(-16, -8)
+texture = ExtResource("3_ryics")
+
+[node name="log5" type="Sprite2D" parent="logs"]
+position = Vector2(-32, -16)
+texture = ExtResource("4_73qj1")
+
+[node name="log6" type="Sprite2D" parent="logs"]
+position = Vector2(-48, -16)
+texture = ExtResource("4_73qj1")
