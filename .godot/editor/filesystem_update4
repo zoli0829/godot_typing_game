@@ -2,8 +2,5 @@ res://scenes/managers/input_manager/input_manager.tscn
 res://scenes/game/game.tscn
 res://scenes/enemies/base_enemy.tscn
 res://scenes/buildings/wall/wall.tscn
-res://scenes/buildings/apple_farm/apple_farm.tscn
 res://scenes/managers/enemy_spawner/enemy_spawner.tscn
-res://scripts/enemy_spawner.gd
-res://scripts/input_manager.gd
-res://scripts/base_enemy.gd
+res://scripts/game_manager.gd

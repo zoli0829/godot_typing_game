@@ -124,6 +124,7 @@ Remove Enemy From enemies[]
 func remove_enemy_from_enemies_array(enemy: Node2D):
 	if enemies.has(enemy):
 		enemies.erase(enemy)
+		print("enemy got erased from the array: ", enemy)
 	else:
 		print("Enemy not found in the array!")
 
