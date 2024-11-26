@@ -1,8 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhw7ruw2botti"]
+[gd_scene load_steps=4 format=3 uid="uid://bhw7ruw2botti"]
 
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="1_qnp3f"]
 [ext_resource type="PackedScene" uid="uid://btxcaqfkjijhn" path="res://scenes/enemies/base_enemy.tscn" id="2_iqoqq"]
+[ext_resource type="Texture2D" uid="uid://ndm42eyfbxlu" path="res://assets/images/icon.svg" id="3_tio01"]
 
 [node name="EnemySpawner" type="Node2D"]
 script = ExtResource("1_qnp3f")
 enemies = Array[PackedScene]([ExtResource("2_iqoqq")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0.168627, 1)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_tio01")

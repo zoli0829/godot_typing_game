@@ -1,5 +1,7 @@
 extends Node2D
 
+var enemy_spawn_limit_x = 192
+var enemy_spawn_limit_y = 440
 @export var enemies: Array[PackedScene] = []
 
 
@@ -35,7 +37,8 @@ func spawn_enemy(index:int, spawn_position: Vector2):
 
 
 func get_random_spawn_location():
-	var random_position = position + Vector2(randf_range(-500, 500), randf_range(-350, 0))
+	var random_position = position + Vector2(randf_range(-enemy_spawn_limit_x, enemy_spawn_limit_x), 
+	randf_range(-enemy_spawn_limit_y, enemy_spawn_limit_y))
 	return random_position
 
 

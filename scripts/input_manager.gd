@@ -1,4 +1,4 @@
-extends Node
+extends Control
 
 signal enemy_destroyed(enemy)
 signal enemy_remove_request(enemy)
@@ -58,6 +58,7 @@ func add_space_to_input():
 func input_escape():
 	print("ESCAPE pressed")
 	clear_input()
+	return
 
 
 func input_enter():
@@ -73,6 +74,7 @@ func add_character_to_input(event):
 func update_text_display():
 	typed_text = current_input
 	text_edit.text = typed_text
+	print("Text updated in TextEdit:", text_edit.text)
 
 
 func clear_input():
@@ -89,11 +91,10 @@ func check_for_word_match():
 		# Check if a function with the modified name exists and call it dynamically
 		if GameManager.has_method(command_name):
 			GameManager.call(command_name)
+			clear_input()
 		else:
-			print("No matching function for: " + command_name)
-		
-		# Reset everything after successful word match
-		clear_input()
+			print("No matching,please make a function for function for: " + command_name)
+			#clear_input()
 
 
 func remove_enemy_commmand_from_enemy_commmands_array(enemy_command: String):
@@ -107,7 +108,7 @@ func check_for_word_in_enemy_commands():
 		for enemy in GameManager.get_enemies():
 			if enemy.get_enemy_command() == current_input:
 				emit_signal("enemy_destroyed", enemy)
-				emit_signal("enemy_remove_requested", enemy)
+				emit_signal("enemy_remove_request", enemy)
 				GameManager.remove_enemy_from_enemies_array(enemy)
 				remove_enemy_commmand_from_enemy_commmands_array(enemy.get_enemy_command())
 				clear_input()

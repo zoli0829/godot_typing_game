@@ -2,15 +2,23 @@
 
 [ext_resource type="Script" path="res://scripts/input_manager.gd" id="1_0ldg3"]
 
-[node name="InputManager" type="Node"]
+[node name="InputManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_0ldg3")
 
 [node name="TextEdit" type="TextEdit" parent="."]
-anchors_preset = -1
-anchor_top = 0.92
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -0.160034
+offset_top = -8.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4

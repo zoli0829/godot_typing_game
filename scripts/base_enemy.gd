@@ -44,4 +44,3 @@ func kill_enemy():
 	# but for now:
 	print("Unit destroyed!")
 	queue_free()
-	pass

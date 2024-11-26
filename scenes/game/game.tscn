@@ -18,43 +18,47 @@ script/source = "extends Node
 
 [node name="game" type="Node"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(574.685, 328.39)
-
 [node name="InputManager" parent="." instance=ExtResource("1_s1tn8")]
+offset_left = -960.0
+offset_top = -512.0
+offset_right = -960.0
+offset_bottom = -512.0
 script = SubResource("GDScript_6j2my")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 32)
 
 [node name="GameManager" parent="." instance=ExtResource("2_hm3up")]
 
 [node name="EnemySpawner" parent="." instance=ExtResource("3_4c1gy")]
-position = Vector2(576, 192)
+position = Vector2(768, 0)
 
 [node name="Buildings" type="Node2D" parent="."]
-position = Vector2(0, 40)
+position = Vector2(-576, -280)
 
 [node name="wall" parent="Buildings" instance=ExtResource("4_hhpj5")]
-position = Vector2(584, 320)
-scale = Vector2(4, 1)
+position = Vector2(-288, -136)
+scale = Vector2(2, 2)
 
 [node name="apple_farm" parent="Buildings" instance=ExtResource("5_jvugp")]
-position = Vector2(16, 408)
+position = Vector2(-176, -56)
 
 [node name="inn" parent="Buildings" instance=ExtResource("6_qd12v")]
-position = Vector2(192, 416)
+position = Vector2(-192, 344)
 
 [node name="iron_mine" parent="Buildings" instance=ExtResource("7_cs8uk")]
-position = Vector2(320, 416)
+position = Vector2(0, 472)
 
 [node name="market" parent="Buildings" instance=ExtResource("8_14mjg")]
-position = Vector2(448, 416)
+position = Vector2(128, 472)
 
 [node name="quarry" parent="Buildings" instance=ExtResource("9_w1osd")]
-position = Vector2(576, 416)
+position = Vector2(-192, 472)
 
 [node name="wheat_farm" parent="Buildings" instance=ExtResource("10_uun1g")]
-position = Vector2(744, 416)
+position = Vector2(16, -64)
 
 [node name="woodcutter_camp" parent="Buildings" instance=ExtResource("11_2sh0e")]
-position = Vector2(904, 416)
+position = Vector2(-192, 80)
 
 [node name="Enemies" type="Node" parent="."]
