@@ -1,9 +1,5 @@
-res://scenes/buildings/wall/tower.tscn
-res://scenes/buildings/wall/wall.tscn
-res://scenes/buildings/wall/gate.tscn
+res://scenes/units/archer/archer.tscn
 res://scenes/game/game.tscn
 res://scenes/managers/input_manager/input_manager.tscn
-res://scenes/enemies/base_enemy.tscn
-res://scenes/managers/enemy_spawner/enemy_spawner.tscn
-res://scripts/input_manager.gd
+res://scenes/buildings/wall/wall.tscn
 res://scenes/buildings/apple_farm/apple_farm.tscn

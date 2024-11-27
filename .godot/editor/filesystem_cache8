@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732736906
+::res://::1732740171
 README.md::TextFile::-1::1732136553::0::1::::<><>::
 ::res://assets/::1732739147
 ::res://assets/FarmingCrops16x16/::1732736173
@@ -2336,7 +2336,8 @@ enemy_spawner.tscn::PackedScene::2925133287694918586::1732738273::0::1::::<><>::
 game_manager.tscn::PackedScene::5155026476290939763::1732464321::0::1::::<><>::res://scripts/game_manager.gd
 ::res://scenes/managers/input_manager/::1732738770
 input_manager.tscn::PackedScene::6048677927549800678::1732738770::0::1::::<><>::res://scripts/input_manager.gd
-::res://scenes/units/::1732739317
+::res://scenes/units/::1732739327
+::res://scenes/units/archer/::1732739327
 ::res://scripts/::1732738264
 base_enemy.gd::GDScript::-1::1732649654::0::1::::<>Node2D<>::
 enemy_spawner.gd::GDScript::-1::1732646518::0::1::::<>Node2D<>::
