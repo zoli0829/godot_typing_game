@@ -94,7 +94,7 @@ func check_for_word_match():
 			clear_input()
 		else:
 			print("No matching,please make a function for function for: " + command_name)
-			#clear_input()
+			clear_input()
 
 
 func remove_enemy_commmand_from_enemy_commmands_array(enemy_command: String):

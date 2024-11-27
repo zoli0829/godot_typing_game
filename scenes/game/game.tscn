@@ -20,9 +20,9 @@ script/source = "extends Node
 
 [node name="InputManager" parent="." instance=ExtResource("1_s1tn8")]
 offset_left = -960.0
-offset_top = -512.0
+offset_top = -508.0
 offset_right = -960.0
-offset_bottom = -512.0
+offset_bottom = -508.0
 script = SubResource("GDScript_6j2my")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -41,31 +41,24 @@ position = Vector2(-288, -136)
 scale = Vector2(2, 2)
 
 [node name="apple_farm" parent="Buildings" instance=ExtResource("5_jvugp")]
-visible = false
-position = Vector2(-176, -56)
+position = Vector2(344, 96)
 
 [node name="inn" parent="Buildings" instance=ExtResource("6_qd12v")]
-visible = false
 position = Vector2(-192, 312)
 
 [node name="iron_mine" parent="Buildings" instance=ExtResource("7_cs8uk")]
-visible = false
-position = Vector2(0, 448)
+position = Vector2(24, 256)
 
 [node name="market" parent="Buildings" instance=ExtResource("8_14mjg")]
-visible = false
 position = Vector2(128, 448)
 
 [node name="quarry" parent="Buildings" instance=ExtResource("9_w1osd")]
-visible = false
 position = Vector2(-192, 440)
 
 [node name="wheat_farm" parent="Buildings" instance=ExtResource("10_uun1g")]
-visible = false
-position = Vector2(16, -64)
+position = Vector2(360, -104)
 
 [node name="woodcutter_camp" parent="Buildings" instance=ExtResource("11_2sh0e")]
-visible = false
 position = Vector2(-192, 80)
 
 [node name="Enemies" type="Node" parent="."]

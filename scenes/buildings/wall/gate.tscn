@@ -1,0 +1,85 @@
+[gd_scene load_steps=11 format=3 uid="uid://cntuqlffwnv7r"]
+
+[ext_resource type="Texture2D" uid="uid://ddtm1d4rm7w0v" path="res://assets/sprites/buildings/castle/gate_top_left.png" id="1_dbvrm"]
+[ext_resource type="Texture2D" uid="uid://cwc6wro0b3aq3" path="res://assets/sprites/buildings/castle/gate_bottom_left.png" id="2_g6v64"]
+[ext_resource type="Texture2D" uid="uid://doy04o44wyaaf" path="res://assets/sprites/buildings/castle/wall_bottom_middle_01.png" id="2_huy6l"]
+[ext_resource type="Texture2D" uid="uid://cxto2usmh2tn1" path="res://assets/sprites/buildings/castle/wall_4.png" id="3_6ppb1"]
+[ext_resource type="Texture2D" uid="uid://7o5w1lpt7jel" path="res://assets/sprites/buildings/castle/gate_top_right.png" id="3_6skvk"]
+[ext_resource type="Texture2D" uid="uid://b7vojn17kbs1" path="res://assets/sprites/buildings/castle/gate_bottom_right.png" id="4_x42f3"]
+[ext_resource type="Texture2D" uid="uid://cm6206bdvoq8i" path="res://assets/sprites/buildings/castle/wall_2.png" id="4_yh211"]
+[ext_resource type="Texture2D" uid="uid://bvimygscad3o" path="res://assets/sprites/buildings/castle/wall_3.png" id="5_mtxh0"]
+[ext_resource type="Texture2D" uid="uid://b5kf2m6blsvmb" path="res://assets/sprites/buildings/castle/wall_top_middle_01.png" id="6_hnypq"]
+[ext_resource type="Texture2D" uid="uid://cisd1lbbjt3ft" path="res://assets/sprites/buildings/castle/tower.png" id="7_dlq15"]
+
+[node name="Gate" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dbvrm")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+texture = ExtResource("2_huy6l")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(-16, -16)
+texture = ExtResource("3_6ppb1")
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(-16, 0)
+texture = ExtResource("4_yh211")
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(-16, 16)
+texture = ExtResource("4_yh211")
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(32, 0)
+texture = ExtResource("5_mtxh0")
+
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(32, 16)
+texture = ExtResource("5_mtxh0")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(16, -16)
+texture = ExtResource("2_huy6l")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("6_hnypq")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(-16, -32)
+texture = ExtResource("3_6ppb1")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(-16, -48)
+texture = ExtResource("7_dlq15")
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(32, -16)
+texture = ExtResource("3_6ppb1")
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(32, -32)
+texture = ExtResource("3_6ppb1")
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(32, -48)
+texture = ExtResource("7_dlq15")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(16, -32)
+texture = ExtResource("6_hnypq")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(0, 16)
+texture = ExtResource("2_g6v64")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(16, 0)
+texture = ExtResource("3_6skvk")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("4_x42f3")

@@ -1,20 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://cabwucp6owa6t"]
+[gd_scene load_steps=7 format=3 uid="uid://cabwucp6owa6t"]
 
-[ext_resource type="Texture2D" uid="uid://cof1n615ui1v6" path="res://assets/sprites/buildings/castle/wall_middle_left_01.png" id="1_uprtw"]
-[ext_resource type="Texture2D" uid="uid://d36koc8ghd5ip" path="res://assets/sprites/buildings/castle/wall_bottom_left_01.png" id="2_mq32m"]
 [ext_resource type="Texture2D" uid="uid://bw5heqrijdhsm" path="res://assets/sprites/buildings/castle/wall.png" id="4_4e8l8"]
-[ext_resource type="Texture2D" uid="uid://b06tf4q3upusm" path="res://assets/sprites/buildings/castle/wall_top_left_01.png" id="4_jywuc"]
+[ext_resource type="PackedScene" uid="uid://mrs1a0sdjxrg" path="res://scenes/buildings/wall/tower.tscn" id="4_4fkv0"]
+[ext_resource type="PackedScene" uid="uid://cntuqlffwnv7r" path="res://scenes/buildings/wall/gate.tscn" id="5_2ymv2"]
+[ext_resource type="Texture2D" uid="uid://ijcylfl5pxi3" path="res://assets/sprites/buildings/castle/wall_middle_left_right_01.png" id="6_3qaqa"]
 [ext_resource type="Texture2D" uid="uid://cd68vdfsblyq1" path="res://assets/sprites/buildings/castle/wall_middle.png" id="6_ncsh2"]
 [ext_resource type="Texture2D" uid="uid://bpac2meflj5hn" path="res://assets/sprites/buildings/castle/wall_top_right_01.png" id="6_pn42c"]
-[ext_resource type="Texture2D" uid="uid://bhs14grqhvd08" path="res://assets/sprites/buildings/castle/wall_middle_right_01.png" id="7_ppspr"]
-[ext_resource type="Texture2D" uid="uid://bfjpo2hfcaflm" path="res://assets/sprites/buildings/castle/wall_bottom_right_01.png" id="8_revjn"]
 
 [node name="wall" type="Node2D"]
 
 [node name="northern_wall" type="Node2D" parent="."]
-
-[node name="wall_sprite" type="Sprite2D" parent="northern_wall"]
-texture = ExtResource("4_jywuc")
 
 [node name="wall_sprite2" type="Sprite2D" parent="northern_wall"]
 position = Vector2(32, 0)
@@ -39,6 +34,66 @@ texture = ExtResource("6_ncsh2")
 [node name="wall_sprite41" type="Sprite2D" parent="northern_wall"]
 position = Vector2(80, 0)
 texture = ExtResource("6_ncsh2")
+
+[node name="wall_sprite11" type="Sprite2D" parent="northern_wall"]
+position = Vector2(32, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite17" type="Sprite2D" parent="northern_wall"]
+position = Vector2(16, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite12" type="Sprite2D" parent="northern_wall"]
+position = Vector2(64, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite46" type="Sprite2D" parent="northern_wall"]
+position = Vector2(48, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite47" type="Sprite2D" parent="northern_wall"]
+position = Vector2(80, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite13" type="Sprite2D" parent="northern_wall"]
+position = Vector2(96, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite14" type="Sprite2D" parent="northern_wall"]
+position = Vector2(128, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite48" type="Sprite2D" parent="northern_wall"]
+position = Vector2(112, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite49" type="Sprite2D" parent="northern_wall"]
+position = Vector2(144, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite15" type="Sprite2D" parent="northern_wall"]
+position = Vector2(160, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite16" type="Sprite2D" parent="northern_wall"]
+position = Vector2(192, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite50" type="Sprite2D" parent="northern_wall"]
+position = Vector2(176, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite51" type="Sprite2D" parent="northern_wall"]
+position = Vector2(208, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite52" type="Sprite2D" parent="northern_wall"]
+position = Vector2(224, 16)
+texture = ExtResource("4_4e8l8")
+
+[node name="wall_sprite53" type="Sprite2D" parent="northern_wall"]
+position = Vector2(240, 16)
+texture = ExtResource("4_4e8l8")
 
 [node name="wall_sprite5" type="Sprite2D" parent="northern_wall"]
 position = Vector2(128, 0)
@@ -80,6 +135,12 @@ texture = ExtResource("6_pn42c")
 position = Vector2(208, 0)
 texture = ExtResource("6_ncsh2")
 
+[node name="Tower" parent="northern_wall" instance=ExtResource("4_4fkv0")]
+position = Vector2(-8, -32)
+
+[node name="Tower2" parent="northern_wall" instance=ExtResource("4_4fkv0")]
+position = Vector2(248, -32)
+
 [node name="southern_wall" type="Node2D" parent="."]
 position = Vector2(0, 336)
 
@@ -107,20 +168,8 @@ texture = ExtResource("6_ncsh2")
 position = Vector2(80, 0)
 texture = ExtResource("6_ncsh2")
 
-[node name="wall_sprite5" type="Sprite2D" parent="southern_wall"]
-position = Vector2(128, 0)
-texture = ExtResource("6_ncsh2")
-
-[node name="wall_sprite42" type="Sprite2D" parent="southern_wall"]
-position = Vector2(112, 0)
-texture = ExtResource("6_ncsh2")
-
 [node name="wall_sprite6" type="Sprite2D" parent="southern_wall"]
 position = Vector2(160, 0)
-texture = ExtResource("6_ncsh2")
-
-[node name="wall_sprite43" type="Sprite2D" parent="southern_wall"]
-position = Vector2(144, 0)
 texture = ExtResource("6_ncsh2")
 
 [node name="wall_sprite7" type="Sprite2D" parent="southern_wall"]
@@ -143,174 +192,169 @@ texture = ExtResource("6_ncsh2")
 position = Vector2(208, 0)
 texture = ExtResource("6_ncsh2")
 
+[node name="Tower" parent="southern_wall" instance=ExtResource("4_4fkv0")]
+position = Vector2(248, -32)
+
+[node name="Tower2" parent="southern_wall" instance=ExtResource("4_4fkv0")]
+position = Vector2(-8, -32)
+
+[node name="Gate" parent="southern_wall" instance=ExtResource("5_2ymv2")]
+z_index = 1
+position = Vector2(120, 0)
+
 [node name="western_wall" type="Node2D" parent="."]
 
 [node name="wall_sprite16" type="Sprite2D" parent="western_wall"]
+z_index = 2
 position = Vector2(0, 32)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite39" type="Sprite2D" parent="western_wall"]
+z_index = 2
 position = Vector2(0, 16)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite17" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 64)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite40" type="Sprite2D" parent="western_wall"]
+z_index = 2
 position = Vector2(0, 48)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite18" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 96)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite41" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 80)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite19" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 128)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite42" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 112)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite20" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 160)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite43" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 144)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite21" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 192)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite44" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 176)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite22" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 224)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite45" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 208)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite23" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 256)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite46" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 240)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite24" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 288)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite47" type="Sprite2D" parent="western_wall"]
 position = Vector2(0, 272)
-texture = ExtResource("1_uprtw")
-
-[node name="wall_sprite25" type="Sprite2D" parent="western_wall"]
-position = Vector2(0, 320)
-texture = ExtResource("1_uprtw")
-
-[node name="wall_sprite49" type="Sprite2D" parent="western_wall"]
-position = Vector2(0, 336)
-texture = ExtResource("2_mq32m")
-
-[node name="wall_sprite48" type="Sprite2D" parent="western_wall"]
-position = Vector2(0, 304)
-texture = ExtResource("1_uprtw")
+texture = ExtResource("6_3qaqa")
 
 [node name="eatern_wall" type="Node2D" parent="."]
 position = Vector2(256, 0)
 
 [node name="wall_sprite16" type="Sprite2D" parent="eatern_wall"]
+z_index = 2
 position = Vector2(0, 32)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite39" type="Sprite2D" parent="eatern_wall"]
+z_index = 2
 position = Vector2(0, 16)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite17" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 64)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite40" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 48)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite18" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 96)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite41" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 80)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite19" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 128)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite42" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 112)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite20" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 160)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite43" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 144)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite21" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 192)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite44" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 176)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite22" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 224)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite45" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 208)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite23" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 256)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite46" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 240)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite24" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 288)
-texture = ExtResource("7_ppspr")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite47" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(0, 272)
-texture = ExtResource("7_ppspr")
-
-[node name="wall_sprite25" type="Sprite2D" parent="eatern_wall"]
-position = Vector2(0, 320)
-texture = ExtResource("7_ppspr")
-
-[node name="wall_sprite49" type="Sprite2D" parent="eatern_wall"]
-position = Vector2(0, 336)
-texture = ExtResource("8_revjn")
+texture = ExtResource("6_3qaqa")
 
 [node name="wall_sprite50" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(-240, 352)
@@ -336,18 +380,6 @@ texture = ExtResource("4_4e8l8")
 position = Vector2(-160, 352)
 texture = ExtResource("4_4e8l8")
 
-[node name="wall_sprite56" type="Sprite2D" parent="eatern_wall"]
-position = Vector2(-144, 352)
-texture = ExtResource("4_4e8l8")
-
-[node name="wall_sprite57" type="Sprite2D" parent="eatern_wall"]
-position = Vector2(-128, 352)
-texture = ExtResource("4_4e8l8")
-
-[node name="wall_sprite58" type="Sprite2D" parent="eatern_wall"]
-position = Vector2(-112, 352)
-texture = ExtResource("4_4e8l8")
-
 [node name="wall_sprite59" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(-96, 352)
 texture = ExtResource("4_4e8l8")
@@ -371,7 +403,3 @@ texture = ExtResource("4_4e8l8")
 [node name="wall_sprite64" type="Sprite2D" parent="eatern_wall"]
 position = Vector2(-16, 352)
 texture = ExtResource("4_4e8l8")
-
-[node name="wall_sprite48" type="Sprite2D" parent="eatern_wall"]
-position = Vector2(0, 304)
-texture = ExtResource("7_ppspr")

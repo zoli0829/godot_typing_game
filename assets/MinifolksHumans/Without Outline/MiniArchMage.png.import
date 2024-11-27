@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://31btr4lyosqt"
-path="res://.godot/imported/wall2.png-e042a1a54ef7f4ae6707e633c5e27ac1.ctex"
+uid="uid://cv3c8bdt7k4gf"
+path="res://.godot/imported/MiniArchMage.png-c45fbe339d50b5635aaa072661520f2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/buildings/castle/wall2.png"
-dest_files=["res://.godot/imported/wall2.png-e042a1a54ef7f4ae6707e633c5e27ac1.ctex"]
+source_file="res://assets/MinifolksHumans/Without Outline/MiniArchMage.png"
+dest_files=["res://.godot/imported/MiniArchMage.png-c45fbe339d50b5635aaa072661520f2e.ctex"]
 
 [params]
 

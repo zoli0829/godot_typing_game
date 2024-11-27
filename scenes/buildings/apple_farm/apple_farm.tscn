@@ -24,6 +24,18 @@ texture = ExtResource("2_8tfme")
 position = Vector2(93.3333, -40)
 texture = ExtResource("2_8tfme")
 
+[node name="apple_tree4" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(1.49996, 74.3333)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree5" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(-91.8333, 74.3333)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree6" type="Sprite2D" parent="apple_orchard"]
+position = Vector2(94.8333, 74.3333)
+texture = ExtResource("2_8tfme")
+
 [node name="apple_tree10" type="Sprite2D" parent="apple_orchard"]
 position = Vector2(93.3333, -160)
 texture = ExtResource("2_8tfme")
