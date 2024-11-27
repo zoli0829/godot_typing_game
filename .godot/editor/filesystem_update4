@@ -1,6 +1,5 @@
-res://scenes/managers/input_manager/input_manager.tscn
-res://scenes/game/game.tscn
 res://scenes/enemies/base_enemy.tscn
 res://scenes/buildings/wall/wall.tscn
 res://scenes/managers/enemy_spawner/enemy_spawner.tscn
-res://scripts/game_manager.gd
+res://scenes/game/game.tscn
+res://scenes/buildings/wall/tower.tscn

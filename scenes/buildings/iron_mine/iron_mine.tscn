@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ypxw3ilqoi6m"]
 
-[ext_resource type="Texture2D" uid="uid://cdpjqsmuvjvc7" path="res://assets/images/buildings/iron_mine.png" id="1_kbpeb"]
+[ext_resource type="Texture2D" uid="uid://cdpjqsmuvjvc7" path="res://assets/sprites/buildings/iron_mine.png" id="1_kbpeb"]
 
 [node name="iron_mine" type="Node2D"]
 

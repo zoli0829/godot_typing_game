@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://mrs1a0sdjxrg"]
+
+[ext_resource type="Texture2D" uid="uid://b06tf4q3upusm" path="res://assets/sprites/buildings/castle/wall_top_left_01.png" id="1_72fog"]
+[ext_resource type="Texture2D" uid="uid://bpac2meflj5hn" path="res://assets/sprites/buildings/castle/wall_top_right_01.png" id="2_ld82o"]
+[ext_resource type="Texture2D" uid="uid://bfjpo2hfcaflm" path="res://assets/sprites/buildings/castle/wall_bottom_right_01.png" id="3_qrsoj"]
+[ext_resource type="Texture2D" uid="uid://d36koc8ghd5ip" path="res://assets/sprites/buildings/castle/wall_bottom_left_01.png" id="4_q7ugg"]
+[ext_resource type="Texture2D" uid="uid://bw5heqrijdhsm" path="res://assets/sprites/buildings/castle/wall.png" id="5_nqgmb"]
+[ext_resource type="Texture2D" uid="uid://31btr4lyosqt" path="res://assets/sprites/buildings/castle/wall2.png" id="6_03plb"]
+
+[node name="Tower" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_72fog")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(16, 0)
+texture = ExtResource("2_ld82o")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("3_qrsoj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(0, 16)
+texture = ExtResource("4_q7ugg")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(16, 32)
+texture = ExtResource("5_nqgmb")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(0, 32)
+texture = ExtResource("6_03plb")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(16, 47.5)
+texture = ExtResource("5_nqgmb")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(0, 47.5)
+texture = ExtResource("5_nqgmb")
