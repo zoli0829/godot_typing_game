@@ -1,5 +1,11 @@
-res://scenes/units/archer/archer.tscn
+res://scenes/buildings/base_building/base_building.tscn
+res://scripts/base_building.gd
 res://scenes/game/game.tscn
 res://scenes/managers/input_manager/input_manager.tscn
 res://scenes/buildings/wall/wall.tscn
 res://scenes/buildings/apple_farm/apple_farm.tscn
+res://scenes/units/archer/archer.tscn
+res://scripts/apple_farm.gd
+res://scripts/game_manager.gd
+res://scenes/managers/game_manager/game_manager.tscn
+res://scripts/input_manager.gd

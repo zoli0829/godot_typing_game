@@ -10,6 +10,25 @@ var is_woodcutter_camp_built = false
 var is_apple_farm_built = false
 var is_wheat_farm_built = false
 
+'''
+CACHED NODES
+'''
+var apple_farm: BaseBuilding
+var inn: BaseBuilding
+var iron_mine: BaseBuilding
+var market: BaseBuilding
+var quarry: BaseBuilding
+var wheat_farm: BaseBuilding
+var woodcutter_camp: BaseBuilding
+'''
+RESOURCES
+'''
+var bows: int = 0
+var food: int = 0
+var iron: int = 0
+var stone: int = 0
+var wood: int = 0
+
 var enemy_command_strings = ["charge", "attack", "fire", "destroy", "advance", "strike", "overwhelm", "seize them", "for glory", "no mercy"]
 @export var enemies: Array[Node2D] = []
 
@@ -17,6 +36,8 @@ var enemy_command_strings = ["charge", "attack", "fire", "destroy", "advance", "
 func _ready():
 	# actually i dont know if this method is useful or not or if i need it 
 	handle_resolution_and_scaling()
+	find_buildings()
+	print(apple_farm)
 	InputManager.connect("enemy_destroyed", destroy_enemy)
 	InputManager.connect("enemy_remove_request",remove_enemy_from_enemies_array)
 
@@ -92,11 +113,12 @@ func on_upgrade_woodcutter_camp_typed():
 func on_build_apple_farm_typed():
 	if is_apple_farm_built:
 		return
-	print("Apple farm built")
-	is_apple_farm_built = true
+	
+	apple_farm.build()
 
 
 func on_upgrade_apple_farm_typed():
+	apple_farm.upgrade()
 	print("Apple farm upgraded")
 
 
@@ -109,6 +131,20 @@ func on_build_wheat_farm_typed():
 
 func on_upgrade_wheat_farm_typed():
 	print("Wheat farm upgraded")
+
+
+func find_buildings():
+	var root = get_tree().root
+	var game_scene = root.get_node("game")
+	var buildings_node = game_scene.get_node("Buildings")
+	
+	apple_farm = buildings_node.get_node("apple_farm")
+	#inn = buildings_node.get_node("inn")
+	#iron_mine = buildings_node.get_node("iron_mine")
+	#market = buildings_node.get_node("market")
+	#quarry = buildings_node.get_node("quarry")
+	#wheat_farm = buildings_node.get_node("wheat_farm")
+	#woodcutter_camp = buildings_node.get_node("woodcutter_camp")
 
 
 '''

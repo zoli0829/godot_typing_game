@@ -1,9 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://bov0jjotk2hnq"]
+[gd_scene load_steps=4 format=3 uid="uid://bov0jjotk2hnq"]
 
 [ext_resource type="Texture2D" uid="uid://btlamiyeje6v4" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png" id="1_7cl8o"]
+[ext_resource type="Script" path="res://scripts/apple_farm.gd" id="1_ojnj6"]
 [ext_resource type="Texture2D" uid="uid://dgj3mks24lk7a" path="res://assets/sprites/trees/apple_tree.png" id="2_8tfme"]
 
-[node name="apple_farm" type="Node2D"]
+[node name="apple_farm" type="Node2D" node_paths=PackedStringArray("building_sprites")]
+script = ExtResource("1_ojnj6")
+build_command = "build apple farm"
+upgrade_command = "upgrade apple farm"
+produce_commands = Array[String](["harvest apples"])
+max_level = 1
+building_sprites = [NodePath("building"), NodePath("apple_orchard/apple_tree"), NodePath("apple_orchard/apple_tree2"), NodePath("apple_orchard/apple_tree3"), NodePath("apple_orchard/apple_tree4"), NodePath("apple_orchard/apple_tree5"), NodePath("apple_orchard/apple_tree6"), NodePath("apple_orchard/apple_tree10"), NodePath("apple_orchard/apple_tree11")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -80.0
+offset_top = -64.0
+offset_right = 80.0
+offset_bottom = -41.0
+text = "test test test"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="building" type="Sprite2D" parent="."]
 texture = ExtResource("1_7cl8o")
@@ -43,3 +59,8 @@ texture = ExtResource("2_8tfme")
 [node name="apple_tree11" type="Sprite2D" parent="apple_orchard"]
 position = Vector2(-93.3333, -160)
 texture = ExtResource("2_8tfme")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

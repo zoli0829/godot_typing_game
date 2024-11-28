@@ -1,10 +1,12 @@
+Timer
+Label
+BaseBuilding
+Sprite2D
 Node
 AnimatedSprite2D
 AnimationPlayer
-Sprite2D
 Node2D
 Control
-Label
 Camera2D
 TextEdit
 RichTextLabel

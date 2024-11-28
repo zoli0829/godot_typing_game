@@ -74,7 +74,7 @@ func add_character_to_input(event):
 func update_text_display():
 	typed_text = current_input
 	text_edit.text = typed_text
-	print("Text updated in TextEdit:", text_edit.text)
+	#print("Text updated in TextEdit:", text_edit.text)
 
 
 func clear_input():
@@ -99,8 +99,8 @@ func check_for_word_match():
 
 func remove_enemy_commmand_from_enemy_commmands_array(enemy_command: String):
 	enemy_commands.erase(enemy_command)
-	print("Enemy command: " + enemy_command + " erased from array!")
-	print(enemy_commands)
+	#print("Enemy command: " + enemy_command + " erased from array!")
+	#print(enemy_commands)
 
 
 func check_for_word_in_enemy_commands():
