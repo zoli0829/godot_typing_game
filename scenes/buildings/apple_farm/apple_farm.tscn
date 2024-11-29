@@ -4,63 +4,68 @@
 [ext_resource type="Script" path="res://scripts/apple_farm.gd" id="1_ojnj6"]
 [ext_resource type="Texture2D" uid="uid://dgj3mks24lk7a" path="res://assets/sprites/trees/apple_tree.png" id="2_8tfme"]
 
-[node name="apple_farm" type="Node2D" node_paths=PackedStringArray("building_sprites")]
+[node name="apple_farm" type="Node2D"]
 script = ExtResource("1_ojnj6")
 build_command = "build apple farm"
 upgrade_command = "upgrade apple farm"
 produce_commands = Array[String](["harvest apples"])
 max_level = 1
-building_sprites = [NodePath("building"), NodePath("apple_orchard/apple_tree"), NodePath("apple_orchard/apple_tree2"), NodePath("apple_orchard/apple_tree3"), NodePath("apple_orchard/apple_tree4"), NodePath("apple_orchard/apple_tree5"), NodePath("apple_orchard/apple_tree6"), NodePath("apple_orchard/apple_tree10"), NodePath("apple_orchard/apple_tree11")]
 
 [node name="Label" type="Label" parent="."]
 offset_left = -80.0
 offset_top = -64.0
 offset_right = 80.0
 offset_bottom = -41.0
-text = "test test test"
+text = "apple farm"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="building" type="Sprite2D" parent="."]
-texture = ExtResource("1_7cl8o")
-
-[node name="apple_orchard" type="Node2D" parent="."]
-position = Vector2(0, 88)
-scale = Vector2(0.6, 0.6)
-
-[node name="apple_tree" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(0, -40)
-texture = ExtResource("2_8tfme")
-
-[node name="apple_tree2" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(-93.3333, -40)
-texture = ExtResource("2_8tfme")
-
-[node name="apple_tree3" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(93.3333, -40)
-texture = ExtResource("2_8tfme")
-
-[node name="apple_tree4" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(1.49996, 74.3333)
-texture = ExtResource("2_8tfme")
-
-[node name="apple_tree5" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(-91.8333, 74.3333)
-texture = ExtResource("2_8tfme")
-
-[node name="apple_tree6" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(94.8333, 74.3333)
-texture = ExtResource("2_8tfme")
-
-[node name="apple_tree10" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(93.3333, -160)
-texture = ExtResource("2_8tfme")
-
-[node name="apple_tree11" type="Sprite2D" parent="apple_orchard"]
-position = Vector2(-93.3333, -160)
-texture = ExtResource("2_8tfme")
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 60.0
+
+[node name="sprites_container" type="Node2D" parent="."]
+
+[node name="building" type="Sprite2D" parent="sprites_container"]
+texture = ExtResource("1_7cl8o")
+
+[node name="apple_tree" type="Sprite2D" parent="sprites_container"]
+position = Vector2(0, 64)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree2" type="Sprite2D" parent="sprites_container"]
+position = Vector2(-56, 64)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree3" type="Sprite2D" parent="sprites_container"]
+position = Vector2(56, 64)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree4" type="Sprite2D" parent="sprites_container"]
+position = Vector2(0.899976, 132.6)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree5" type="Sprite2D" parent="sprites_container"]
+position = Vector2(-55.1, 132.6)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree6" type="Sprite2D" parent="sprites_container"]
+position = Vector2(56.9, 132.6)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree10" type="Sprite2D" parent="sprites_container"]
+position = Vector2(56, -8)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
+
+[node name="apple_tree11" type="Sprite2D" parent="sprites_container"]
+position = Vector2(-56, -8)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_8tfme")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

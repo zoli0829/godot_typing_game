@@ -1,14 +1,21 @@
 extends BaseBuilding
 
 
+func _ready():
+	super()
+	add_commands_to_the_input_commands_list()
+
+
 func build():
+	super()
+	
 	for sprite in building_sprites:
 		sprite.modulate.a = 1
 	is_built = true
 	command_to_show = upgrade_command
 	update_label(command_to_show)
 	upgrade()
-	timer.start(1)
+	timer.start(60)
 	GameManager.is_apple_farm_built = true
 
 
@@ -38,7 +45,5 @@ func update_label(text: String):
 
 
 func _on_timer_timeout():
-	produce()
-	timer.start()
 	produce()
 	timer.start()

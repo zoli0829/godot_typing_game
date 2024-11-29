@@ -35,7 +35,7 @@ position = Vector2(0, 32)
 position = Vector2(768, 0)
 
 [node name="Buildings" type="Node2D" parent="."]
-position = Vector2(-576, -280)
+position = Vector2(-576, -232)
 
 [node name="wall" parent="Buildings" instance=ExtResource("4_hhpj5")]
 position = Vector2(-288, -136)

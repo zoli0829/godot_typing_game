@@ -1,8 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://c24y2a0m6hv8j"]
+[gd_scene load_steps=3 format=3 uid="uid://c24y2a0m6hv8j"]
 
+[ext_resource type="Script" path="res://scripts/quarry.gd" id="1_ic7n2"]
 [ext_resource type="Texture2D" uid="uid://dhh2cc6ut5gb7" path="res://assets/sprites/buildings/quarry.png" id="1_tsha3"]
 
-[node name="quarry" type="Node2D"]
+[node name="quarry" type="Node2D" node_paths=PackedStringArray("building_sprites")]
+script = ExtResource("1_ic7n2")
+build_command = "build quarry"
+upgrade_command = "upgrade quarry"
+produce_commands = Array[String](["collect stones"])
+max_level = 10
+building_sprites = [NodePath("sprites_container/building")]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Label" type="Label" parent="."]
+offset_left = -64.0
+offset_top = -88.0
+offset_right = 64.0
+offset_bottom = -65.0
+text = "quarry"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="sprites_container" type="Node2D" parent="."]
+
+[node name="building" type="Sprite2D" parent="sprites_container"]
 texture = ExtResource("1_tsha3")

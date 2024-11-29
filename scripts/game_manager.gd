@@ -25,6 +25,7 @@ RESOURCES
 '''
 var bows: int = 0
 var food: int = 0
+var gold: int = 0
 var iron: int = 0
 var stone: int = 0
 var wood: int = 0
@@ -37,60 +38,113 @@ func _ready():
 	# actually i dont know if this method is useful or not or if i need it 
 	handle_resolution_and_scaling()
 	find_buildings()
-	print(apple_farm)
 	InputManager.connect("enemy_destroyed", destroy_enemy)
 	InputManager.connect("enemy_remove_request",remove_enemy_from_enemies_array)
 
 '''
 FUNCTIONS FOR BUILDINGS
 '''
+# MARKET FUNCTIONS
 func on_build_market_typed():
 	if is_market_built:
 		return
-	print("Market built")
+		
+	market.build()
 	is_market_built = true
 
 
 func on_upgrade_market_typed():
-	print("Market upgraded")
+	market.upgrade()
 
 
+func on_buy_wood_typed():
+	wood += 1
+
+
+func on_buy_stone_typed():
+	stone += 1
+
+
+func on_buy_food_typed():
+	food += 1
+
+
+func on_buy_iron_typed():
+	iron += 1
+
+
+func on_sell_wood_typed():
+	wood -= 1
+
+
+func on_sell_stone_typed():
+	stone -= 1
+
+
+func on_sell_food_typed():
+	food -= 1
+
+
+func on_sell_iron_typed():
+	iron -= 1
+
+
+# INN FUNCTIONS
 func on_build_inn_typed():
 	if is_inn_built:
 		return
-	print("Inn built")
+		
+	inn.build()
 	is_inn_built = true
 
 
 func on_upgrade_inn_typed():
-	print("Inn upgraded")
+	inn.upgrade()
 
 
+func on_collect_gold_typed():
+	gold += inn.level
+
+
+# IRON MINE FUNCTIONS
 func on_build_iron_mine_typed():
 	if is_iron_mine_built:
 		return
-	print("Iron mine built")
+		
+	iron_mine.build()
 	is_iron_mine_built = true
 
 
 func on_upgrade_iron_mine_typed():
-	print("Iron mine upgraded")
+	iron_mine.upgrade()
 
 
+func on_collect_iron_typed():
+	iron += iron_mine.level
+
+
+# QUARRY FUNCTIONS
 func on_build_quarry_typed():
 	if is_quarry_built:
 		return
-	print("Quarry built")
+		
+	quarry.build()
 	is_quarry_built = true
 
 
 func on_upgrade_quarry_typed():
-	print("Quarry upgraded")
+	quarry.upgrade()
 
 
+func on_collect_stones_typed():
+	stone += quarry.level
+
+
+# WALL FUNCTIONS
 func on_build_wall_typed():
 	if is_wall_built:
 		return
+		
 	print("Wall built")
 	is_wall_built = true
 
@@ -99,38 +153,55 @@ func on_upgrade_wall_typed():
 	print("Walls upgraded")
 
 
+# WOODCUTTER CAMP FUNCTIONS
 func on_build_woodcutter_camp_typed():
 	if is_woodcutter_camp_built:
 		return
-	print("Woodcutter built")
+		
+	woodcutter_camp.build()
 	is_woodcutter_camp_built = true
 
 
 func on_upgrade_woodcutter_camp_typed():
-	print("Woodcutter upgraded")
+	woodcutter_camp.upgrade()
 
 
+func on_collect_wood_typed():
+	wood += woodcutter_camp.level
+
+
+# APPLE FARM FUNCTIONS
 func on_build_apple_farm_typed():
 	if is_apple_farm_built:
 		return
 	
 	apple_farm.build()
+	is_apple_farm_built = true
 
 
 func on_upgrade_apple_farm_typed():
 	apple_farm.upgrade()
-	print("Apple farm upgraded")
 
 
+func on_harvest_apples_typed():
+	food += apple_farm.level
+
+
+# WHEAT FARM FUNCTIONS
 func on_build_wheat_farm_typed():
 	if is_wheat_farm_built:
 		return
-	print("Wheat farm built")
+		
+	wheat_farm.build()
 	is_wheat_farm_built = true
 
 
 func on_upgrade_wheat_farm_typed():
-	print("Wheat farm upgraded")
+	wheat_farm.upgrade()
+
+
+func on_harvest_wheat_typed():
+	food += wheat_farm.level
 
 
 func find_buildings():
@@ -139,12 +210,12 @@ func find_buildings():
 	var buildings_node = game_scene.get_node("Buildings")
 	
 	apple_farm = buildings_node.get_node("apple_farm")
-	#inn = buildings_node.get_node("inn")
-	#iron_mine = buildings_node.get_node("iron_mine")
-	#market = buildings_node.get_node("market")
-	#quarry = buildings_node.get_node("quarry")
-	#wheat_farm = buildings_node.get_node("wheat_farm")
-	#woodcutter_camp = buildings_node.get_node("woodcutter_camp")
+	inn = buildings_node.get_node("inn")
+	iron_mine = buildings_node.get_node("iron_mine")
+	market = buildings_node.get_node("market")
+	quarry = buildings_node.get_node("quarry")
+	wheat_farm = buildings_node.get_node("wheat_farm")
+	woodcutter_camp = buildings_node.get_node("woodcutter_camp")
 
 
 '''

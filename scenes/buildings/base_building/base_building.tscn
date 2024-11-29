@@ -13,10 +13,12 @@ offset_right = 32.0
 offset_bottom = -25.0
 text = "build building"
 
-[node name="building_sprite" type="Sprite2D" parent="."]
-texture = ExtResource("1_f62dw")
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 60.0
+
+[node name="sprites_container" type="Node2D" parent="."]
+
+[node name="building_sprite" type="Sprite2D" parent="sprites_container"]
+texture = ExtResource("1_f62dw")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

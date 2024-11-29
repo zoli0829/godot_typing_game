@@ -18,19 +18,21 @@ var command_to_show :String
 
 
 func _ready():
-	set_spritte_opacity_low()
+	add_sprites_to_list()
+	set_sprite_opacity_low()
 	command_to_show = build_command
 	update_label(command_to_show)
-	add_commands_to_the_commands_list()
 
 
-func set_spritte_opacity_low():
+func set_sprite_opacity_low():
 	for sprite in building_sprites:
 		sprite.modulate.a = 0.25
 
 
 func build():
-	pass
+	# once we built the building, we erase that command from the list
+	if InputManager.commands.has(build_command):
+		InputManager.commands.erase(build_command)
 
 
 func upgrade():
@@ -43,12 +45,20 @@ func produce():
 	pass
 
 
-func add_commands_to_the_commands_list():
+func add_commands_to_the_input_commands_list():
 	pass
 
 
 func update_label(text: String):
 	pass
+
+
+func add_sprites_to_list():
+	var sprites_container = $sprites_container
+	var sprites = sprites_container.get_children()
+	for sprite in sprites:
+		building_sprites.append(sprite)
+
 
 func _on_timer_timeout() -> void:
 	pass

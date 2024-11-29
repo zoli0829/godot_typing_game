@@ -1,8 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://ypxw3ilqoi6m"]
+[gd_scene load_steps=3 format=3 uid="uid://ypxw3ilqoi6m"]
 
+[ext_resource type="Script" path="res://scripts/iron_mine.gd" id="1_21281"]
 [ext_resource type="Texture2D" uid="uid://cdpjqsmuvjvc7" path="res://assets/sprites/buildings/iron_mine.png" id="1_kbpeb"]
 
-[node name="iron_mine" type="Node2D"]
+[node name="iron_mine" type="Node2D" node_paths=PackedStringArray("building_sprites")]
+script = ExtResource("1_21281")
+build_command = "build iron mine"
+upgrade_command = "upgrade iron mine"
+produce_commands = Array[String](["collect iron"])
+max_level = 10
+building_sprites = [NodePath("sprites_container/building")]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Label" type="Label" parent="."]
+offset_left = -64.0
+offset_top = -88.0
+offset_right = 64.0
+offset_bottom = -65.0
+text = "iron mine"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+
+[node name="sprites_container" type="Node2D" parent="."]
+
+[node name="building" type="Sprite2D" parent="sprites_container"]
 texture = ExtResource("1_kbpeb")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

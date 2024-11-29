@@ -17,7 +17,6 @@ func pick_random_word_and_append_to_enemy_commands():
 	if available_commands.size() > 0:
 		enemy_command = available_commands.pick_random().to_lower()
 		InputManager.enemy_commands.append(enemy_command)
-		print(enemy_command + " was added to the commands")
 		update_label(enemy_command)
 	else:
 		print("No more unique commands available!")

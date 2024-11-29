@@ -7,12 +7,7 @@ var typed_text = ""
 var commands = [
 "build market", "upgrade market",
 "build inn", "upgrade_inn",
-"build iron mine", "upgrade iron mine",
-"build quarry", "upgrade quarry",
 "build wall","upgrade wall",
-"build woodcutter camp", "upgrade woodcutter camp",
-"build apple farm", "upgrade apple farm",
-"build wheat farm", "upgrade wheat farm"
 ]
 
 @export var enemy_commands = []

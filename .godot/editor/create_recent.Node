@@ -1,11 +1,11 @@
+Node2D
+Node
 Timer
 Label
 BaseBuilding
 Sprite2D
-Node
 AnimatedSprite2D
 AnimationPlayer
-Node2D
 Control
 Camera2D
 TextEdit
