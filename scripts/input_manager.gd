@@ -69,7 +69,6 @@ func add_character_to_input(event):
 func update_text_display():
 	typed_text = current_input
 	text_edit.text = typed_text
-	#print("Text updated in TextEdit:", text_edit.text)
 
 
 func clear_input():
@@ -83,7 +82,6 @@ func check_for_word_match():
 		var command_name = current_input.replace(" ", "_")
 		command_name = "on_" + command_name + "_typed"
 		
-		# Check if a function with the modified name exists and call it dynamically
 		if GameManager.has_method(command_name):
 			GameManager.call(command_name)
 			clear_input()
@@ -94,8 +92,6 @@ func check_for_word_match():
 
 func remove_enemy_commmand_from_enemy_commmands_array(enemy_command: String):
 	enemy_commands.erase(enemy_command)
-	#print("Enemy command: " + enemy_command + " erased from array!")
-	#print(enemy_commands)
 
 
 func check_for_word_in_enemy_commands():

@@ -48,7 +48,7 @@ position = Vector2(344, 96)
 position = Vector2(-192, 312)
 
 [node name="iron_mine" parent="Buildings" instance=ExtResource("7_cs8uk")]
-position = Vector2(24, 256)
+position = Vector2(128, 264)
 
 [node name="market" parent="Buildings" instance=ExtResource("8_14mjg")]
 position = Vector2(128, 448)

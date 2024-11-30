@@ -337,66 +337,82 @@ position = Vector2(-40, 24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_81" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-88, -24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_82" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-72, -24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_83" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-56, -24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_84" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-40, -24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_85" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-88, -8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_86" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-72, -8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_87" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-56, -8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_88" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-40, -8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_89" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-88, 8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_90" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-72, 8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_91" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-56, 8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_92" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-40, 8)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_93" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-88, 24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_94" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-72, 24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_95" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-56, 24)
 texture = ExtResource("2_pv840")
 
 [node name="wheat_96" type="Sprite2D" parent="sprites_container"]
+self_modulate = Color(1, 1, 1, 0.258824)
 position = Vector2(-40, 24)
 texture = ExtResource("2_pv840")
 

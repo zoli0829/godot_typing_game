@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732910170
+::res://::1732994790
 README.md::TextFile::-1::1732136553::0::1::::<><>::
 ::res://assets/::1732739147
 ::res://assets/FarmingCrops16x16/::1732904858
@@ -2307,49 +2307,50 @@ wall_top_right_01.png::CompressedTexture2D::3439423625386236811::1732736107::173
 apple_tree.png::CompressedTexture2D::7600696572324291312::1732736107::1732904855::1::::<><>::
 ::res://scenes/::1732739317
 ::res://scenes/buildings/::1732904536
-::res://scenes/buildings/apple_farm/::1732908935
-apple_farm.tscn::PackedScene::3413950919640234686::1732908935::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/apple_farm.gd<>uid://dgj3mks24lk7a::::res://assets/sprites/trees/apple_tree.png
-::res://scenes/buildings/base_building/::1732908935
-base_building.tscn::PackedScene::2637403501492022976::1732908935::0::1::::<><>::res://scripts/base_building.gd<>uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png
-::res://scenes/buildings/inn/::1732908935
-inn.tscn::PackedScene::3551989187728174239::1732908935::0::1::::<><>::res://scripts/inn.gd<>uid://b4fx0p30if46f::::res://assets/sprites/buildings/inn.png
-::res://scenes/buildings/iron_mine/::1732908935
-iron_mine.tscn::PackedScene::1716935175457181210::1732908935::0::1::::<><>::res://scripts/iron_mine.gd<>uid://cdpjqsmuvjvc7::::res://assets/sprites/buildings/iron_mine.png
-::res://scenes/buildings/market/::1732736107
-market.tscn::PackedScene::8945166668559490182::1732736107::0::1::::<><>::uid://yhxmmim70ann::::res://assets/sprites/buildings/market.png
-::res://scenes/buildings/quarry/::1732908935
-quarry.tscn::PackedScene::6729312563949699751::1732908935::0::1::::<><>::res://scripts/quarry.gd<>uid://dhh2cc6ut5gb7::::res://assets/sprites/buildings/quarry.png
+::res://scenes/buildings/apple_farm/::1732915462
+apple_farm.tscn::PackedScene::3413950919640234686::1732915462::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/apple_farm.gd<>uid://dgj3mks24lk7a::::res://assets/sprites/trees/apple_tree.png
+::res://scenes/buildings/base_building/::1732915431
+base_building.tscn::PackedScene::2637403501492022976::1732915431::0::1::::<><>::res://scripts/base_building.gd<>uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png
+::res://scenes/buildings/inn/::1732915605
+inn.tscn::PackedScene::3551989187728174239::1732915605::0::1::::<><>::res://scripts/inn.gd<>uid://b4fx0p30if46f::::res://assets/sprites/buildings/inn.png
+::res://scenes/buildings/iron_mine/::1732915610
+iron_mine.tscn::PackedScene::1716935175457181210::1732915610::0::1::::<><>::res://scripts/iron_mine.gd<>uid://cdpjqsmuvjvc7::::res://assets/sprites/buildings/iron_mine.png
+::res://scenes/buildings/market/::1732915615
+market.tscn::PackedScene::8945166668559490182::1732915615::0::1::::<><>::uid://yhxmmim70ann::::res://assets/sprites/buildings/market.png<>res://scripts/market.gd
+::res://scenes/buildings/quarry/::1732915621
+quarry.tscn::PackedScene::6729312563949699751::1732915621::0::1::::<><>::res://scripts/quarry.gd<>uid://dhh2cc6ut5gb7::::res://assets/sprites/buildings/quarry.png
 ::res://scenes/buildings/wall/::1732740624
 gate.tscn::PackedScene::5725763010303552973::1732738273::0::1::::<><>::uid://ddtm1d4rm7w0v::::res://assets/sprites/buildings/castle/gate_top_left.png<>uid://cwc6wro0b3aq3::::res://assets/sprites/buildings/castle/gate_bottom_left.png<>uid://doy04o44wyaaf::::res://assets/sprites/buildings/castle/wall_bottom_middle_01.png<>uid://cxto2usmh2tn1::::res://assets/sprites/buildings/castle/wall_4.png<>uid://7o5w1lpt7jel::::res://assets/sprites/buildings/castle/gate_top_right.png<>uid://b7vojn17kbs1::::res://assets/sprites/buildings/castle/gate_bottom_right.png<>uid://cm6206bdvoq8i::::res://assets/sprites/buildings/castle/wall_2.png<>uid://bvimygscad3o::::res://assets/sprites/buildings/castle/wall_3.png<>uid://b5kf2m6blsvmb::::res://assets/sprites/buildings/castle/wall_top_middle_01.png<>uid://cisd1lbbjt3ft::::res://assets/sprites/buildings/castle/tower.png
 tower.tscn::PackedScene::878499921429066396::1732738273::0::1::::<><>::uid://b06tf4q3upusm::::res://assets/sprites/buildings/castle/wall_top_left_01.png<>uid://bpac2meflj5hn::::res://assets/sprites/buildings/castle/wall_top_right_01.png<>uid://bfjpo2hfcaflm::::res://assets/sprites/buildings/castle/wall_bottom_right_01.png<>uid://d36koc8ghd5ip::::res://assets/sprites/buildings/castle/wall_bottom_left_01.png<>uid://bvimygscad3o::::res://assets/sprites/buildings/castle/wall_3.png<>uid://cm6206bdvoq8i::::res://assets/sprites/buildings/castle/wall_2.png
 wall.tscn::PackedScene::4776277364506061153::1732740624::0::1::::<><>::uid://bw5heqrijdhsm::::res://assets/sprites/buildings/castle/wall.png<>uid://mrs1a0sdjxrg::::res://scenes/buildings/wall/tower.tscn<>uid://cntuqlffwnv7r::::res://scenes/buildings/wall/gate.tscn<>uid://ijcylfl5pxi3::::res://assets/sprites/buildings/castle/wall_middle_left_right_01.png<>uid://cd68vdfsblyq1::::res://assets/sprites/buildings/castle/wall_middle.png<>uid://bpac2meflj5hn::::res://assets/sprites/buildings/castle/wall_top_right_01.png
-::res://scenes/buildings/wheat_farm/::1732908935
-wheat_farm.tscn::PackedScene::8634096440258936748::1732908935::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/wheat_farm.gd<>uid://ue83bur5pina::::res://assets/FarmingCrops16x16/wheat_crops.png
-::res://scenes/buildings/woodcutter_camp/::1732908935
-woodcutter_camp.tscn::PackedScene::2419991686931609752::1732908935::0::1::::<><>::res://scripts/woodcutter_camp.gd<>uid://crho2d1dii48k::::res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png<>uid://dylsw2v0n7fwh::::res://assets/Ninja Adventure - Asset Pack/props/logs_01.png<>uid://cja8v5ek0llt3::::res://assets/Ninja Adventure - Asset Pack/props/logs_03.png<>uid://deqgg8njbrmem::::res://assets/Ninja Adventure - Asset Pack/props/logs_04.png
+::res://scenes/buildings/wheat_farm/::1732915631
+wheat_farm.tscn::PackedScene::8634096440258936748::1732915631::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/wheat_farm.gd<>uid://ue83bur5pina::::res://assets/FarmingCrops16x16/wheat_crops.png
+::res://scenes/buildings/woodcutter_camp/::1732915653
+woodcutter_camp.tscn::PackedScene::2419991686931609752::1732915653::0::1::::<><>::res://scripts/woodcutter_camp.gd<>uid://crho2d1dii48k::::res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png<>uid://dylsw2v0n7fwh::::res://assets/Ninja Adventure - Asset Pack/props/logs_01.png<>uid://cja8v5ek0llt3::::res://assets/Ninja Adventure - Asset Pack/props/logs_03.png<>uid://deqgg8njbrmem::::res://assets/Ninja Adventure - Asset Pack/props/logs_04.png
 ::res://scenes/enemies/::1732907773
 base_enemy.tscn::PackedScene::3767611683708954863::1732907773::0::1::::<><>::res://scripts/base_enemy.gd<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg
-::res://scenes/game/::1732908935
-game.tscn::PackedScene::6497651209641585424::1732908935::0::1::::<><>::uid://csga3vb5ujqxq::::res://scenes/managers/input_manager/input_manager.tscn<>uid://cfpesebldigch::::res://scenes/managers/game_manager/game_manager.tscn<>uid://bhw7ruw2botti::::res://scenes/managers/enemy_spawner/enemy_spawner.tscn<>uid://cabwucp6owa6t::::res://scenes/buildings/wall/wall.tscn<>uid://bov0jjotk2hnq::::res://scenes/buildings/apple_farm/apple_farm.tscn<>uid://bquu0i4xiot3l::::res://scenes/buildings/inn/inn.tscn<>uid://ypxw3ilqoi6m::::res://scenes/buildings/iron_mine/iron_mine.tscn<>uid://d0pdt84x50pww::::res://scenes/buildings/market/market.tscn<>uid://c24y2a0m6hv8j::::res://scenes/buildings/quarry/quarry.tscn<>uid://dvaoko167cplk::::res://scenes/buildings/wheat_farm/wheat_farm.tscn<>uid://baqi56nyndsqi::::res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn<>uid://ppifpd02wj38::::res://scenes/units/archer/archer.tscn
+::res://scenes/game/::1732915431
+game.tscn::PackedScene::6497651209641585424::1732915431::0::1::::<><>::uid://csga3vb5ujqxq::::res://scenes/managers/input_manager/input_manager.tscn<>uid://cfpesebldigch::::res://scenes/managers/game_manager/game_manager.tscn<>uid://bhw7ruw2botti::::res://scenes/managers/enemy_spawner/enemy_spawner.tscn<>uid://cabwucp6owa6t::::res://scenes/buildings/wall/wall.tscn<>uid://bov0jjotk2hnq::::res://scenes/buildings/apple_farm/apple_farm.tscn<>uid://bquu0i4xiot3l::::res://scenes/buildings/inn/inn.tscn<>uid://ypxw3ilqoi6m::::res://scenes/buildings/iron_mine/iron_mine.tscn<>uid://d0pdt84x50pww::::res://scenes/buildings/market/market.tscn<>uid://c24y2a0m6hv8j::::res://scenes/buildings/quarry/quarry.tscn<>uid://dvaoko167cplk::::res://scenes/buildings/wheat_farm/wheat_farm.tscn<>uid://baqi56nyndsqi::::res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn<>uid://ppifpd02wj38::::res://scenes/units/archer/archer.tscn
 ::res://scenes/managers/::1732464321
 ::res://scenes/managers/enemy_spawner/::1732738273
 enemy_spawner.tscn::PackedScene::2925133287694918586::1732738273::0::1::::<><>::res://scripts/enemy_spawner.gd<>uid://btxcaqfkjijhn::::res://scenes/enemies/base_enemy.tscn<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg
-::res://scenes/managers/game_manager/::1732908935
-game_manager.tscn::PackedScene::5155026476290939763::1732908935::0::1::::<><>::res://scripts/game_manager.gd
-::res://scenes/managers/input_manager/::1732908935
-input_manager.tscn::PackedScene::6048677927549800678::1732908935::0::1::::<><>::res://scripts/input_manager.gd
+::res://scenes/managers/game_manager/::1732915431
+game_manager.tscn::PackedScene::5155026476290939763::1732915431::0::1::::<><>::res://scripts/game_manager.gd
+::res://scenes/managers/input_manager/::1732915431
+input_manager.tscn::PackedScene::6048677927549800678::1732915431::0::1::::<><>::res://scripts/input_manager.gd
 ::res://scenes/units/::1732739327
 ::res://scenes/units/archer/::1732740624
 archer.tscn::PackedScene::1084293779450546749::1732740624::0::1::::<><>::uid://dlh22favunjpa::::res://assets/MinifolksHumans/Outline/MiniArcherMan.png
-::res://scripts/::1732908716
-apple_farm.gd::GDScript::-1::1732904954::0::1::::<>BaseBuilding<>::
-base_building.gd::GDScript::-1::1732906606::0::1::::BaseBuilding<>Node2D<>::
+::res://scripts/::1732915212
+apple_farm.gd::GDScript::-1::1732913496::0::1::::<>BaseBuilding<>::
+base_building.gd::GDScript::-1::1732914719::0::1::::BaseBuilding<>Node2D<>::
 base_enemy.gd::GDScript::-1::1732907773::0::1::::<>Node2D<>::
 enemy_spawner.gd::GDScript::-1::1732646518::0::1::::<>Node2D<>::
-game_manager.gd::GDScript::-1::1732908686::0::1::::<>Node<>::
-inn.gd::GDScript::-1::1732908716::0::1::::<>BaseBuilding<>::
+game_manager.gd::GDScript::-1::1732915212::0::1::::<>Node<>::
+inn.gd::GDScript::-1::1732913490::0::1::::<>BaseBuilding<>::
 input_manager.gd::GDScript::-1::1732907914::0::1::::<>Control<>::
-iron_mine.gd::GDScript::-1::1732906021::0::1::::<>BaseBuilding<>::
-quarry.gd::GDScript::-1::1732906002::0::1::::<>BaseBuilding<>::
-wheat_farm.gd::GDScript::-1::1732907376::0::1::::<>BaseBuilding<>::
-woodcutter_camp.gd::GDScript::-1::1732907712::0::1::::<>BaseBuilding<>::
+iron_mine.gd::GDScript::-1::1732913509::0::1::::<>BaseBuilding<>::
+market.gd::GDScript::-1::1732915071::0::1::::<>BaseBuilding<>::
+quarry.gd::GDScript::-1::1732913523::0::1::::<>BaseBuilding<>::
+wheat_farm.gd::GDScript::-1::1732913534::0::1::::<>BaseBuilding<>::
+woodcutter_camp.gd::GDScript::-1::1732913648::0::1::::<>BaseBuilding<>::

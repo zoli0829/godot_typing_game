@@ -40,7 +40,6 @@ func upgrade():
 
 
 func produce():
-	# generate lvl number of units every 60 seconds
 	#GameManager.resource += level
 	pass
 

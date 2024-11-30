@@ -247,11 +247,9 @@ System or Settings functions
 '''
 
 func handle_resolution_and_scaling():
-		# Set the base resolution
 	var base_width = 1920
 	var base_height = 1080
 
-	# Get the current window size
 	var current_size = DisplayServer.window_get_size()
 
 	# Calculate the scale factor
