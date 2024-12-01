@@ -20,6 +20,7 @@ config/icon="res://assets/sprites/icon.svg"
 
 InputManager="*res://scenes/managers/input_manager/input_manager.tscn"
 GameManager="*res://scenes/managers/game_manager/game_manager.tscn"
+Enums="*res://scripts/enums.gd"
 
 [display]
 
@@ -27,8 +28,13 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/window_width_override=1920
 window/size/window_height_override=1080
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 window/stretch/scale_mode="integer"
+
+[gui]
+
+theme/custom="res://resources/theme/theme.tres"
 
 [rendering]
 

@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732994790
+::res://::1733052619
 README.md::TextFile::-1::1732136553::0::1::::<><>::
-::res://assets/::1732739147
+::res://assets/::1733050008
 ::res://assets/FarmingCrops16x16/::1732904858
 Crop_Spritesheet.png::CompressedTexture2D::2650638412955783546::1732644445::1732904858::1::::<><>::
 README.txt::TextFile::-1::1732644445::0::1::::<><>::
@@ -2272,6 +2272,123 @@ nine_path_panel.png::CompressedTexture2D::8074812041693369942::1732644446::17329
 nine_path_panel.png::CompressedTexture2D::5686874813251738461::1732644446::1732904855::1::::<><>::
 ::res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Wip/ThemeWood4/::1732904855
 nine_path_panel.png::CompressedTexture2D::3506338765638278365::1732644446::1732904855::1::::<><>::
+::res://assets/pixel_art_icons/::1733050008
+::res://assets/pixel_art_icons/Sprites/::1733050009
+::res://assets/pixel_art_icons/Sprites/Equipment/::1733050012
+Bag.png::CompressedTexture2D::621902189288001223::1733050008::1733050012::1::::<><>::
+Belt.png::CompressedTexture2D::7138453358141880594::1733050008::1733050012::1::::<><>::
+Helm.png::CompressedTexture2D::1041790291616659350::1733050008::1733050012::1::::<><>::
+Iron Armor.png::CompressedTexture2D::18315013367686607::1733050008::1733050012::1::::<><>::
+Iron Boot.png::CompressedTexture2D::1775721798823585485::1733050008::1733050012::1::::<><>::
+Iron Helmet.png::CompressedTexture2D::8015071479322221849::1733050008::1733050012::1::::<><>::
+Leather Armor.png::CompressedTexture2D::7797338559355942323::1733050008::1733050012::1::::<><>::
+Leather Boot.png::CompressedTexture2D::7787176649760430795::1733050008::1733050012::1::::<><>::
+Leather Helmet.png::CompressedTexture2D::1542930250029179034::1733050008::1733050012::1::::<><>::
+Wizard Hat.png::CompressedTexture2D::5162884840843159110::1733050008::1733050012::1::::<><>::
+Wooden Armor.png::CompressedTexture2D::3130036112630788055::1733050008::1733050012::1::::<><>::
+::res://assets/pixel_art_icons/Sprites/Food/::1733050012
+Apple.png::CompressedTexture2D::1131771344244064380::1733050008::1733050012::1::::<><>::
+Beer.png::CompressedTexture2D::6618534885314582530::1733050008::1733050012::1::::<><>::
+Bread.png::CompressedTexture2D::4907920696828384666::1733050008::1733050012::1::::<><>::
+Cheese.png::CompressedTexture2D::2987325358816319097::1733050008::1733050012::1::::<><>::
+Fish Steak.png::CompressedTexture2D::2020035867190078430::1733050008::1733050012::1::::<><>::
+Green Apple.png::CompressedTexture2D::4737432270991192610::1733050008::1733050012::1::::<><>::
+Ham.png::CompressedTexture2D::196668149370164756::1733050008::1733050012::1::::<><>::
+Meat.png::CompressedTexture2D::3784545248522496096::1733050008::1733050012::1::::<><>::
+Mushroom.png::CompressedTexture2D::196216043701233503::1733050008::1733050012::1::::<><>::
+Wine 2.png::CompressedTexture2D::6788842314352299496::1733050008::1733050012::1::::<><>::
+Wine.png::CompressedTexture2D::1015540334066445811::1733050008::1733050012::1::::<><>::
+::res://assets/pixel_art_icons/Sprites/Material/::1733050012
+Fabric.png::CompressedTexture2D::2520912245283898206::1733050008::1733050012::1::::<><>::
+Leather.png::CompressedTexture2D::6590894854093833795::1733050008::1733050012::1::::<><>::
+Paper.png::CompressedTexture2D::1369453799323677812::1733050008::1733050012::1::::<><>::
+Rope.png::CompressedTexture2D::6521760027362236303::1733050008::1733050012::1::::<><>::
+String.png::CompressedTexture2D::2006317313625015653::1733050008::1733050012::1::::<><>::
+Wood Log.png::CompressedTexture2D::8148390135962562809::1733050008::1733050012::1::::<><>::
+Wooden Plank.png::CompressedTexture2D::4548751837399394427::1733050008::1733050012::1::::<><>::
+Wool.png::CompressedTexture2D::4487397988105592258::1733050008::1733050012::1::::<><>::
+::res://assets/pixel_art_icons/Sprites/Misc/::1733050012
+Book 2.png::CompressedTexture2D::2929172087723281648::1733050008::1733050012::1::::<><>::
+Book 3.png::CompressedTexture2D::5623757756128183012::1733050008::1733050012::1::::<><>::
+Book.png::CompressedTexture2D::341232656216935840::1733050008::1733050012::1::::<><>::
+Candle.png::CompressedTexture2D::8117158474800890689::1733050008::1733050012::1::::<><>::
+Chest.png::CompressedTexture2D::7661601985472159808::1733050008::1733050012::1::::<><>::
+Copper Coin.png::CompressedTexture2D::9061297919299906523::1733050008::1733050012::1::::<><>::
+Crate.png::CompressedTexture2D::2379829051767027851::1733050008::1733050012::1::::<><>::
+Envolop.png::CompressedTexture2D::8437967621595984462::1733050008::1733050012::1::::<><>::
+Gear.png::CompressedTexture2D::4291901680381121605::1733050008::1733050012::1::::<><>::
+Golden Coin.png::CompressedTexture2D::8080186066298371855::1733050008::1733050012::1::::<><>::
+Golden Key.png::CompressedTexture2D::2467084645103106629::1733050008::1733050012::1::::<><>::
+Heart.png::CompressedTexture2D::7892537083754544487::1733050008::1733050012::1::::<><>::
+Iron Key.png::CompressedTexture2D::2063511383273480724::1733050008::1733050012::1::::<><>::
+Lantern.png::CompressedTexture2D::7047076582479231038::1733050008::1733050012::1::::<><>::
+Map.png::CompressedTexture2D::3277624564756442994::1733050008::1733050012::1::::<><>::
+Rune Stone.png::CompressedTexture2D::4832191752592198429::1733050008::1733050012::1::::<><>::
+Scroll.png::CompressedTexture2D::6145957159588888918::1733050008::1733050012::1::::<><>::
+Silver Coin.png::CompressedTexture2D::8808827248560076058::1733050008::1733050012::1::::<><>::
+Silver Key.png::CompressedTexture2D::4421264140468096483::1733050008::1733050012::1::::<><>::
+::res://assets/pixel_art_icons/Sprites/Monster Part/::1733050012
+Bone.png::CompressedTexture2D::7742563965072408000::1733050008::1733050012::1::::<><>::
+Egg.png::CompressedTexture2D::1778064252721254628::1733050008::1733050012::1::::<><>::
+Feather.png::CompressedTexture2D::2237502545745644780::1733050008::1733050012::1::::<><>::
+Monster Egg.png::CompressedTexture2D::5488448410893300141::1733050008::1733050012::1::::<><>::
+Monster Eye.png::CompressedTexture2D::5904549782638189287::1733050008::1733050012::1::::<><>::
+Monster Meat.png::CompressedTexture2D::4082985215445105536::1733050008::1733050011::1::::<><>::
+Skull.png::CompressedTexture2D::7738770150326801012::1733050008::1733050011::1::::<><>::
+Slime Gel.png::CompressedTexture2D::319056563824842150::1733050008::1733050011::1::::<><>::
+::res://assets/pixel_art_icons/Sprites/Ore & Gem/::1733050011
+Coal.png::CompressedTexture2D::2646811902868181659::1733050008::1733050011::1::::<><>::
+Copper Ingot.png::CompressedTexture2D::7118681290191033243::1733050008::1733050011::1::::<><>::
+Copper Nugget.png::CompressedTexture2D::3617374620494568796::1733050008::1733050011::1::::<><>::
+Crystal.png::CompressedTexture2D::2120971380664819334::1733050008::1733050011::1::::<><>::
+Cut Emerald.png::CompressedTexture2D::753487908524796829::1733050008::1733050011::1::::<><>::
+Cut Ruby.png::CompressedTexture2D::6849613387068963329::1733050008::1733050011::1::::<><>::
+Cut Sapphire.png::CompressedTexture2D::8406714235476813833::1733050008::1733050011::1::::<><>::
+Cut Topaz.png::CompressedTexture2D::5445638377263690533::1733050008::1733050011::1::::<><>::
+Diamond.png::CompressedTexture2D::2951588528126483500::1733050008::1733050011::1::::<><>::
+Emerald.png::CompressedTexture2D::5082859458392176733::1733050008::1733050011::1::::<><>::
+Gold Nugget.png::CompressedTexture2D::5553018839067970320::1733050008::1733050011::1::::<><>::
+Golden Ingot.png::CompressedTexture2D::6445134269016028772::1733050008::1733050011::1::::<><>::
+Obsidian.png::CompressedTexture2D::7172234384030839847::1733050008::1733050011::1::::<><>::
+Pearl.png::CompressedTexture2D::2981910111378549409::1733050008::1733050011::1::::<><>::
+Ruby.png::CompressedTexture2D::3364567542535777478::1733050008::1733050011::1::::<><>::
+Sapphire.png::CompressedTexture2D::7897838826824757484::1733050008::1733050011::1::::<><>::
+Silver Ingot.png::CompressedTexture2D::3833454006801572022::1733050008::1733050011::1::::<><>::
+Silver Nugget.png::CompressedTexture2D::2941490875131264399::1733050008::1733050011::1::::<><>::
+Topaz.png::CompressedTexture2D::1864006752344397542::1733050008::1733050011::1::::<><>::
+::res://assets/pixel_art_icons/Sprites/Potion/::1733050012
+Blue Potion 2.png::CompressedTexture2D::1631741166716310332::1733050008::1733050011::1::::<><>::
+Blue Potion 3.png::CompressedTexture2D::3989526542273884242::1733050008::1733050011::1::::<><>::
+Blue Potion.png::CompressedTexture2D::4795278853661777426::1733050008::1733050011::1::::<><>::
+Empty Bottle.png::CompressedTexture2D::324228734878407712::1733050008::1733050011::1::::<><>::
+Green Potion 2.png::CompressedTexture2D::8426621101721303994::1733050008::1733050012::1::::<><>::
+Green Potion 3.png::CompressedTexture2D::588304173554893415::1733050008::1733050012::1::::<><>::
+Green Potion.png::CompressedTexture2D::1778654456736238271::1733050009::1733050012::1::::<><>::
+Red Potion 2.png::CompressedTexture2D::3920625530109611657::1733050009::1733050012::1::::<><>::
+Red Potion 3.png::CompressedTexture2D::2253443060405524597::1733050009::1733050012::1::::<><>::
+Red Potion.png::CompressedTexture2D::3153134585078460858::1733050009::1733050012::1::::<><>::
+Water Bottle.png::CompressedTexture2D::1401850302653144031::1733050009::1733050012::1::::<><>::
+::res://assets/pixel_art_icons/Sprites/Weapon & Tool/::1733050012
+Arrow.png::CompressedTexture2D::8351346166469398179::1733050009::1733050012::1::::<><>::
+Axe.png::CompressedTexture2D::1454910539670481692::1733050009::1733050011::1::::<><>::
+Bow.png::CompressedTexture2D::2656421924819607945::1733050009::1733050011::1::::<><>::
+Emerald Staff.png::CompressedTexture2D::4730760237080219353::1733050009::1733050011::1::::<><>::
+Golden Sword.png::CompressedTexture2D::903839558183954040::1733050009::1733050011::1::::<><>::
+Hammer.png::CompressedTexture2D::5995136744808429332::1733050009::1733050011::1::::<><>::
+Iron Shield.png::CompressedTexture2D::4021209665326933232::1733050009::1733050011::1::::<><>::
+Iron Sword.png::CompressedTexture2D::4572613287448131672::1733050009::1733050011::1::::<><>::
+Knife.png::CompressedTexture2D::8453930442628065994::1733050009::1733050011::1::::<><>::
+Magic Wand.png::CompressedTexture2D::7558778547116775731::1733050009::1733050011::1::::<><>::
+Pickaxe.png::CompressedTexture2D::7121385797873770627::1733050009::1733050011::1::::<><>::
+Ruby Staff.png::CompressedTexture2D::2518176219040808717::1733050009::1733050011::1::::<><>::
+Sapphire Staff.png::CompressedTexture2D::6928369981857936319::1733050009::1733050011::1::::<><>::
+Shovel.png::CompressedTexture2D::7899937018803695122::1733050009::1733050011::1::::<><>::
+Silver Sword.png::CompressedTexture2D::3578528324205797152::1733050009::1733050011::1::::<><>::
+Topaz Staff.png::CompressedTexture2D::5279241098796101946::1733050009::1733050011::1::::<><>::
+Torch.png::CompressedTexture2D::4379286954854571962::1733050009::1733050011::1::::<><>::
+Wooden Shield.png::CompressedTexture2D::620739636692472654::1733050009::1733050011::1::::<><>::
+Wooden Staff.png::CompressedTexture2D::2855394608157024599::1733050009::1733050011::1::::<><>::
+Wooden Sword.png::CompressedTexture2D::8923833665815319304::1733050009::1733050011::1::::<><>::
 ::res://assets/sprites/::1732904855
 icon.svg::CompressedTexture2D::919429917899909566::1732736107::1732904855::1::::<><>::
 ::res://assets/sprites/buildings/::1732904855
@@ -2305,52 +2422,61 @@ wall_top_right.png::CompressedTexture2D::7129627028947934810::1732736107::173290
 wall_top_right_01.png::CompressedTexture2D::3439423625386236811::1732736107::1732904855::1::::<><>::
 ::res://assets/sprites/trees/::1732904855
 apple_tree.png::CompressedTexture2D::7600696572324291312::1732736107::1732904855::1::::<><>::
-::res://scenes/::1732739317
+::res://resources/::1733049099
+::res://resources/theme/::1733052440
+Bitfantasy.ttf::FontFile::7872517843637805010::1733049069::1733049195::1::::<><>::
+theme.tres::Theme::5604525757130692560::1733052440::0::1::::<><>::uid://dkfrho2uvddxq::::res://resources/theme/Bitfantasy.ttf<>uid://cna0855lgqqkj::::res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Wip/ThemeWood3/nine_path_panel.png
+::res://scenes/::1733046808
 ::res://scenes/buildings/::1732904536
-::res://scenes/buildings/apple_farm/::1732915462
-apple_farm.tscn::PackedScene::3413950919640234686::1732915462::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/apple_farm.gd<>uid://dgj3mks24lk7a::::res://assets/sprites/trees/apple_tree.png
-::res://scenes/buildings/base_building/::1732915431
-base_building.tscn::PackedScene::2637403501492022976::1732915431::0::1::::<><>::res://scripts/base_building.gd<>uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png
-::res://scenes/buildings/inn/::1732915605
-inn.tscn::PackedScene::3551989187728174239::1732915605::0::1::::<><>::res://scripts/inn.gd<>uid://b4fx0p30if46f::::res://assets/sprites/buildings/inn.png
-::res://scenes/buildings/iron_mine/::1732915610
-iron_mine.tscn::PackedScene::1716935175457181210::1732915610::0::1::::<><>::res://scripts/iron_mine.gd<>uid://cdpjqsmuvjvc7::::res://assets/sprites/buildings/iron_mine.png
-::res://scenes/buildings/market/::1732915615
-market.tscn::PackedScene::8945166668559490182::1732915615::0::1::::<><>::uid://yhxmmim70ann::::res://assets/sprites/buildings/market.png<>res://scripts/market.gd
-::res://scenes/buildings/quarry/::1732915621
-quarry.tscn::PackedScene::6729312563949699751::1732915621::0::1::::<><>::res://scripts/quarry.gd<>uid://dhh2cc6ut5gb7::::res://assets/sprites/buildings/quarry.png
+::res://scenes/buildings/apple_farm/::1732995042
+apple_farm.tscn::PackedScene::3413950919640234686::1732995042::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/apple_farm.gd<>uid://dgj3mks24lk7a::::res://assets/sprites/trees/apple_tree.png
+::res://scenes/buildings/base_building/::1732995042
+base_building.tscn::PackedScene::2637403501492022976::1732995042::0::1::::<><>::res://scripts/base_building.gd<>uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png
+::res://scenes/buildings/inn/::1733052566
+inn.tscn::PackedScene::3551989187728174239::1733052566::0::1::::<><>::res://scripts/inn.gd<>uid://b4fx0p30if46f::::res://assets/sprites/buildings/inn.png
+::res://scenes/buildings/iron_mine/::1733052572
+iron_mine.tscn::PackedScene::1716935175457181210::1733052572::0::1::::<><>::res://scripts/iron_mine.gd<>uid://cdpjqsmuvjvc7::::res://assets/sprites/buildings/iron_mine.png
+::res://scenes/buildings/market/::1733052587
+market.tscn::PackedScene::8945166668559490182::1733052587::0::1::::<><>::uid://yhxmmim70ann::::res://assets/sprites/buildings/market.png<>res://scripts/market.gd
+::res://scenes/buildings/quarry/::1732995042
+quarry.tscn::PackedScene::6729312563949699751::1732995042::0::1::::<><>::res://scripts/quarry.gd<>uid://dhh2cc6ut5gb7::::res://assets/sprites/buildings/quarry.png
 ::res://scenes/buildings/wall/::1732740624
 gate.tscn::PackedScene::5725763010303552973::1732738273::0::1::::<><>::uid://ddtm1d4rm7w0v::::res://assets/sprites/buildings/castle/gate_top_left.png<>uid://cwc6wro0b3aq3::::res://assets/sprites/buildings/castle/gate_bottom_left.png<>uid://doy04o44wyaaf::::res://assets/sprites/buildings/castle/wall_bottom_middle_01.png<>uid://cxto2usmh2tn1::::res://assets/sprites/buildings/castle/wall_4.png<>uid://7o5w1lpt7jel::::res://assets/sprites/buildings/castle/gate_top_right.png<>uid://b7vojn17kbs1::::res://assets/sprites/buildings/castle/gate_bottom_right.png<>uid://cm6206bdvoq8i::::res://assets/sprites/buildings/castle/wall_2.png<>uid://bvimygscad3o::::res://assets/sprites/buildings/castle/wall_3.png<>uid://b5kf2m6blsvmb::::res://assets/sprites/buildings/castle/wall_top_middle_01.png<>uid://cisd1lbbjt3ft::::res://assets/sprites/buildings/castle/tower.png
 tower.tscn::PackedScene::878499921429066396::1732738273::0::1::::<><>::uid://b06tf4q3upusm::::res://assets/sprites/buildings/castle/wall_top_left_01.png<>uid://bpac2meflj5hn::::res://assets/sprites/buildings/castle/wall_top_right_01.png<>uid://bfjpo2hfcaflm::::res://assets/sprites/buildings/castle/wall_bottom_right_01.png<>uid://d36koc8ghd5ip::::res://assets/sprites/buildings/castle/wall_bottom_left_01.png<>uid://bvimygscad3o::::res://assets/sprites/buildings/castle/wall_3.png<>uid://cm6206bdvoq8i::::res://assets/sprites/buildings/castle/wall_2.png
 wall.tscn::PackedScene::4776277364506061153::1732740624::0::1::::<><>::uid://bw5heqrijdhsm::::res://assets/sprites/buildings/castle/wall.png<>uid://mrs1a0sdjxrg::::res://scenes/buildings/wall/tower.tscn<>uid://cntuqlffwnv7r::::res://scenes/buildings/wall/gate.tscn<>uid://ijcylfl5pxi3::::res://assets/sprites/buildings/castle/wall_middle_left_right_01.png<>uid://cd68vdfsblyq1::::res://assets/sprites/buildings/castle/wall_middle.png<>uid://bpac2meflj5hn::::res://assets/sprites/buildings/castle/wall_top_right_01.png
-::res://scenes/buildings/wheat_farm/::1732915631
-wheat_farm.tscn::PackedScene::8634096440258936748::1732915631::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/wheat_farm.gd<>uid://ue83bur5pina::::res://assets/FarmingCrops16x16/wheat_crops.png
-::res://scenes/buildings/woodcutter_camp/::1732915653
-woodcutter_camp.tscn::PackedScene::2419991686931609752::1732915653::0::1::::<><>::res://scripts/woodcutter_camp.gd<>uid://crho2d1dii48k::::res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png<>uid://dylsw2v0n7fwh::::res://assets/Ninja Adventure - Asset Pack/props/logs_01.png<>uid://cja8v5ek0llt3::::res://assets/Ninja Adventure - Asset Pack/props/logs_03.png<>uid://deqgg8njbrmem::::res://assets/Ninja Adventure - Asset Pack/props/logs_04.png
+::res://scenes/buildings/wheat_farm/::1732995080
+wheat_farm.tscn::PackedScene::8634096440258936748::1732995080::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/wheat_farm.gd<>uid://ue83bur5pina::::res://assets/FarmingCrops16x16/wheat_crops.png
+::res://scenes/buildings/woodcutter_camp/::1732995042
+woodcutter_camp.tscn::PackedScene::2419991686931609752::1732995042::0::1::::<><>::res://scripts/woodcutter_camp.gd<>uid://crho2d1dii48k::::res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png<>uid://dylsw2v0n7fwh::::res://assets/Ninja Adventure - Asset Pack/props/logs_01.png<>uid://cja8v5ek0llt3::::res://assets/Ninja Adventure - Asset Pack/props/logs_03.png<>uid://deqgg8njbrmem::::res://assets/Ninja Adventure - Asset Pack/props/logs_04.png
 ::res://scenes/enemies/::1732907773
 base_enemy.tscn::PackedScene::3767611683708954863::1732907773::0::1::::<><>::res://scripts/base_enemy.gd<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg
-::res://scenes/game/::1732915431
-game.tscn::PackedScene::6497651209641585424::1732915431::0::1::::<><>::uid://csga3vb5ujqxq::::res://scenes/managers/input_manager/input_manager.tscn<>uid://cfpesebldigch::::res://scenes/managers/game_manager/game_manager.tscn<>uid://bhw7ruw2botti::::res://scenes/managers/enemy_spawner/enemy_spawner.tscn<>uid://cabwucp6owa6t::::res://scenes/buildings/wall/wall.tscn<>uid://bov0jjotk2hnq::::res://scenes/buildings/apple_farm/apple_farm.tscn<>uid://bquu0i4xiot3l::::res://scenes/buildings/inn/inn.tscn<>uid://ypxw3ilqoi6m::::res://scenes/buildings/iron_mine/iron_mine.tscn<>uid://d0pdt84x50pww::::res://scenes/buildings/market/market.tscn<>uid://c24y2a0m6hv8j::::res://scenes/buildings/quarry/quarry.tscn<>uid://dvaoko167cplk::::res://scenes/buildings/wheat_farm/wheat_farm.tscn<>uid://baqi56nyndsqi::::res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn<>uid://ppifpd02wj38::::res://scenes/units/archer/archer.tscn
+::res://scenes/game/::1733051801
+game.tscn::PackedScene::6497651209641585424::1733051801::0::1::::<><>::uid://csga3vb5ujqxq::::res://scenes/managers/input_manager/input_manager.tscn<>uid://dhdtfdiujlctv::::res://scenes/ui/game_ui.tscn<>uid://cfpesebldigch::::res://scenes/managers/game_manager/game_manager.tscn<>uid://bhw7ruw2botti::::res://scenes/managers/enemy_spawner/enemy_spawner.tscn<>uid://cabwucp6owa6t::::res://scenes/buildings/wall/wall.tscn<>uid://bov0jjotk2hnq::::res://scenes/buildings/apple_farm/apple_farm.tscn<>uid://bquu0i4xiot3l::::res://scenes/buildings/inn/inn.tscn<>uid://ypxw3ilqoi6m::::res://scenes/buildings/iron_mine/iron_mine.tscn<>uid://d0pdt84x50pww::::res://scenes/buildings/market/market.tscn<>uid://c24y2a0m6hv8j::::res://scenes/buildings/quarry/quarry.tscn<>uid://dvaoko167cplk::::res://scenes/buildings/wheat_farm/wheat_farm.tscn<>uid://baqi56nyndsqi::::res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn<>uid://ppifpd02wj38::::res://scenes/units/archer/archer.tscn
 ::res://scenes/managers/::1732464321
 ::res://scenes/managers/enemy_spawner/::1732738273
 enemy_spawner.tscn::PackedScene::2925133287694918586::1732738273::0::1::::<><>::res://scripts/enemy_spawner.gd<>uid://btxcaqfkjijhn::::res://scenes/enemies/base_enemy.tscn<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg
-::res://scenes/managers/game_manager/::1732915431
-game_manager.tscn::PackedScene::5155026476290939763::1732915431::0::1::::<><>::res://scripts/game_manager.gd
-::res://scenes/managers/input_manager/::1732915431
-input_manager.tscn::PackedScene::6048677927549800678::1732915431::0::1::::<><>::res://scripts/input_manager.gd
+::res://scenes/managers/game_manager/::1733051801
+game_manager.tscn::PackedScene::5155026476290939763::1733051801::0::1::::<><>::res://scripts/game_manager.gd
+::res://scenes/managers/input_manager/::1733051801
+input_manager.tscn::PackedScene::6048677927549800678::1733051801::0::1::::<><>::res://scripts/input_manager.gd
+::res://scenes/ui/::1733052526
+game_ui.tscn::PackedScene::7657939812489453067::1733052440::0::1::::<><>::uid://cl34yq1fcd1tk::::res://resources/theme/theme.tres<>uid://cub8xm6n4aarq::::res://scenes/ui/resource_widget.tscn<>uid://c2jdiu4m8ugq::::res://assets/pixel_art_icons/Sprites/Food/Ham.png<>uid://b52pjptvkaumt::::res://assets/pixel_art_icons/Sprites/Material/Wooden Plank.png<>uid://buu7osdhh8o4m::::res://assets/pixel_art_icons/Sprites/Ore & Gem/Silver Ingot.png<>uid://bd3147ottldif::::res://assets/pixel_art_icons/Sprites/Weapon & Tool/Bow.png<>uid://dagjwghbumfxf::::res://assets/pixel_art_icons/Sprites/Ore & Gem/Obsidian.png<>uid://bq8p3rrddk5w3::::res://assets/pixel_art_icons/Sprites/Weapon & Tool/Silver Sword.png<>uid://dnedqpqosjd0j::::res://assets/pixel_art_icons/Sprites/Misc/Golden Coin.png
+resource_widget.tscn::PackedScene::6180728030720568962::1733052526::0::1::::<><>::uid://bdnknryovitem::::res://assets/kenney_tiny-town/Tiles/tile_0075.png<>res://scripts/resource_widget.gd
 ::res://scenes/units/::1732739327
 ::res://scenes/units/archer/::1732740624
 archer.tscn::PackedScene::1084293779450546749::1732740624::0::1::::<><>::uid://dlh22favunjpa::::res://assets/MinifolksHumans/Outline/MiniArcherMan.png
-::res://scripts/::1732915212
+::res://scripts/::1733052587
 apple_farm.gd::GDScript::-1::1732913496::0::1::::<>BaseBuilding<>::
-base_building.gd::GDScript::-1::1732914719::0::1::::BaseBuilding<>Node2D<>::
+base_building.gd::GDScript::-1::1733052526::0::1::::BaseBuilding<>Node2D<>::
 base_enemy.gd::GDScript::-1::1732907773::0::1::::<>Node2D<>::
 enemy_spawner.gd::GDScript::-1::1732646518::0::1::::<>Node2D<>::
-game_manager.gd::GDScript::-1::1732915212::0::1::::<>Node<>::
+enums.gd::GDScript::-1::1733052587::0::1::::<>Node<>::
+game_manager.gd::GDScript::-1::1732994954::0::1::::<>Node<>::
 inn.gd::GDScript::-1::1732913490::0::1::::<>BaseBuilding<>::
-input_manager.gd::GDScript::-1::1732907914::0::1::::<>Control<>::
+input_manager.gd::GDScript::-1::1732994888::0::1::::<>Control<>::
 iron_mine.gd::GDScript::-1::1732913509::0::1::::<>BaseBuilding<>::
 market.gd::GDScript::-1::1732915071::0::1::::<>BaseBuilding<>::
 quarry.gd::GDScript::-1::1732913523::0::1::::<>BaseBuilding<>::
+resource_widget.gd::GDScript::-1::1733052350::0::1::::<>Control<>::
 wheat_farm.gd::GDScript::-1::1732913534::0::1::::<>BaseBuilding<>::
 woodcutter_camp.gd::GDScript::-1::1732913648::0::1::::<>BaseBuilding<>::

@@ -10,6 +10,7 @@ build_command = "build wheat farm"
 upgrade_command = "upgrade wheat farm"
 produce_commands = Array[String](["harvest wheat"])
 max_level = 10
+resource_type = 1
 
 [node name="sprites_container" type="Node2D" parent="."]
 

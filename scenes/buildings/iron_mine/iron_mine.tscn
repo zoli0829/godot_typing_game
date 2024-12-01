@@ -10,6 +10,7 @@ upgrade_command = "upgrade iron mine"
 produce_commands = Array[String](["collect iron"])
 max_level = 10
 building_sprites = [NodePath("sprites_container/building")]
+resource_type = 2
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0

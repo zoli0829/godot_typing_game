@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhdtfdiujlctv"]
+
+[ext_resource type="Theme" uid="uid://cl34yq1fcd1tk" path="res://resources/theme/theme.tres" id="1_6ugr5"]
+[ext_resource type="PackedScene" uid="uid://cub8xm6n4aarq" path="res://scenes/ui/resource_widget.tscn" id="1_ahhql"]
+[ext_resource type="Texture2D" uid="uid://c2jdiu4m8ugq" path="res://assets/pixel_art_icons/Sprites/Food/Ham.png" id="2_modn5"]
+[ext_resource type="Texture2D" uid="uid://b52pjptvkaumt" path="res://assets/pixel_art_icons/Sprites/Material/Wooden Plank.png" id="3_aip77"]
+[ext_resource type="Texture2D" uid="uid://buu7osdhh8o4m" path="res://assets/pixel_art_icons/Sprites/Ore & Gem/Silver Ingot.png" id="4_d8rk0"]
+[ext_resource type="Texture2D" uid="uid://bd3147ottldif" path="res://assets/pixel_art_icons/Sprites/Weapon & Tool/Bow.png" id="5_bxidc"]
+[ext_resource type="Texture2D" uid="uid://dagjwghbumfxf" path="res://assets/pixel_art_icons/Sprites/Ore & Gem/Obsidian.png" id="5_l1lpj"]
+[ext_resource type="Texture2D" uid="uid://bq8p3rrddk5w3" path="res://assets/pixel_art_icons/Sprites/Weapon & Tool/Silver Sword.png" id="6_ii2x1"]
+[ext_resource type="Texture2D" uid="uid://dnedqpqosjd0j" path="res://assets/pixel_art_icons/Sprites/Misc/Golden Coin.png" id="6_vau06"]
+
+[node name="GameUi" type="CanvasLayer"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme = ExtResource("1_6ugr5")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Gold" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("6_vau06")
+resource_type = 1
+
+[node name="Food" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("2_modn5")
+
+[node name="Wood" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("3_aip77")
+resource_type = 3
+
+[node name="Iron" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("4_d8rk0")
+resource_type = 2
+
+[node name="Stone" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("5_l1lpj")
+resource_type = 4
+
+[node name="Bow" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("5_bxidc")
+resource_type = 5
+
+[node name="Weapon" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("6_ii2x1")
+resource_type = 6

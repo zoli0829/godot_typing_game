@@ -1,0 +1,16 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://cl34yq1fcd1tk"]
+
+[ext_resource type="FontFile" uid="uid://dkfrho2uvddxq" path="res://resources/theme/Bitfantasy.ttf" id="1_gt41r"]
+[ext_resource type="Texture2D" uid="uid://cna0855lgqqkj" path="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Wip/ThemeWood3/nine_path_panel.png" id="1_ii2tp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tsf8r"]
+texture = ExtResource("1_ii2tp")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[resource]
+default_font = ExtResource("1_gt41r")
+default_font_size = 16
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_tsf8r")

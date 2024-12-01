@@ -1,5 +1,11 @@
 extends Node2D
 
+'''
+once we built the building we want to display the upgrade_command if we can upgrade
+then we start the timer, once it finishes we wait for the user's input to call the produce_command
+then we add the level to the resource
+then we start the timer again
+'''
 class_name BaseBuilding
 
 @export var build_command: String
@@ -8,6 +14,7 @@ class_name BaseBuilding
 @export var level: int = 0
 @export var max_level: int 
 @export var building_sprites: Array[Sprite2D]
+@export var resource_type: Enums.Resources
 
 var is_built = false
 var is_fully_upgraded = false
@@ -24,6 +31,10 @@ func _ready():
 	update_label(command_to_show)
 
 
+func _process(delta: float) -> void:
+	pass
+
+
 func set_sprite_opacity_low():
 	for sprite in building_sprites:
 		sprite.modulate.a = 0.25
@@ -31,8 +42,7 @@ func set_sprite_opacity_low():
 
 func build():
 	# once we built the building, we erase that command from the list
-	if InputManager.commands.has(build_command):
-		InputManager.commands.erase(build_command)
+	InputManager.remove_command_from_commands(build_command)
 
 
 func upgrade():
@@ -40,8 +50,11 @@ func upgrade():
 
 
 func produce():
-	#GameManager.resource += level
 	pass
+
+
+func producing():
+	print("producing... ", name)
 
 
 func add_commands_to_the_input_commands_list():
@@ -60,4 +73,4 @@ func add_sprites_to_list():
 
 
 func _on_timer_timeout() -> void:
-	pass
+	produce()

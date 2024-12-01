@@ -10,6 +10,7 @@ upgrade_command = "upgrade quarry"
 produce_commands = Array[String](["collect stones"])
 max_level = 10
 building_sprites = [NodePath("sprites_container/building")]
+resource_type = 5
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0

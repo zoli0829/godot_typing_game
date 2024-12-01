@@ -94,6 +94,11 @@ func remove_enemy_commmand_from_enemy_commmands_array(enemy_command: String):
 	enemy_commands.erase(enemy_command)
 
 
+func remove_command_from_commands(command):
+	if commands.has(command):
+		commands.erase(command)
+
+
 func check_for_word_in_enemy_commands():
 	if current_input in enemy_commands:
 		for enemy in GameManager.get_enemies():

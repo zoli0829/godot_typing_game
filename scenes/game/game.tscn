@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cytrmphmb360s"]
+[gd_scene load_steps=15 format=3 uid="uid://cytrmphmb360s"]
 
 [ext_resource type="PackedScene" uid="uid://csga3vb5ujqxq" path="res://scenes/managers/input_manager/input_manager.tscn" id="1_s1tn8"]
+[ext_resource type="PackedScene" uid="uid://dhdtfdiujlctv" path="res://scenes/ui/game_ui.tscn" id="1_ywl3c"]
 [ext_resource type="PackedScene" uid="uid://cfpesebldigch" path="res://scenes/managers/game_manager/game_manager.tscn" id="2_hm3up"]
 [ext_resource type="PackedScene" uid="uid://bhw7ruw2botti" path="res://scenes/managers/enemy_spawner/enemy_spawner.tscn" id="3_4c1gy"]
 [ext_resource type="PackedScene" uid="uid://cabwucp6owa6t" path="res://scenes/buildings/wall/wall.tscn" id="4_hhpj5"]
@@ -19,23 +20,21 @@ script/source = "extends Node
 
 [node name="game" type="Node"]
 
+[node name="GameUi" parent="." instance=ExtResource("1_ywl3c")]
+
 [node name="InputManager" parent="." instance=ExtResource("1_s1tn8")]
-offset_left = -960.0
-offset_top = -508.0
-offset_right = -960.0
-offset_bottom = -508.0
 script = SubResource("GDScript_6j2my")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 32)
+position = Vector2(960, 544)
 
 [node name="GameManager" parent="." instance=ExtResource("2_hm3up")]
 
 [node name="EnemySpawner" parent="." instance=ExtResource("3_4c1gy")]
-position = Vector2(768, 0)
+position = Vector2(1720, 600)
 
 [node name="Buildings" type="Node2D" parent="."]
-position = Vector2(-576, -232)
+position = Vector2(384, 280)
 
 [node name="wall" parent="Buildings" instance=ExtResource("4_hhpj5")]
 position = Vector2(-288, -136)
@@ -64,7 +63,8 @@ position = Vector2(-192, 80)
 
 [node name="Enemies" type="Node" parent="."]
 
-[node name="Archers" type="Node" parent="."]
+[node name="Archers" type="Node2D" parent="."]
+position = Vector2(960, 608)
 
 [node name="Archer" parent="Archers" instance=ExtResource("12_d47wp")]
 position = Vector2(-352, -360)

@@ -12,6 +12,7 @@ build_command = "build woodcutter camp"
 upgrade_command = "upgrade woodcutter camp"
 produce_commands = Array[String](["collect wood"])
 max_level = 10
+resource_type = 4
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0

@@ -11,7 +11,7 @@ var is_apple_farm_built = false
 var is_wheat_farm_built = false
 
 '''
-CACHED NODES
+CACHED BUILDINGS
 '''
 var apple_farm: BaseBuilding
 var inn: BaseBuilding
@@ -20,10 +20,23 @@ var market: BaseBuilding
 var quarry: BaseBuilding
 var wheat_farm: BaseBuilding
 var woodcutter_camp: BaseBuilding
+
+'''
+CACHED WIDGETS
+'''
+var gold_widget: Control
+var food_widget: Control
+var wood_widget: Control
+var iron_widget: Control
+var stone_widget: Control
+var bow_widget: Control
+var weapon_widget: Control
+
 '''
 RESOURCES
 '''
-var bows: int = 0
+var bow: int = 0
+var weapon: int = 0
 var food: int = 0
 var gold: int = 0
 var iron: int = 0
@@ -37,7 +50,10 @@ var enemy_command_strings = ["charge", "attack", "fire", "destroy", "advance", "
 func _ready():
 	# actually i dont know if this method is useful or not or if i need it 
 	handle_resolution_and_scaling()
+	# TODO if scene is game scene and not main menu scene
 	find_buildings()
+	find_widgets()
+	
 	InputManager.connect("enemy_destroyed", destroy_enemy)
 	InputManager.connect("enemy_remove_request",remove_enemy_from_enemies_array)
 
@@ -216,6 +232,23 @@ func find_buildings():
 	quarry = buildings_node.get_node("quarry")
 	wheat_farm = buildings_node.get_node("wheat_farm")
 	woodcutter_camp = buildings_node.get_node("woodcutter_camp")
+
+
+func find_widgets():
+	var root = get_tree().root
+	var game_scene2 = root.get_node("game")
+	var game_ui = game_scene2.get_node("GameUi")
+	var panel_container = game_ui.get_node("PanelContainer")
+	var margin_container = panel_container.get_node("MarginContainer")
+	var hbox_container = margin_container.get_node("HBoxContainer")
+	
+	gold_widget = hbox_container.get_node("Gold")
+	food_widget = hbox_container.get_node("Food")
+	wood_widget = hbox_container.get_node("Wood")
+	iron_widget = hbox_container.get_node("Iron")
+	stone_widget = hbox_container.get_node("Stone")
+	bow_widget = hbox_container.get_node("Bow")
+	weapon_widget = hbox_container.get_node("Weapon")
 
 
 '''

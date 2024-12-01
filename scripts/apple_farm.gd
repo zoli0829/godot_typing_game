@@ -1,17 +1,27 @@
 extends BaseBuilding
 
-
+'''
+once we built the building we want to display the upgrade_command if we can upgrade
+then we start the timer, once it finishes we wait for the user's input to call the produce_command
+then we add the level to the resource
+then we start the timer again
+'''
 func _ready():
 	super()
 	add_commands_to_the_input_commands_list()
 
 
+func _process(delta: float) -> void:
+	pass
+
+
 func build():
-	super()
+	super() # removes the build command from the InputManager's list
 	
 	for sprite in building_sprites:
 		sprite.modulate.a = 1
 	is_built = true
+	
 	command_to_show = upgrade_command
 	update_label(command_to_show)
 	upgrade()
@@ -26,11 +36,18 @@ func upgrade():
 	level += 1
 	if level == max_level:
 		is_fully_upgraded = true
+		
 
 
 func produce():
-	GameManager.food += level
-	print("Now we have food: ", GameManager.food)
+	print("Waiting for harvest command...")
+	command_to_show = produce_commands[0]
+	update_label(command_to_show)
+
+
+func producing():
+	super()
+	
 
 
 func add_commands_to_the_input_commands_list():
@@ -46,4 +63,3 @@ func update_label(text: String):
 
 func _on_timer_timeout():
 	produce()
-	timer.start()
