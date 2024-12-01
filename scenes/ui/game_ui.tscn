@@ -35,39 +35,40 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 icon = ExtResource("6_vau06")
-resource_type = 1
+resource_type = 2
 
 [node name="Food" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
 layout_mode = 2
 size_flags_horizontal = 3
 icon = ExtResource("2_modn5")
+resource_type = 1
 
 [node name="Wood" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
 layout_mode = 2
 size_flags_horizontal = 3
 icon = ExtResource("3_aip77")
-resource_type = 3
+resource_type = 4
 
 [node name="Iron" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
 layout_mode = 2
 size_flags_horizontal = 3
 icon = ExtResource("4_d8rk0")
-resource_type = 2
+resource_type = 3
 
 [node name="Stone" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
 layout_mode = 2
 size_flags_horizontal = 3
 icon = ExtResource("5_l1lpj")
-resource_type = 4
+resource_type = 5
 
 [node name="Bow" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
 layout_mode = 2
 size_flags_horizontal = 3
 icon = ExtResource("5_bxidc")
-resource_type = 5
+resource_type = 6
 
 [node name="Weapon" parent="PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("1_ahhql")]
 layout_mode = 2
 size_flags_horizontal = 3
 icon = ExtResource("6_ii2x1")
-resource_type = 6
+resource_type = 7

@@ -38,6 +38,9 @@ func _input(event):
 			input_escape()
 		elif event.keycode == KEY_ENTER:
 			input_enter()
+			# all the keys to ignore
+		elif event.keycode == KEY_CTRL or event.keycode == KEY_ALT or event.keycode == KEY_MENU or event.keycode == KEY_INSERT or event.keycode == KEY_HOME or event.keycode == KEY_PAGEUP or event.keycode == KEY_HOMEPAGE or event.keycode == KEY_END or event.keycode == KEY_PAGEDOWN or event.keycode == KEY_TAB or event.keycode == KEY_CAPSLOCK or event.keycode == KEY_SHIFT or event.keycode == KEY_PAUSE or event.keycode == KEY_SCROLLLOCK or event.keycode == KEY_LEFT or event.keycode == KEY_RIGHT or event.keycode == KEY_UP or event.keycode == KEY_DOWN:
+			return
 		else:
 			add_character_to_input(event)
 

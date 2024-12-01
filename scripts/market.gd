@@ -15,27 +15,34 @@ func build():
 	for sprite in building_sprites:
 		sprite.modulate.a = 1
 	is_built = true
+	
 	command_to_show = buy_or_sell_command
 	update_label(command_to_show)
 	upgrade()
-	# no need for timer
+	timer.start()
 	GameManager.is_market_built = true
 
 
 func upgrade():
 	if is_fully_upgraded:
 		# TODO: show a message on the screen that the building is fully upgraded
-		print("Gets stuck in the IF statement then returns")
 		return
+	
 	level += 1
 	if level == max_level:
 		is_fully_upgraded = true
-		update_label("buy or sell goods")
-		print("Updates the label!")
+		update_label(buy_or_sell_command)
 
 
 func produce():
-	print("Now we can sell and buy goods!")
+	GameManager.iron += level
+	timer.start()
+	if is_fully_upgraded:
+		command_to_show = ""
+		update_label(command_to_show)
+	else:
+		command_to_show = upgrade_command
+		update_label(command_to_show)
 
 
 func add_commands_to_the_input_commands_list():
@@ -47,3 +54,8 @@ func add_commands_to_the_input_commands_list():
 
 func update_label(text: String):
 	label.text = text
+
+
+func _on_timer_timeout():
+	super()
+	update_label(produce_commands[0])

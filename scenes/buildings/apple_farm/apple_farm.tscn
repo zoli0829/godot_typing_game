@@ -9,7 +9,8 @@ script = ExtResource("1_ojnj6")
 build_command = "build apple farm"
 upgrade_command = "upgrade apple farm"
 produce_commands = Array[String](["harvest apples"])
-max_level = 1
+max_level = 10
+resource_type = 1
 
 [node name="Label" type="Label" parent="."]
 offset_left = -80.0
@@ -22,6 +23,7 @@ vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 60.0
+one_shot = true
 
 [node name="sprites_container" type="Node2D" parent="."]
 

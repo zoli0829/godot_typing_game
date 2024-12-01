@@ -1,6 +1,7 @@
 extends Node2D
 
 '''
+timer needs to be one_shot
 once we built the building we want to display the upgrade_command if we can upgrade
 then we start the timer, once it finishes we wait for the user's input to call the produce_command
 then we add the level to the resource
@@ -31,10 +32,6 @@ func _ready():
 	update_label(command_to_show)
 
 
-func _process(delta: float) -> void:
-	pass
-
-
 func set_sprite_opacity_low():
 	for sprite in building_sprites:
 		sprite.modulate.a = 0.25
@@ -43,18 +40,17 @@ func set_sprite_opacity_low():
 func build():
 	# once we built the building, we erase that command from the list
 	InputManager.remove_command_from_commands(build_command)
+	# TODO: play SFX
 
 
 func upgrade():
+	# TODO:play SFX, and dont forget to call super() in the children
 	pass
 
 
 func produce():
+	# TODO: play SFX, and dont forget to call super() in the children
 	pass
-
-
-func producing():
-	print("producing... ", name)
 
 
 func add_commands_to_the_input_commands_list():
@@ -73,4 +69,4 @@ func add_sprites_to_list():
 
 
 func _on_timer_timeout() -> void:
-	produce()
+	print("Timer finished...")

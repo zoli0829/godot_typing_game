@@ -9,7 +9,7 @@ build_command = "build inn"
 upgrade_command = "upgrade inn"
 produce_commands = Array[String](["collect gold"])
 max_level = 10
-resource_type = 1
+resource_type = 2
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0

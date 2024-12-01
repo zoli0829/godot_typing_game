@@ -1,14 +1,6 @@
 extends BaseBuilding
 
-'''
-Fill out the:
-	build_command
-	upgrade_command
-	produce_command
-Add the sprites that need to change their opacity
-Maybe add the timeout signal again if its not working
-Hook up the functions in GameManager
-'''
+
 func _ready():
 	super()
 	add_commands_to_the_input_commands_list()
@@ -20,10 +12,11 @@ func build():
 	for sprite in building_sprites:
 		sprite.modulate.a = 1
 	is_built = true
+	
 	command_to_show = upgrade_command
 	update_label(command_to_show)
 	upgrade()
-	timer.start(60)
+	timer.start()
 	GameManager.is_quarry_built = true
 
 
@@ -37,8 +30,15 @@ func upgrade():
 
 
 func produce():
-	GameManager.iron += level
-	print("Now we have stone: ", GameManager.stone)
+	GameManager.stone += level
+	timer.start()
+	
+	if is_fully_upgraded:
+		command_to_show = ""
+		update_label(command_to_show)
+	else:
+		command_to_show = upgrade_command
+		update_label(command_to_show)
 
 
 func add_commands_to_the_input_commands_list():
@@ -53,5 +53,5 @@ func update_label(text: String):
 
 
 func _on_timer_timeout():
-	produce()
-	timer.start()
+	super()
+	update_label(produce_commands[0])

@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bdnknryovitem" path="res://assets/kenney_tiny-town/Tiles/tile_0075.png" id="1_56xvo"]
 [ext_resource type="Script" path="res://scripts/resource_widget.gd" id="1_t74bv"]
 
-[node name="ResourceWidget" type="Control"]
+[node name="ResourceWidget" type="Control" node_paths=PackedStringArray("resource_label")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_t74bv")
+resource_label = NodePath("HBoxContainer/resource_label")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0

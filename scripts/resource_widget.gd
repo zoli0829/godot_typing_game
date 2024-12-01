@@ -1,17 +1,18 @@
 extends Control
 
 @onready var resource_sprite: TextureRect = $HBoxContainer/resource_sprite
-@onready var resource_label: Label = $HBoxContainer/resource_label
 
+@export var resource_label: Label 
 @export var icon: Texture2D
 @export var resource_type: Enums.Resources
 
 
 func _ready():
+	resource_label = $HBoxContainer/resource_label
 	resource_sprite.texture = icon
 
 
-func update_label():
+func update_label(_resource: Enums.Resources):
 	match resource_type:
 		Enums.Resources.NONE:
 			return
