@@ -14,11 +14,13 @@ var is_wall_built = false
 var is_woodcutter_camp_built = false
 var is_apple_farm_built = false
 var is_wheat_farm_built = false
+var is_blacksmith_built = false
 
 '''
 CACHED BUILDINGS
 '''
 var apple_farm: BaseBuilding
+var blacksmith: BaseBuilding
 var inn: BaseBuilding
 var iron_mine: BaseBuilding
 var market: BaseBuilding
@@ -116,11 +118,29 @@ func on_sell_iron_typed():
 	iron -= 1
 
 
+# BLACKSMITH FUNCTIONS
+func on_build_blacksmith_typed():
+	if is_blacksmith_built:
+		return
+	
+	blacksmith.build()
+	is_blacksmith_built = true
+
+
+func on_upgrade_blacksmith_typed():
+	blacksmith.upgrade()
+
+
+func on_forge_weapon_typed():
+	blacksmith.produce()
+	weapon_widget.update_label(blacksmith.resource_type)
+
+
 # INN FUNCTIONS
 func on_build_inn_typed():
 	if is_inn_built:
 		return
-		
+	
 	inn.build()
 	is_inn_built = true
 
@@ -243,6 +263,7 @@ func find_buildings():
 	var buildings_node = game_scene.get_node("Buildings")
 	
 	apple_farm = buildings_node.get_node("apple_farm")
+	blacksmith = buildings_node.get_node("blacksmith")
 	inn = buildings_node.get_node("inn")
 	iron_mine = buildings_node.get_node("iron_mine")
 	market = buildings_node.get_node("market")

@@ -22,6 +22,7 @@ vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 60.0
+one_shot = true
 
 [node name="sprites_container" type="Node2D" parent="."]
 

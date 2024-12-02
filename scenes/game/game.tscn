@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cytrmphmb360s"]
+[gd_scene load_steps=17 format=3 uid="uid://cytrmphmb360s"]
 
 [ext_resource type="PackedScene" uid="uid://csga3vb5ujqxq" path="res://scenes/managers/input_manager/input_manager.tscn" id="1_s1tn8"]
 [ext_resource type="PackedScene" uid="uid://dhdtfdiujlctv" path="res://scenes/ui/game_ui.tscn" id="1_ywl3c"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://dvaoko167cplk" path="res://scenes/buildings/wheat_farm/wheat_farm.tscn" id="10_uun1g"]
 [ext_resource type="PackedScene" uid="uid://baqi56nyndsqi" path="res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn" id="11_2sh0e"]
 [ext_resource type="PackedScene" uid="uid://ppifpd02wj38" path="res://scenes/units/archer/archer.tscn" id="12_d47wp"]
+[ext_resource type="PackedScene" uid="uid://d8nbfhv3pjuy" path="res://scenes/buildings/blacksmith/blacksmith.tscn" id="13_56xvw"]
+[ext_resource type="Texture2D" uid="uid://ndm42eyfbxlu" path="res://assets/sprites/icon.svg" id="14_hpf7b"]
 
 [sub_resource type="GDScript" id="GDScript_6j2my"]
 script/source = "extends Node
@@ -61,34 +63,27 @@ position = Vector2(360, -104)
 [node name="woodcutter_camp" parent="Buildings" instance=ExtResource("11_2sh0e")]
 position = Vector2(-192, 80)
 
+[node name="blacksmith" parent="Buildings" instance=ExtResource("13_56xvw")]
+position = Vector2(128, -8)
+
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Archers" type="Node2D" parent="."]
-position = Vector2(960, 608)
+
+[node name="Sprite2D" type="Sprite2D" parent="Archers"]
+visible = false
+position = Vector2(608, 432)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("14_hpf7b")
 
 [node name="Archer" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, -360)
+position = Vector2(608, 256)
 
 [node name="Archer2" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, -296)
+position = Vector2(608, 384)
 
 [node name="Archer3" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, -232)
+position = Vector2(608, 512)
 
 [node name="Archer4" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, -168)
-
-[node name="Archer5" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, -104)
-
-[node name="Archer6" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, -40)
-
-[node name="Archer7" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, 32)
-
-[node name="Archer8" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, 96)
-
-[node name="Archer9" parent="Archers" instance=ExtResource("12_d47wp")]
-position = Vector2(-352, 152)
+position = Vector2(608, 640)
