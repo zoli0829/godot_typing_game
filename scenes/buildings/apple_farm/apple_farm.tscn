@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bov0jjotk2hnq"]
+[gd_scene load_steps=6 format=3 uid="uid://bov0jjotk2hnq"]
 
 [ext_resource type="Texture2D" uid="uid://btlamiyeje6v4" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png" id="1_7cl8o"]
 [ext_resource type="Script" path="res://scripts/apple_farm.gd" id="1_ojnj6"]
 [ext_resource type="Texture2D" uid="uid://dgj3mks24lk7a" path="res://assets/sprites/trees/apple_tree.png" id="2_8tfme"]
+[ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="4_ih7gm"]
+[ext_resource type="Texture2D" uid="uid://qeidxv12c4no" path="res://assets/pixel_art_icons/Sprites/Food/Apple.png" id="5_8psvl"]
 
 [node name="apple_farm" type="Node2D"]
 script = ExtResource("1_ojnj6")
@@ -22,7 +24,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 60.0
+wait_time = 5.0
 one_shot = true
 
 [node name="sprites_container" type="Node2D" parent="."]
@@ -69,5 +71,9 @@ texture = ExtResource("2_8tfme")
 position = Vector2(-56, -8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_8tfme")
+
+[node name="resource_icon" parent="." instance=ExtResource("4_ih7gm")]
+position = Vector2(0, -80)
+texture = ExtResource("5_8psvl")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

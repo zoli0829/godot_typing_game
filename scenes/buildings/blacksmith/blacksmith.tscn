@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://d8nbfhv3pjuy"]
+[gd_scene load_steps=7 format=3 uid="uid://d8nbfhv3pjuy"]
 
 [ext_resource type="Script" path="res://scripts/blacksmith.gd" id="1_6yee1"]
 [ext_resource type="Texture2D" uid="uid://ccccauobooqn2" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_3.png" id="2_fihs4"]
 [ext_resource type="Texture2D" uid="uid://cf0hfynds72n4" path="res://assets/kenney_tiny-dungeon/Tiles/anvil.png" id="3_v6kbf"]
 [ext_resource type="PackedScene" uid="uid://b0e033650oght" path="res://scenes/units/blacksmith_man/blacksmith_man.tscn" id="4_88k3x"]
+[ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="5_aic4s"]
+[ext_resource type="Texture2D" uid="uid://bq8p3rrddk5w3" path="res://assets/pixel_art_icons/Sprites/Weapon & Tool/Silver Sword.png" id="6_qiqv7"]
 
 [node name="Blacksmith" type="Node2D" node_paths=PackedStringArray("unit")]
 script = ExtResource("1_6yee1")
@@ -15,10 +17,10 @@ max_level = 10
 resource_type = 7
 
 [node name="Label" type="Label" parent="."]
-offset_left = -64.0
-offset_top = -80.0
-offset_right = 64.0
-offset_bottom = -67.0
+offset_left = -56.0
+offset_top = -40.0
+offset_right = 72.0
+offset_bottom = -27.0
 text = "blacksmith"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -39,5 +41,9 @@ texture = ExtResource("3_v6kbf")
 [node name="BlacksmithMan" parent="." instance=ExtResource("4_88k3x")]
 visible = false
 position = Vector2(-8, 40)
+
+[node name="resource_icon" parent="." instance=ExtResource("5_aic4s")]
+position = Vector2(0, -56)
+texture = ExtResource("6_qiqv7")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

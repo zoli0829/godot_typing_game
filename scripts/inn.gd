@@ -31,6 +31,7 @@ func upgrade():
 
 
 func produce():
+	super() # play fade out animation
 	GameManager.gold += level
 	timer.start()
 	

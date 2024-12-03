@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ce23j48m7db76"]
+
+[ext_resource type="Script" path="res://scripts/fletcher.gd" id="1_vg41v"]
+[ext_resource type="Texture2D" uid="uid://uj5ejrxgfm0o" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_4.png" id="2_srs35"]
+[ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_5bevh"]
+[ext_resource type="Texture2D" uid="uid://c13f3wtb4pieq" path="res://assets/kenney_tiny-town/Tiles/bow.png" id="4_u2qg5"]
+
+[node name="Fletcher" type="Node2D"]
+script = ExtResource("1_vg41v")
+build_command = "build fletcher"
+upgrade_command = "upgrade fletcher"
+produce_commands = Array[String](["make bow"])
+max_level = 10
+resource_type = 6
+
+[node name="Label" type="Label" parent="."]
+offset_left = -64.0
+offset_top = -40.0
+offset_right = 64.0
+offset_bottom = -27.0
+text = "fletcher"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="sprites_container" type="Node2D" parent="."]
+
+[node name="building" type="Sprite2D" parent="sprites_container"]
+texture = ExtResource("2_srs35")
+
+[node name="resource_icon" parent="." instance=ExtResource("3_5bevh")]
+position = Vector2(0, -56)
+texture = ExtResource("4_u2qg5")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

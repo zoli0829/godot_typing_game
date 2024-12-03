@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bquu0i4xiot3l"]
+[gd_scene load_steps=5 format=3 uid="uid://bquu0i4xiot3l"]
 
 [ext_resource type="Script" path="res://scripts/inn.gd" id="1_a4l7v"]
 [ext_resource type="Texture2D" uid="uid://b4fx0p30if46f" path="res://assets/sprites/buildings/inn.png" id="1_qvf31"]
+[ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_4ft3t"]
+[ext_resource type="Texture2D" uid="uid://dnedqpqosjd0j" path="res://assets/pixel_art_icons/Sprites/Misc/Golden Coin.png" id="4_xxsvd"]
 
 [node name="inn" type="Node2D"]
 script = ExtResource("1_a4l7v")
@@ -28,3 +30,7 @@ one_shot = true
 
 [node name="building" type="Sprite2D" parent="sprites_container"]
 texture = ExtResource("1_qvf31")
+
+[node name="resource_icon" parent="." instance=ExtResource("3_4ft3t")]
+position = Vector2(0, -104)
+texture = ExtResource("4_xxsvd")

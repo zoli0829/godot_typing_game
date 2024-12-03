@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cytrmphmb360s"]
+[gd_scene load_steps=18 format=3 uid="uid://cytrmphmb360s"]
 
 [ext_resource type="PackedScene" uid="uid://csga3vb5ujqxq" path="res://scenes/managers/input_manager/input_manager.tscn" id="1_s1tn8"]
 [ext_resource type="PackedScene" uid="uid://dhdtfdiujlctv" path="res://scenes/ui/game_ui.tscn" id="1_ywl3c"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://ppifpd02wj38" path="res://scenes/units/archer/archer.tscn" id="12_d47wp"]
 [ext_resource type="PackedScene" uid="uid://d8nbfhv3pjuy" path="res://scenes/buildings/blacksmith/blacksmith.tscn" id="13_56xvw"]
 [ext_resource type="Texture2D" uid="uid://ndm42eyfbxlu" path="res://assets/sprites/icon.svg" id="14_hpf7b"]
+[ext_resource type="PackedScene" uid="uid://ce23j48m7db76" path="res://scenes/buildings/fletcher/fletcher.tscn" id="14_niuv5"]
 
 [sub_resource type="GDScript" id="GDScript_6j2my"]
 script/source = "extends Node
@@ -65,6 +66,9 @@ position = Vector2(-192, 80)
 
 [node name="blacksmith" parent="Buildings" instance=ExtResource("13_56xvw")]
 position = Vector2(128, -8)
+
+[node name="fletcher" parent="Buildings" instance=ExtResource("14_niuv5")]
+position = Vector2(-56, -8)
 
 [node name="Enemies" type="Node" parent="."]
 

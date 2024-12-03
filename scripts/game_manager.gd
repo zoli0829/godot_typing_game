@@ -6,21 +6,24 @@ BUGS:
 '''
 
 #FLAGS
-var is_market_built = false
+var is_apple_farm_built = false
+var is_blacksmith_built = false
+var is_fletcher_built = false
 var is_inn_built = false
 var is_iron_mine_built = false
+var is_market_built = false
 var is_quarry_built = false
 var is_wall_built = false
-var is_woodcutter_camp_built = false
-var is_apple_farm_built = false
 var is_wheat_farm_built = false
-var is_blacksmith_built = false
+var is_woodcutter_camp_built = false
+
 
 '''
 CACHED BUILDINGS
 '''
 var apple_farm: BaseBuilding
 var blacksmith: BaseBuilding
+var fletcher: BaseBuilding
 var inn: BaseBuilding
 var iron_mine: BaseBuilding
 var market: BaseBuilding
@@ -134,6 +137,24 @@ func on_upgrade_blacksmith_typed():
 func on_forge_weapon_typed():
 	blacksmith.produce()
 	weapon_widget.update_label(blacksmith.resource_type)
+
+
+# FLETCHER FUNCTIONS
+func on_build_fletcher_typed():
+	if is_fletcher_built:
+		return
+	
+	fletcher.build()
+	is_fletcher_built = true
+
+
+func on_upgrade_fletcher_typed():
+	fletcher.upgrade()
+
+
+func on_make_bow_typed():
+	fletcher.produce()
+	bow_widget.update_label(fletcher.resource_type)
 
 
 # INN FUNCTIONS
@@ -264,6 +285,7 @@ func find_buildings():
 	
 	apple_farm = buildings_node.get_node("apple_farm")
 	blacksmith = buildings_node.get_node("blacksmith")
+	fletcher = buildings_node.get_node("fletcher")
 	inn = buildings_node.get_node("inn")
 	iron_mine = buildings_node.get_node("iron_mine")
 	market = buildings_node.get_node("market")
@@ -287,16 +309,22 @@ func find_widgets():
 	
 	gold_widget = hbox_container.get_node("Gold")
 	widgets_array.append(gold_widget)
+	
 	food_widget = hbox_container.get_node("Food")
 	widgets_array.append(food_widget)
+	
 	wood_widget = hbox_container.get_node("Wood")
 	widgets_array.append(wood_widget)
+	
 	iron_widget = hbox_container.get_node("Iron")
 	widgets_array.append(iron_widget)
+	
 	stone_widget = hbox_container.get_node("Stone")
 	widgets_array.append(stone_widget)
+	
 	bow_widget = hbox_container.get_node("Bow")
 	widgets_array.append(bow_widget)
+	
 	weapon_widget = hbox_container.get_node("Weapon")
 	widgets_array.append(weapon_widget)
 
@@ -344,6 +372,9 @@ func handle_resolution_and_scaling():
 	get_viewport().canvas_transform = Transform2D().scaled(Vector2(scale_factor, scale_factor))
 
 
+'''
+HELPER FUNCTION
+'''
 func load_words_from_file(_file_path: String) -> Array:
 	var file = FileAccess.open(file_path, FileAccess.READ)
 	var words_array = []

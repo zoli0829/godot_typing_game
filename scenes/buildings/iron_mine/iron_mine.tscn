@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://ypxw3ilqoi6m"]
+[gd_scene load_steps=5 format=3 uid="uid://ypxw3ilqoi6m"]
 
 [ext_resource type="Script" path="res://scripts/iron_mine.gd" id="1_21281"]
 [ext_resource type="Texture2D" uid="uid://cdpjqsmuvjvc7" path="res://assets/sprites/buildings/iron_mine.png" id="1_kbpeb"]
+[ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_culqo"]
+[ext_resource type="Texture2D" uid="uid://buu7osdhh8o4m" path="res://assets/pixel_art_icons/Sprites/Ore & Gem/Silver Ingot.png" id="4_e2wic"]
 
 [node name="iron_mine" type="Node2D" node_paths=PackedStringArray("building_sprites")]
 script = ExtResource("1_21281")
@@ -29,5 +31,9 @@ one_shot = true
 
 [node name="building" type="Sprite2D" parent="sprites_container"]
 texture = ExtResource("1_kbpeb")
+
+[node name="resource_icon" parent="." instance=ExtResource("3_culqo")]
+position = Vector2(0, -104)
+texture = ExtResource("4_e2wic")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://c24y2a0m6hv8j"]
+[gd_scene load_steps=5 format=3 uid="uid://c24y2a0m6hv8j"]
 
 [ext_resource type="Script" path="res://scripts/quarry.gd" id="1_ic7n2"]
 [ext_resource type="Texture2D" uid="uid://dhh2cc6ut5gb7" path="res://assets/sprites/buildings/quarry.png" id="1_tsha3"]
+[ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_gnkm4"]
+[ext_resource type="Texture2D" uid="uid://dagjwghbumfxf" path="res://assets/pixel_art_icons/Sprites/Ore & Gem/Obsidian.png" id="4_q8o2h"]
 
 [node name="quarry" type="Node2D" node_paths=PackedStringArray("building_sprites")]
 script = ExtResource("1_ic7n2")
@@ -29,3 +31,7 @@ one_shot = true
 
 [node name="building" type="Sprite2D" parent="sprites_container"]
 texture = ExtResource("1_tsha3")
+
+[node name="resource_icon" parent="." instance=ExtResource("3_gnkm4")]
+position = Vector2(0, -104)
+texture = ExtResource("4_q8o2h")

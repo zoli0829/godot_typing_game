@@ -35,7 +35,8 @@ func upgrade():
 
 
 func produce():
-	GameManager.iron += level
+	# TODO: this needs a rework the market should do different things based on the commands
+	#GameManager.iron += level
 	timer.start()
 	if is_fully_upgraded:
 		command_to_show = ""

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdttwd175f3u7"]
+[gd_scene load_steps=4 format=3 uid="uid://bdttwd175f3u7"]
 
 [ext_resource type="Script" path="res://scripts/base_building.gd" id="1_dq38j"]
 [ext_resource type="Texture2D" uid="uid://btlamiyeje6v4" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png" id="1_f62dw"]
+[ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_mjl48"]
 
 [node name="BaseBuilding" type="Node2D"]
 script = ExtResource("1_dq38j")
@@ -20,5 +21,7 @@ wait_time = 60.0
 
 [node name="building_sprite" type="Sprite2D" parent="sprites_container"]
 texture = ExtResource("1_f62dw")
+
+[node name="resource_icon" parent="." instance=ExtResource("3_mjl48")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

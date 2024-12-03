@@ -30,6 +30,7 @@ func upgrade():
 
 
 func produce():
+	super() # play fade out animation
 	GameManager.wood += level
 	timer.start()
 	
