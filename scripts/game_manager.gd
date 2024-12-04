@@ -31,6 +31,9 @@ var quarry: BaseBuilding
 var wheat_farm: BaseBuilding
 var woodcutter_camp: BaseBuilding
 
+#DEBUG
+var resource_buildings: Array[BaseBuilding] = []
+
 '''
 CACHED WIDGETS
 '''
@@ -72,6 +75,14 @@ func _ready():
 	
 	InputManager.connect("enemy_destroyed", destroy_enemy)
 	InputManager.connect("enemy_remove_request",remove_enemy_from_enemies_array)
+
+
+func _input(event):
+	if Input.is_action_just_pressed("debug_1"):
+		debug_call_build_functions()
+	elif Input.is_action_just_pressed("debug_2"):
+		debug_call_produce_functions()
+
 
 '''
 FUNCTIONS FOR BUILDINGS
@@ -292,6 +303,17 @@ func find_buildings():
 	quarry = buildings_node.get_node("quarry")
 	wheat_farm = buildings_node.get_node("wheat_farm")
 	woodcutter_camp = buildings_node.get_node("woodcutter_camp")
+	
+	#DEBUG MAY DELETE LATER
+	resource_buildings.append(apple_farm)
+	resource_buildings.append(blacksmith)
+	resource_buildings.append(fletcher)
+	resource_buildings.append(inn)
+	resource_buildings.append(iron_mine)
+	resource_buildings.append(quarry)
+	resource_buildings.append(wheat_farm)
+	resource_buildings.append(woodcutter_camp)
+	resource_buildings.append(market)
 
 
 func update_widget_labels():
@@ -387,3 +409,14 @@ func load_words_from_file(_file_path: String) -> Array:
 		print("You probably moved the file! File not found: ", file_path)
 	
 	return words_array
+
+
+func debug_call_produce_functions():
+	for rb in resource_buildings:
+		rb.produce()
+		update_widget_labels()
+
+
+func debug_call_build_functions():
+	for rb in resource_buildings:
+		rb.build()

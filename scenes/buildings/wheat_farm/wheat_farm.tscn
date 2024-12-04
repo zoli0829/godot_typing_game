@@ -435,3 +435,5 @@ one_shot = true
 [node name="resource_icon" parent="." instance=ExtResource("4_6e032")]
 position = Vector2(0, -72)
 texture = ExtResource("5_ljmt6")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

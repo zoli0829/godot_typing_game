@@ -7,9 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="5_aic4s"]
 [ext_resource type="Texture2D" uid="uid://bq8p3rrddk5w3" path="res://assets/pixel_art_icons/Sprites/Weapon & Tool/Silver Sword.png" id="6_qiqv7"]
 
-[node name="Blacksmith" type="Node2D" node_paths=PackedStringArray("unit")]
+[node name="Blacksmith" type="Node2D"]
 script = ExtResource("1_6yee1")
-unit = NodePath("BlacksmithMan")
 build_command = "build blacksmith"
 upgrade_command = "upgrade blacksmith"
 produce_commands = Array[String](["forge weapon"])
@@ -26,7 +25,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 20.0
+wait_time = 5.0
 one_shot = true
 
 [node name="sprites_container" type="Node2D" parent="."]

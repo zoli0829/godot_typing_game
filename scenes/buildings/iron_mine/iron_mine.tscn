@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ypxw3ilqoi6m"]
 
 [ext_resource type="Script" path="res://scripts/iron_mine.gd" id="1_21281"]
-[ext_resource type="Texture2D" uid="uid://cdpjqsmuvjvc7" path="res://assets/sprites/buildings/iron_mine.png" id="1_kbpeb"]
+[ext_resource type="Texture2D" uid="uid://bur5wyeunu6sp" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_2.png" id="2_54n3p"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_culqo"]
 [ext_resource type="Texture2D" uid="uid://buu7osdhh8o4m" path="res://assets/pixel_art_icons/Sprites/Ore & Gem/Silver Ingot.png" id="4_e2wic"]
 
@@ -16,9 +16,9 @@ resource_type = 3
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0
-offset_top = -88.0
+offset_top = -48.0
 offset_right = 64.0
-offset_bottom = -65.0
+offset_bottom = -25.0
 text = "iron mine"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -30,10 +30,10 @@ one_shot = true
 [node name="sprites_container" type="Node2D" parent="."]
 
 [node name="building" type="Sprite2D" parent="sprites_container"]
-texture = ExtResource("1_kbpeb")
+texture = ExtResource("2_54n3p")
 
 [node name="resource_icon" parent="." instance=ExtResource("3_culqo")]
-position = Vector2(0, -104)
+position = Vector2(0, -56)
 texture = ExtResource("4_e2wic")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

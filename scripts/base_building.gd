@@ -1,13 +1,6 @@
 extends Node2D
 
-'''
-timer needs to be one_shot
-once we built the building we want to display the upgrade_command if we can upgrade
-then we start the timer, once it finishes we wait for the user's input to call the produce_command
-then we add the level to the resource
-then we start the timer again
-on_timer_timeout() icon starts to float -> we call produce(), in produce we play the fade out anim
-'''
+
 class_name BaseBuilding
 
 @export var build_command: String
@@ -20,6 +13,7 @@ class_name BaseBuilding
 
 var is_built = false
 var is_fully_upgraded = false
+var timer_seconds = 5
 
 var command_to_show :String
 @onready var label = $Label
@@ -51,7 +45,7 @@ func build():
 	command_to_show = upgrade_command
 	update_label(command_to_show)
 	upgrade()
-	timer.start()
+	start_timer(timer_seconds)
 	
 	match self.name:
 		"apple_farm":
@@ -108,7 +102,7 @@ func produce():
 			GameManager.weapon += level
 		_:
 			print("OH OH we need to increment some resource value!!!")
-	timer.start()
+	start_timer(timer_seconds)
 	
 	if is_fully_upgraded:
 		command_to_show = ""
@@ -136,7 +130,12 @@ func add_sprites_to_list():
 		building_sprites.append(sprite)
 
 
+func start_timer(seconds: int):
+	timer.one_shot = true
+	timer.start(seconds)
+
+
 func _on_timer_timeout() -> void:
 	resource_icon.show_icon_and_play_ready_animation()
 	update_label(produce_commands[0])
-	print("Timer finished...")
+	print("Timer time out in: ", name)

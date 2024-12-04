@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d0pdt84x50pww"]
 
-[ext_resource type="Texture2D" uid="uid://yhxmmim70ann" path="res://assets/sprites/buildings/market.png" id="1_7xrkm"]
 [ext_resource type="Script" path="res://scripts/market.gd" id="1_j0sry"]
+[ext_resource type="Texture2D" uid="uid://buspkk02nu6ga" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_6.png" id="2_xxaol"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_31c8g"]
 
 [node name="market" type="Node2D"]
@@ -13,9 +13,9 @@ max_level = 1
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0
-offset_top = -88.0
+offset_top = -48.0
 offset_right = 64.0
-offset_bottom = -65.0
+offset_bottom = -25.0
 text = "market"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -27,9 +27,9 @@ one_shot = true
 [node name="sprites_container" type="Node2D" parent="."]
 
 [node name="building" type="Sprite2D" parent="sprites_container"]
-texture = ExtResource("1_7xrkm")
+texture = ExtResource("2_xxaol")
 
 [node name="resource_icon" parent="." instance=ExtResource("3_31c8g")]
-position = Vector2(0, -104)
+position = Vector2(0, -56)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

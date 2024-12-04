@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dhdtfdiujlctv" path="res://scenes/ui/game_ui.tscn" id="1_ywl3c"]
 [ext_resource type="PackedScene" uid="uid://cfpesebldigch" path="res://scenes/managers/game_manager/game_manager.tscn" id="2_hm3up"]
 [ext_resource type="PackedScene" uid="uid://bhw7ruw2botti" path="res://scenes/managers/enemy_spawner/enemy_spawner.tscn" id="3_4c1gy"]
-[ext_resource type="PackedScene" uid="uid://cabwucp6owa6t" path="res://scenes/buildings/wall/wall.tscn" id="4_hhpj5"]
+[ext_resource type="PackedScene" uid="uid://cabwucp6owa6t" path="res://scenes/buildings/wall/castle.tscn" id="4_hhpj5"]
 [ext_resource type="PackedScene" uid="uid://bov0jjotk2hnq" path="res://scenes/buildings/apple_farm/apple_farm.tscn" id="5_jvugp"]
 [ext_resource type="PackedScene" uid="uid://bquu0i4xiot3l" path="res://scenes/buildings/inn/inn.tscn" id="6_qd12v"]
 [ext_resource type="PackedScene" uid="uid://ypxw3ilqoi6m" path="res://scenes/buildings/iron_mine/iron_mine.tscn" id="7_cs8uk"]
@@ -39,7 +39,7 @@ position = Vector2(1720, 600)
 [node name="Buildings" type="Node2D" parent="."]
 position = Vector2(384, 280)
 
-[node name="wall" parent="Buildings" instance=ExtResource("4_hhpj5")]
+[node name="castle" parent="Buildings" instance=ExtResource("4_hhpj5")]
 position = Vector2(-288, -136)
 scale = Vector2(2, 2)
 
