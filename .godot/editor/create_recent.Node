@@ -1,3 +1,4 @@
+ProgressBar
 AnimationPlayer
 Sprite2D
 BaseBuilding
@@ -11,4 +12,3 @@ HBoxContainer
 GridContainer
 TextureRect
 PanelContainer
-CanvasLayer

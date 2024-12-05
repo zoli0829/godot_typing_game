@@ -22,6 +22,13 @@ text = "fletcher"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 40.0
+offset_top = -24.0
+offset_right = 48.0
+offset_bottom = 24.0
+fill_mode = 3
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
 one_shot = true
@@ -32,7 +39,8 @@ one_shot = true
 texture = ExtResource("2_srs35")
 
 [node name="resource_icon" parent="." instance=ExtResource("3_5bevh")]
-position = Vector2(0, -56)
+position = Vector2(0, -72)
+scale = Vector2(2, 2)
 texture = ExtResource("4_u2qg5")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

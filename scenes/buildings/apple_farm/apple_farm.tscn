@@ -1,10 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://bov0jjotk2hnq"]
+[gd_scene load_steps=8 format=3 uid="uid://bov0jjotk2hnq"]
 
 [ext_resource type="Texture2D" uid="uid://btlamiyeje6v4" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png" id="1_7cl8o"]
 [ext_resource type="Script" path="res://scripts/apple_farm.gd" id="1_ojnj6"]
 [ext_resource type="Texture2D" uid="uid://dgj3mks24lk7a" path="res://assets/sprites/trees/apple_tree.png" id="2_8tfme"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="4_ih7gm"]
 [ext_resource type="Texture2D" uid="uid://qeidxv12c4no" path="res://assets/pixel_art_icons/Sprites/Food/Apple.png" id="5_8psvl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4vyed"]
+bg_color = Color(0.247059, 0.14902, 0.192157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y7ucv"]
+bg_color = Color(0.262745, 0.882353, 0.701961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.247059, 0.14902, 0.192157, 1)
 
 [node name="apple_farm" type="Node2D"]
 script = ExtResource("1_ojnj6")
@@ -22,6 +33,16 @@ offset_bottom = -41.0
 text = "apple farm"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 88.0
+offset_top = -48.0
+offset_right = 96.0
+offset_bottom = 168.0
+theme_override_styles/background = SubResource("StyleBoxFlat_4vyed")
+theme_override_styles/fill = SubResource("StyleBoxFlat_y7ucv")
+fill_mode = 3
+show_percentage = false
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0

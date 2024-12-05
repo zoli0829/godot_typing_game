@@ -23,6 +23,14 @@ text = "iron mine"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 40.0
+offset_top = -24.0
+offset_right = 48.0
+offset_bottom = 24.0
+fill_mode = 3
+show_percentage = false
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 60.0
 one_shot = true

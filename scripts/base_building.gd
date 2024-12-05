@@ -10,6 +10,7 @@ class_name BaseBuilding
 @export var max_level: int 
 @export var building_sprites: Array[Sprite2D]
 @export var resource_type: Enums.Resources
+@export var unit: CharacterBody2D
 
 var is_built = false
 var is_fully_upgraded = false
@@ -18,6 +19,7 @@ var timer_seconds = 5
 var command_to_show :String
 @onready var label = $Label
 @onready var timer = $Timer
+@onready var progress_bar: ProgressBar = $ProgressBar
 @onready var resource_icon: Node2D = $resource_icon
 
 
@@ -27,6 +29,13 @@ func _ready():
 	command_to_show = build_command
 	update_label(command_to_show)
 	add_commands_to_the_input_commands_list()
+	
+	# hide the progress bar then set it to visible in build()
+	progress_bar.modulate.a = 0
+
+
+func _process(delta: float) -> void:
+	update_progress_bar()
 
 
 func set_sprite_opacity_low():
@@ -35,12 +44,12 @@ func set_sprite_opacity_low():
 
 
 func build():
-	# once we built the building, we erase that command from the list
 	InputManager.remove_command_from_commands(build_command)
 	# TODO: play SFX
 	for sprite in building_sprites:
 		sprite.modulate.a = 1
 	is_built = true
+	progress_bar.modulate.a = 1
 	
 	command_to_show = upgrade_command
 	update_label(command_to_show)
@@ -68,6 +77,10 @@ func build():
 			GameManager.is_woodcutter_camp_built = true
 		_:
 			print("OH OH no boolean value was set to true in the is_xyz_built values!!!")
+	
+	if unit == null:
+		return
+	unit.visible = true
 
 
 func upgrade():
@@ -133,6 +146,17 @@ func add_sprites_to_list():
 func start_timer(seconds: int):
 	timer.one_shot = true
 	timer.start(seconds)
+
+
+func update_progress_bar():
+	if progress_bar == null:
+		return
+	
+	progress_bar.max_value = timer_seconds
+	progress_bar.step = 1
+	progress_bar.show_percentage = false
+	progress_bar.fill_mode = 3 # bottom to top
+	progress_bar.set_value_no_signal(timer_seconds - timer.time_left)
 
 
 func _on_timer_timeout() -> void:
