@@ -54,6 +54,8 @@ func build():
 	command_to_show = upgrade_command
 	update_label(command_to_show)
 	upgrade()
+	# TODO will start the timer once it has enough resources, then use those resources
+	# and start the process and call GameManager.update_widget_labels()
 	start_timer(timer_seconds)
 	
 	match self.name:

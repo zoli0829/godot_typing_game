@@ -1,14 +1,6 @@
-res://scenes/buildings/base_building/base_building.tscn
-res://resources/theme/theme.tres
 res://scenes/game/game.tscn
-res://scenes/buildings/apple_farm/apple_farm.tscn
-res://scenes/buildings/fletcher/fletcher.tscn
-res://scenes/buildings/inn/inn.tscn
-res://scenes/buildings/iron_mine/iron_mine.tscn
+res://resources/theme/theme.tres
 res://scenes/buildings/market/market.tscn
-res://scenes/buildings/quarry/quarry.tscn
-res://scenes/buildings/wheat_farm/wheat_farm.tscn
-res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn
 res://scenes/buildings/blacksmith/blacksmith.tscn
-res://scripts/market.gd
+res://scenes/buildings/fletcher/fletcher.tscn
 res://scripts/base_building.gd
