@@ -22,6 +22,8 @@ var command_to_show :String
 @onready var progress_bar: ProgressBar = $ProgressBar
 @onready var resource_icon: Node2D = $resource_icon
 
+# RESOURCES
+
 
 func _ready():
 	add_sprites_to_list()
