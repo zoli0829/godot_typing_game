@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://btxcaqfkjijhn"]
+[gd_scene load_steps=4 format=3 uid="uid://btxcaqfkjijhn"]
 
 [ext_resource type="Script" path="res://scripts/base_enemy.gd" id="1_0hbrq"]
 [ext_resource type="Texture2D" uid="uid://ndm42eyfbxlu" path="res://assets/sprites/icon.svg" id="2_iowb1"]
+[ext_resource type="PackedScene" uid="uid://cxm8jun85aksw" path="res://scenes/components/random_stream_player_2d_component.tscn" id="3_ta41x"]
 
 [node name="BaseEnemy" type="Node2D" node_paths=PackedStringArray("label")]
 script = ExtResource("1_0hbrq")
@@ -21,3 +22,7 @@ theme_override_font_sizes/font_size = 32
 text = "Attack!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="RandomStreamPlayer2DComponent" parent="." instance=ExtResource("3_ta41x")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

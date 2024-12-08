@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d8nbfhv3pjuy"]
+[gd_scene load_steps=8 format=3 uid="uid://d8nbfhv3pjuy"]
 
 [ext_resource type="Script" path="res://scripts/blacksmith.gd" id="1_6yee1"]
 [ext_resource type="Texture2D" uid="uid://ccccauobooqn2" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_3.png" id="2_fihs4"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b0e033650oght" path="res://scenes/units/blacksmith_man/blacksmith_man.tscn" id="4_88k3x"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="5_aic4s"]
 [ext_resource type="Texture2D" uid="uid://bq8p3rrddk5w3" path="res://assets/pixel_art_icons/Sprites/Weapon & Tool/Silver Sword.png" id="6_qiqv7"]
+[ext_resource type="PackedScene" uid="uid://cxm8jun85aksw" path="res://scenes/components/random_stream_player_2d_component.tscn" id="7_2ocvq"]
 
 [node name="Blacksmith" type="Node2D" node_paths=PackedStringArray("unit")]
 script = ExtResource("1_6yee1")
@@ -51,5 +52,7 @@ position = Vector2(-8, 40)
 [node name="resource_icon" parent="." instance=ExtResource("5_aic4s")]
 position = Vector2(0, -56)
 texture = ExtResource("6_qiqv7")
+
+[node name="RandomStreamPlayer2DComponent" parent="." instance=ExtResource("7_2ocvq")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

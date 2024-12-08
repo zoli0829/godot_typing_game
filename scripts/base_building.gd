@@ -1,5 +1,12 @@
 extends Node2D
 
+'''
+SFX:
+	play the build sfx in build()
+	play the build sfx in upgrade()
+	play the ready to harvest in on_timer_time_out()
+	play the harvested sfx in process()
+'''
 
 class_name BaseBuilding
 
@@ -21,8 +28,16 @@ var command_to_show :String
 @onready var timer = $Timer
 @onready var progress_bar: ProgressBar = $ProgressBar
 @onready var resource_icon: Node2D = $resource_icon
+@onready var random_stream_player: AudioStreamPlayer2D = $RandomStreamPlayer2DComponent
 
 # RESOURCES
+@export var gold_requirement: int
+@export var wood_requirement: int
+@export var stone_requirement: int
+@export var iron_requirement: int
+@export var food_requirement: int
+@export var bow_requirement: int
+@export var weapon_requirement: int
 
 
 func _ready():
@@ -47,7 +62,8 @@ func set_sprite_opacity_low():
 
 func build():
 	InputManager.remove_command_from_commands(build_command)
-	# TODO: play SFX
+	random_stream_player.play_random_build_sfx()
+	
 	for sprite in building_sprites:
 		sprite.modulate.a = 1
 	is_built = true
@@ -88,18 +104,21 @@ func build():
 
 
 func upgrade():
-	# TODO:play SFX, and dont forget to call super() in the children
+	random_stream_player.play_random_build_sfx()
+	
 	if is_fully_upgraded:
 		# TODO: show a message on the screen that the building is fully upgraded
 		return
+	
 	level += 1
 	if level == max_level:
 		is_fully_upgraded = true
 
 
 func produce():
-	# TODO: play SFX, and dont forget to call super() in the children
+	random_stream_player.play_random_harvested_sfx()
 	resource_icon.play_fade_out_animation()
+	
 	match resource_type:
 		Enums.Resources.NONE:
 			return
@@ -165,5 +184,6 @@ func update_progress_bar():
 
 func _on_timer_timeout() -> void:
 	resource_icon.show_icon_and_play_ready_animation()
+	random_stream_player.play_random_ready_to_harvest_sfx()
 	update_label(produce_commands[0])
 	print("Timer time out in: ", name)

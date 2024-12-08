@@ -1,5 +1,6 @@
-ProgressBar
 AnimationPlayer
+AudioStreamPlayer2D
+ProgressBar
 Sprite2D
 BaseBuilding
 Node2D
@@ -11,4 +12,3 @@ MarginContainer
 HBoxContainer
 GridContainer
 TextureRect
-PanelContainer

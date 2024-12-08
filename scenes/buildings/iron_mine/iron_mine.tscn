@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ypxw3ilqoi6m"]
+[gd_scene load_steps=6 format=3 uid="uid://ypxw3ilqoi6m"]
 
 [ext_resource type="Script" path="res://scripts/iron_mine.gd" id="1_21281"]
 [ext_resource type="Texture2D" uid="uid://bur5wyeunu6sp" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_2.png" id="2_54n3p"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_culqo"]
 [ext_resource type="Texture2D" uid="uid://buu7osdhh8o4m" path="res://assets/pixel_art_icons/Sprites/Ore & Gem/Silver Ingot.png" id="4_e2wic"]
+[ext_resource type="PackedScene" uid="uid://cxm8jun85aksw" path="res://scenes/components/random_stream_player_2d_component.tscn" id="5_61hg5"]
 
 [node name="iron_mine" type="Node2D" node_paths=PackedStringArray("building_sprites")]
 script = ExtResource("1_21281")
@@ -43,5 +44,7 @@ texture = ExtResource("2_54n3p")
 [node name="resource_icon" parent="." instance=ExtResource("3_culqo")]
 position = Vector2(0, -56)
 texture = ExtResource("4_e2wic")
+
+[node name="RandomStreamPlayer2DComponent" parent="." instance=ExtResource("5_61hg5")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,6 +1,8 @@
-res://scenes/game/game.tscn
+res://scenes/components/random_stream_player_2d_component.tscn
 res://resources/theme/theme.tres
-res://scenes/buildings/market/market.tscn
-res://scenes/buildings/blacksmith/blacksmith.tscn
+res://scripts/random_stream_player_2d_component.gd
+res://scenes/game/game.tscn
+res://scenes/buildings/base_building/base_building.tscn
 res://scenes/buildings/fletcher/fletcher.tscn
 res://scripts/base_building.gd
+res://scenes/enemies/base_enemy.tscn

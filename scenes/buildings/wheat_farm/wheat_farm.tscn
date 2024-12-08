@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dvaoko167cplk"]
+[gd_scene load_steps=7 format=3 uid="uid://dvaoko167cplk"]
 
 [ext_resource type="Texture2D" uid="uid://btlamiyeje6v4" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png" id="1_0bdt7"]
 [ext_resource type="Script" path="res://scripts/wheat_farm.gd" id="1_bwpb6"]
 [ext_resource type="Texture2D" uid="uid://ue83bur5pina" path="res://assets/FarmingCrops16x16/wheat_crops.png" id="2_pv840"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="4_6e032"]
 [ext_resource type="Texture2D" uid="uid://cb6o0b084jgh3" path="res://assets/pixel_art_icons/Sprites/Food/Bread.png" id="5_ljmt6"]
+[ext_resource type="PackedScene" uid="uid://cxm8jun85aksw" path="res://scenes/components/random_stream_player_2d_component.tscn" id="6_u8vh8"]
 
 [node name="wheat_farm" type="Node2D"]
 script = ExtResource("1_bwpb6")
@@ -441,5 +442,7 @@ one_shot = true
 [node name="resource_icon" parent="." instance=ExtResource("4_6e032")]
 position = Vector2(0, -72)
 texture = ExtResource("5_ljmt6")
+
+[node name="RandomStreamPlayer2DComponent" parent="." instance=ExtResource("6_u8vh8")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

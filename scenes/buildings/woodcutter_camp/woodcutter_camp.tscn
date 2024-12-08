@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://baqi56nyndsqi"]
+[gd_scene load_steps=9 format=3 uid="uid://baqi56nyndsqi"]
 
 [ext_resource type="Script" path="res://scripts/woodcutter_camp.gd" id="1_jek7k"]
 [ext_resource type="Texture2D" uid="uid://crho2d1dii48k" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png" id="1_x23xd"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://deqgg8njbrmem" path="res://assets/Ninja Adventure - Asset Pack/props/logs_04.png" id="4_73qj1"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="6_jimkn"]
 [ext_resource type="Texture2D" uid="uid://b52pjptvkaumt" path="res://assets/pixel_art_icons/Sprites/Material/Wooden Plank.png" id="7_xhbrh"]
+[ext_resource type="PackedScene" uid="uid://cxm8jun85aksw" path="res://scenes/components/random_stream_player_2d_component.tscn" id="8_7l48a"]
 
 [node name="woodcutter_camp" type="Node2D"]
 script = ExtResource("1_jek7k")
@@ -67,5 +68,7 @@ texture = ExtResource("4_73qj1")
 [node name="resource_icon" parent="." instance=ExtResource("6_jimkn")]
 position = Vector2(0, -56)
 texture = ExtResource("7_xhbrh")
+
+[node name="RandomStreamPlayer2DComponent" parent="." instance=ExtResource("8_7l48a")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

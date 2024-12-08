@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 run/max_fps=60
 config/icon="res://assets/sprites/icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://resources/default_bus_layout.tres"
+
 [autoload]
 
 InputManager="*res://scenes/managers/input_manager/input_manager.tscn"

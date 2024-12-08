@@ -1,8 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733592285
+::res://::1733651458
+default_bus_layout.tres::AudioBusLayout::5359801792442928703::1733646667::0::1::::<><>::
 enemy_commands.txt::TextFile::-1::1733077581::0::1::::<><>::
 README.md::TextFile::-1::1732136553::0::1::::<><>::
-::res://assets/::1733160918
+::res://assets/::1733646390
+::res://assets/audio/::1733651619
+footstep_carpet_000.ogg::AudioStreamOggVorbis::335272628062490701::1733646237::1733646394::1::::<><>::
+footstep_carpet_001.ogg::AudioStreamOggVorbis::1804129147848562435::1733646237::1733646394::1::::<><>::
+footstep_carpet_002.ogg::AudioStreamOggVorbis::5187203975661775958::1733646237::1733646394::1::::<><>::
+footstep_carpet_003.ogg::AudioStreamOggVorbis::8378770774593982219::1733646237::1733646394::1::::<><>::
+footstep_carpet_004.ogg::AudioStreamOggVorbis::9038826466057930378::1733646237::1733646394::1::::<><>::
+impactMetal_heavy_001.ogg::AudioStreamOggVorbis::7392178712421649804::1733651616::1733651619::1::::<><>::
+impactMetal_heavy_002.ogg::AudioStreamOggVorbis::6990136739530809934::1733651616::1733651619::1::::<><>::
+impactMetal_heavy_003.ogg::AudioStreamOggVorbis::8023984697052749477::1733651616::1733651619::1::::<><>::
+impactMetal_heavy_004.ogg::AudioStreamOggVorbis::6656683753048022548::1733651616::1733651619::1::::<><>::
+impactMining_000.ogg::AudioStreamOggVorbis::7716951797315755191::1733651449::1733651461::1::::<><>::
+impactMining_001.ogg::AudioStreamOggVorbis::4255338853560226676::1733651449::1733651461::1::::<><>::
+impactMining_002.ogg::AudioStreamOggVorbis::1096153113183767672::1733651449::1733651461::1::::<><>::
+impactMining_003.ogg::AudioStreamOggVorbis::7245119158125445038::1733651449::1733651461::1::::<><>::
+impactMining_004.ogg::AudioStreamOggVorbis::7814753418677567343::1733651449::1733651461::1::::<><>::
 ::res://assets/FarmingCrops16x16/::1732904858
 Crop_Spritesheet.png::CompressedTexture2D::2650638412955783546::1732644445::1732904858::1::::<><>::
 README.txt::TextFile::-1::1732644445::0::1::::<><>::
@@ -2566,39 +2582,41 @@ wall_top_right_01.png::CompressedTexture2D::3439423625386236811::1732736107::173
 ::res://assets/sprites/trees/::1732904855
 apple_tree.png::CompressedTexture2D::7600696572324291312::1732736107::1732904855::1::::<><>::
 ::res://resources/::1733049099
-::res://resources/theme/::1733508216
+::res://resources/theme/::1733651104
 Bitfantasy.ttf::FontFile::7872517843637805010::1733049069::1733049195::1::::<><>::
-theme.tres::Theme::5604525757130692560::1733508216::0::1::::<><>::uid://dkfrho2uvddxq::::res://resources/theme/Bitfantasy.ttf<>uid://cna0855lgqqkj::::res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Wip/ThemeWood3/nine_path_panel.png
-::res://scenes/::1733046808
+theme.tres::Theme::5604525757130692560::1733651104::0::1::::<><>::uid://dkfrho2uvddxq::::res://resources/theme/Bitfantasy.ttf<>uid://cna0855lgqqkj::::res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Wip/ThemeWood3/nine_path_panel.png
+::res://scenes/::1733646894
 ::res://scenes/buildings/::1733252309
-::res://scenes/buildings/apple_farm/::1733435452
-apple_farm.tscn::PackedScene::3413950919640234686::1733435452::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/apple_farm.gd<>uid://dgj3mks24lk7a::::res://assets/sprites/trees/apple_tree.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://qeidxv12c4no::::res://assets/pixel_art_icons/Sprites/Food/Apple.png
-::res://scenes/buildings/base_building/::1733435452
-base_building.tscn::PackedScene::2637403501492022976::1733435452::0::1::::<><>::res://scripts/base_building.gd<>uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn
-::res://scenes/buildings/blacksmith/::1733509007
-blacksmith.tscn::PackedScene::279482377920482300::1733509007::0::1::::<><>::res://scripts/blacksmith.gd<>uid://ccccauobooqn2::::res://assets/Ninja Adventure - Asset Pack/buildings/house_3.png<>uid://cf0hfynds72n4::::res://assets/kenney_tiny-dungeon/Tiles/anvil.png<>uid://b0e033650oght::::res://scenes/units/blacksmith_man/blacksmith_man.tscn<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://bq8p3rrddk5w3::::res://assets/pixel_art_icons/Sprites/Weapon & Tool/Silver Sword.png
-::res://scenes/buildings/fletcher/::1733509007
-fletcher.tscn::PackedScene::5111052663984358587::1733509007::0::1::::<><>::res://scripts/fletcher.gd<>uid://uj5ejrxgfm0o::::res://assets/Ninja Adventure - Asset Pack/buildings/house_4.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://c13f3wtb4pieq::::res://assets/kenney_tiny-town/Tiles/bow.png
-::res://scenes/buildings/inn/::1733435452
-inn.tscn::PackedScene::3551989187728174239::1733435452::0::1::::<><>::res://scripts/inn.gd<>uid://fm4dafqdb1qg::::res://assets/Ninja Adventure - Asset Pack/buildings/house_5.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://dnedqpqosjd0j::::res://assets/pixel_art_icons/Sprites/Misc/Golden Coin.png
-::res://scenes/buildings/iron_mine/::1733435452
-iron_mine.tscn::PackedScene::1716935175457181210::1733435452::0::1::::<><>::res://scripts/iron_mine.gd<>uid://bur5wyeunu6sp::::res://assets/Ninja Adventure - Asset Pack/buildings/house_2.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://buu7osdhh8o4m::::res://assets/pixel_art_icons/Sprites/Ore & Gem/Silver Ingot.png
-::res://scenes/buildings/market/::1733509007
-market.tscn::PackedScene::8945166668559490182::1733509007::0::1::::<><>::res://scripts/market.gd<>uid://buspkk02nu6ga::::res://assets/Ninja Adventure - Asset Pack/buildings/house_6.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn
-::res://scenes/buildings/quarry/::1733435452
-quarry.tscn::PackedScene::6729312563949699751::1733435452::0::1::::<><>::res://scripts/quarry.gd<>uid://bur5wyeunu6sp::::res://assets/Ninja Adventure - Asset Pack/buildings/house_2.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://dagjwghbumfxf::::res://assets/pixel_art_icons/Sprites/Ore & Gem/Obsidian.png
+::res://scenes/buildings/apple_farm/::1733647784
+apple_farm.tscn::PackedScene::3413950919640234686::1733647784::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/apple_farm.gd<>uid://dgj3mks24lk7a::::res://assets/sprites/trees/apple_tree.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://qeidxv12c4no::::res://assets/pixel_art_icons/Sprites/Food/Apple.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/base_building/::1733651627
+base_building.tscn::PackedScene::2637403501492022976::1733651627::0::1::::<><>::res://scripts/base_building.gd<>uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/blacksmith/::1733647796
+blacksmith.tscn::PackedScene::279482377920482300::1733647796::0::1::::<><>::res://scripts/blacksmith.gd<>uid://ccccauobooqn2::::res://assets/Ninja Adventure - Asset Pack/buildings/house_3.png<>uid://cf0hfynds72n4::::res://assets/kenney_tiny-dungeon/Tiles/anvil.png<>uid://b0e033650oght::::res://scenes/units/blacksmith_man/blacksmith_man.tscn<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://bq8p3rrddk5w3::::res://assets/pixel_art_icons/Sprites/Weapon & Tool/Silver Sword.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/fletcher/::1733651627
+fletcher.tscn::PackedScene::5111052663984358587::1733651627::0::1::::<><>::res://scripts/fletcher.gd<>uid://uj5ejrxgfm0o::::res://assets/Ninja Adventure - Asset Pack/buildings/house_4.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://c13f3wtb4pieq::::res://assets/kenney_tiny-town/Tiles/bow.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/inn/::1733647816
+inn.tscn::PackedScene::3551989187728174239::1733647816::0::1::::<><>::res://scripts/inn.gd<>uid://fm4dafqdb1qg::::res://assets/Ninja Adventure - Asset Pack/buildings/house_5.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://dnedqpqosjd0j::::res://assets/pixel_art_icons/Sprites/Misc/Golden Coin.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/iron_mine/::1733647825
+iron_mine.tscn::PackedScene::1716935175457181210::1733647825::0::1::::<><>::res://scripts/iron_mine.gd<>uid://bur5wyeunu6sp::::res://assets/Ninja Adventure - Asset Pack/buildings/house_2.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://buu7osdhh8o4m::::res://assets/pixel_art_icons/Sprites/Ore & Gem/Silver Ingot.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/market/::1733647834
+market.tscn::PackedScene::8945166668559490182::1733647834::0::1::::<><>::res://scripts/market.gd<>uid://buspkk02nu6ga::::res://assets/Ninja Adventure - Asset Pack/buildings/house_6.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/quarry/::1733647842
+quarry.tscn::PackedScene::6729312563949699751::1733647842::0::1::::<><>::res://scripts/quarry.gd<>uid://bur5wyeunu6sp::::res://assets/Ninja Adventure - Asset Pack/buildings/house_2.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://dagjwghbumfxf::::res://assets/pixel_art_icons/Sprites/Ore & Gem/Obsidian.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
 ::res://scenes/buildings/wall/::1733335686
 castle.tscn::PackedScene::4776277364506061153::1732740624::0::1::::<><>::uid://bw5heqrijdhsm::::res://assets/sprites/buildings/castle/wall.png<>uid://mrs1a0sdjxrg::::res://scenes/buildings/wall/tower.tscn<>uid://cntuqlffwnv7r::::res://scenes/buildings/wall/gate.tscn<>uid://ijcylfl5pxi3::::res://assets/sprites/buildings/castle/wall_middle_left_right_01.png<>uid://cd68vdfsblyq1::::res://assets/sprites/buildings/castle/wall_middle.png<>uid://bpac2meflj5hn::::res://assets/sprites/buildings/castle/wall_top_right_01.png
 gate.tscn::PackedScene::5725763010303552973::1732738273::0::1::::<><>::uid://ddtm1d4rm7w0v::::res://assets/sprites/buildings/castle/gate_top_left.png<>uid://cwc6wro0b3aq3::::res://assets/sprites/buildings/castle/gate_bottom_left.png<>uid://doy04o44wyaaf::::res://assets/sprites/buildings/castle/wall_bottom_middle_01.png<>uid://cxto2usmh2tn1::::res://assets/sprites/buildings/castle/wall_4.png<>uid://7o5w1lpt7jel::::res://assets/sprites/buildings/castle/gate_top_right.png<>uid://b7vojn17kbs1::::res://assets/sprites/buildings/castle/gate_bottom_right.png<>uid://cm6206bdvoq8i::::res://assets/sprites/buildings/castle/wall_2.png<>uid://bvimygscad3o::::res://assets/sprites/buildings/castle/wall_3.png<>uid://b5kf2m6blsvmb::::res://assets/sprites/buildings/castle/wall_top_middle_01.png<>uid://cisd1lbbjt3ft::::res://assets/sprites/buildings/castle/tower.png
 tower.tscn::PackedScene::878499921429066396::1732738273::0::1::::<><>::uid://b06tf4q3upusm::::res://assets/sprites/buildings/castle/wall_top_left_01.png<>uid://bpac2meflj5hn::::res://assets/sprites/buildings/castle/wall_top_right_01.png<>uid://bfjpo2hfcaflm::::res://assets/sprites/buildings/castle/wall_bottom_right_01.png<>uid://d36koc8ghd5ip::::res://assets/sprites/buildings/castle/wall_bottom_left_01.png<>uid://bvimygscad3o::::res://assets/sprites/buildings/castle/wall_3.png<>uid://cm6206bdvoq8i::::res://assets/sprites/buildings/castle/wall_2.png
-::res://scenes/buildings/wheat_farm/::1733435452
-wheat_farm.tscn::PackedScene::8634096440258936748::1733435452::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/wheat_farm.gd<>uid://ue83bur5pina::::res://assets/FarmingCrops16x16/wheat_crops.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://cb6o0b084jgh3::::res://assets/pixel_art_icons/Sprites/Food/Bread.png
-::res://scenes/buildings/woodcutter_camp/::1733435452
-woodcutter_camp.tscn::PackedScene::2419991686931609752::1733435452::0::1::::<><>::res://scripts/woodcutter_camp.gd<>uid://crho2d1dii48k::::res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png<>uid://dylsw2v0n7fwh::::res://assets/Ninja Adventure - Asset Pack/props/logs_01.png<>uid://cja8v5ek0llt3::::res://assets/Ninja Adventure - Asset Pack/props/logs_03.png<>uid://deqgg8njbrmem::::res://assets/Ninja Adventure - Asset Pack/props/logs_04.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://b52pjptvkaumt::::res://assets/pixel_art_icons/Sprites/Material/Wooden Plank.png
+::res://scenes/buildings/wheat_farm/::1733647851
+wheat_farm.tscn::PackedScene::8634096440258936748::1733647851::0::1::::<><>::uid://btlamiyeje6v4::::res://assets/Ninja Adventure - Asset Pack/buildings/house_1.png<>res://scripts/wheat_farm.gd<>uid://ue83bur5pina::::res://assets/FarmingCrops16x16/wheat_crops.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://cb6o0b084jgh3::::res://assets/pixel_art_icons/Sprites/Food/Bread.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/buildings/woodcutter_camp/::1733647859
+woodcutter_camp.tscn::PackedScene::2419991686931609752::1733647859::0::1::::<><>::res://scripts/woodcutter_camp.gd<>uid://crho2d1dii48k::::res://assets/Ninja Adventure - Asset Pack/buildings/house_8.png<>uid://dylsw2v0n7fwh::::res://assets/Ninja Adventure - Asset Pack/props/logs_01.png<>uid://cja8v5ek0llt3::::res://assets/Ninja Adventure - Asset Pack/props/logs_03.png<>uid://deqgg8njbrmem::::res://assets/Ninja Adventure - Asset Pack/props/logs_04.png<>uid://bq3rmr534iwrg::::res://scenes/ui/resource_icon.tscn<>uid://b52pjptvkaumt::::res://assets/pixel_art_icons/Sprites/Material/Wooden Plank.png<>uid://cxm8jun85aksw::::res://scenes/components/random_stream_player_2d_component.tscn
+::res://scenes/components/::1733651627
+random_stream_player_2d_component.tscn::PackedScene::6413978109105033186::1733651627::0::1::::<><>::res://scripts/random_stream_player_2d_component.gd<>uid://e1n5khy8amrl::::res://assets/audio/footstep_carpet_000.ogg<>uid://0x60jpxc20d8::::res://assets/audio/footstep_carpet_001.ogg<>uid://cf5yqykunfrp3::::res://assets/audio/footstep_carpet_002.ogg<>uid://drm0eo4k77v28::::res://assets/audio/footstep_carpet_003.ogg<>uid://d11qfe574fwyk::::res://assets/audio/footstep_carpet_004.ogg<>uid://ddk3drrmdpvro::::res://assets/audio/impactMetal_heavy_001.ogg<>uid://c6ucsbvw8q7fu::::res://assets/audio/impactMetal_heavy_002.ogg<>uid://dmk44deex6w8d::::res://assets/audio/impactMetal_heavy_003.ogg<>uid://c13sux3uilbyi::::res://assets/audio/impactMetal_heavy_004.ogg<>uid://dh7fcll4p8a0n::::res://assets/audio/impactMining_000.ogg<>uid://b1vk2rpaifwfk::::res://assets/audio/impactMining_001.ogg<>uid://pu8qm00ybe5e::::res://assets/audio/impactMining_002.ogg<>uid://dbhub3o1nr0qs::::res://assets/audio/impactMining_003.ogg<>uid://djlr32gxh8bpv::::res://assets/audio/impactMining_004.ogg
 ::res://scenes/enemies/::1732907773
 base_enemy.tscn::PackedScene::3767611683708954863::1732907773::0::1::::<><>::res://scripts/base_enemy.gd<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg
-::res://scenes/game/::1733509007
-game.tscn::PackedScene::6497651209641585424::1733509007::0::1::::<><>::uid://csga3vb5ujqxq::::res://scenes/managers/input_manager/input_manager.tscn<>uid://dhdtfdiujlctv::::res://scenes/ui/game_ui.tscn<>uid://cfpesebldigch::::res://scenes/managers/game_manager/game_manager.tscn<>uid://bhw7ruw2botti::::res://scenes/managers/enemy_spawner/enemy_spawner.tscn<>uid://cabwucp6owa6t::::res://scenes/buildings/wall/castle.tscn<>uid://bov0jjotk2hnq::::res://scenes/buildings/apple_farm/apple_farm.tscn<>uid://bquu0i4xiot3l::::res://scenes/buildings/inn/inn.tscn<>uid://ypxw3ilqoi6m::::res://scenes/buildings/iron_mine/iron_mine.tscn<>uid://d0pdt84x50pww::::res://scenes/buildings/market/market.tscn<>uid://c24y2a0m6hv8j::::res://scenes/buildings/quarry/quarry.tscn<>uid://dvaoko167cplk::::res://scenes/buildings/wheat_farm/wheat_farm.tscn<>uid://baqi56nyndsqi::::res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn<>uid://ppifpd02wj38::::res://scenes/units/archer/archer.tscn<>uid://d8nbfhv3pjuy::::res://scenes/buildings/blacksmith/blacksmith.tscn<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg<>uid://ce23j48m7db76::::res://scenes/buildings/fletcher/fletcher.tscn
+::res://scenes/game/::1733651627
+game.tscn::PackedScene::6497651209641585424::1733651627::0::1::::<><>::uid://csga3vb5ujqxq::::res://scenes/managers/input_manager/input_manager.tscn<>uid://dhdtfdiujlctv::::res://scenes/ui/game_ui.tscn<>uid://cfpesebldigch::::res://scenes/managers/game_manager/game_manager.tscn<>uid://bhw7ruw2botti::::res://scenes/managers/enemy_spawner/enemy_spawner.tscn<>uid://cabwucp6owa6t::::res://scenes/buildings/wall/castle.tscn<>uid://bov0jjotk2hnq::::res://scenes/buildings/apple_farm/apple_farm.tscn<>uid://bquu0i4xiot3l::::res://scenes/buildings/inn/inn.tscn<>uid://ypxw3ilqoi6m::::res://scenes/buildings/iron_mine/iron_mine.tscn<>uid://d0pdt84x50pww::::res://scenes/buildings/market/market.tscn<>uid://c24y2a0m6hv8j::::res://scenes/buildings/quarry/quarry.tscn<>uid://dvaoko167cplk::::res://scenes/buildings/wheat_farm/wheat_farm.tscn<>uid://baqi56nyndsqi::::res://scenes/buildings/woodcutter_camp/woodcutter_camp.tscn<>uid://ppifpd02wj38::::res://scenes/units/archer/archer.tscn<>uid://d8nbfhv3pjuy::::res://scenes/buildings/blacksmith/blacksmith.tscn<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg<>uid://ce23j48m7db76::::res://scenes/buildings/fletcher/fletcher.tscn
 ::res://scenes/managers/::1732464321
 ::res://scenes/managers/enemy_spawner/::1732738273
 enemy_spawner.tscn::PackedScene::2925133287694918586::1732738273::0::1::::<><>::res://scripts/enemy_spawner.gd<>uid://btxcaqfkjijhn::::res://scenes/enemies/base_enemy.tscn<>uid://ndm42eyfbxlu::::res://assets/sprites/icon.svg
@@ -2615,9 +2633,9 @@ resource_widget.tscn::PackedScene::6180728030720568962::1733260188::0::1::::<><>
 archer.tscn::PackedScene::1084293779450546749::1733164614::0::1::::<><>::uid://bi2h63ypjkmwm::::res://assets/kenney_tiny-dungeon/Tiles/archer.png<>uid://c13f3wtb4pieq::::res://assets/kenney_tiny-town/Tiles/bow.png
 ::res://scenes/units/blacksmith_man/::1733164614
 blacksmith_man.tscn::PackedScene::4150968732648417945::1733164614::0::1::::<><>::uid://chsnhk0rb3rc5::::res://assets/kenney_tiny-dungeon/Tiles/blacksmith.png<>uid://crwktkthc42kg::::res://assets/kenney_tiny-dungeon/Tiles/hammer.png
-::res://scripts/::1733508616
+::res://scripts/::1733651263
 apple_farm.gd::GDScript::-1::1733260269::0::1::::<>BaseBuilding<>::
-base_building.gd::GDScript::-1::1733508616::0::1::::BaseBuilding<>Node2D<>::
+base_building.gd::GDScript::-1::1733647710::0::1::::BaseBuilding<>Node2D<>::
 base_enemy.gd::GDScript::-1::1732907773::0::1::::<>Node2D<>::
 blacksmith.gd::GDScript::-1::1733335421::0::1::::<>BaseBuilding<>::
 enemy_spawner.gd::GDScript::-1::1732646518::0::1::::<>Node2D<>::
@@ -2629,6 +2647,7 @@ input_manager.gd::GDScript::-1::1733079397::0::1::::<>Control<>::
 iron_mine.gd::GDScript::-1::1733335474::0::1::::<>BaseBuilding<>::
 market.gd::GDScript::-1::1733435795::0::1::::<>BaseBuilding<>::
 quarry.gd::GDScript::-1::1733337067::0::1::::<>BaseBuilding<>::
+random_stream_player_2d_component.gd::GDScript::-1::1733651263::0::1::::<>AudioStreamPlayer2D<>::
 resource_icon.gd::GDScript::-1::1733258124::0::1::::<>Node2D<>::
 resource_widget.gd::GDScript::-1::1733078658::0::1::::<>Control<>::
 wheat_farm.gd::GDScript::-1::1733336995::0::1::::<>BaseBuilding<>::

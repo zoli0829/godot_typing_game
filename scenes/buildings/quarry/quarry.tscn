@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c24y2a0m6hv8j"]
+[gd_scene load_steps=6 format=3 uid="uid://c24y2a0m6hv8j"]
 
 [ext_resource type="Script" path="res://scripts/quarry.gd" id="1_ic7n2"]
 [ext_resource type="Texture2D" uid="uid://bur5wyeunu6sp" path="res://assets/Ninja Adventure - Asset Pack/buildings/house_2.png" id="2_u1xyq"]
 [ext_resource type="PackedScene" uid="uid://bq3rmr534iwrg" path="res://scenes/ui/resource_icon.tscn" id="3_gnkm4"]
 [ext_resource type="Texture2D" uid="uid://dagjwghbumfxf" path="res://assets/pixel_art_icons/Sprites/Ore & Gem/Obsidian.png" id="4_q8o2h"]
+[ext_resource type="PackedScene" uid="uid://cxm8jun85aksw" path="res://scenes/components/random_stream_player_2d_component.tscn" id="5_6r6l3"]
 
 [node name="quarry" type="Node2D" node_paths=PackedStringArray("building_sprites")]
 script = ExtResource("1_ic7n2")
@@ -41,5 +42,7 @@ texture = ExtResource("2_u1xyq")
 [node name="resource_icon" parent="." instance=ExtResource("3_gnkm4")]
 position = Vector2(0, -56)
 texture = ExtResource("4_q8o2h")
+
+[node name="RandomStreamPlayer2DComponent" parent="." instance=ExtResource("5_6r6l3")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
