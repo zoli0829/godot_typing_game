@@ -3,6 +3,10 @@ extends Node2D
 @export var enemy_command : String  # Random word for the enemy
 @export var label: Label
 
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var random_stream_player: AudioStreamPlayer2D = $RandomStreamPlayer2DComponent
+
+
 func _ready() -> void:
 	pick_random_word_and_append_to_enemy_commands()
 	add_enemy_to_game_manager()

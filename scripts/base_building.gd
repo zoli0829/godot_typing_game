@@ -31,6 +31,14 @@ var command_to_show :String
 @onready var random_stream_player: AudioStreamPlayer2D = $RandomStreamPlayer2DComponent
 
 # RESOURCES
+@export var base_gold_requirement: int
+@export var base_wood_requirement: int
+@export var base_stone_requirement: int
+@export var base_iron_requirement: int
+@export var base_food_requirement: int
+@export var base_bow_requirement: int
+@export var base_weapon_requirement: int
+
 @export var gold_requirement: int
 @export var wood_requirement: int
 @export var stone_requirement: int
@@ -55,64 +63,85 @@ func _process(delta: float) -> void:
 	update_progress_bar()
 
 
+# TODO: requirements need a design overhaul
+func can_upgrade_or_build():
+	return GameManager.iron >= iron_requirement and GameManager.stone >= stone_requirement and GameManager.wood >= wood_requirement and GameManager.food >= food_requirement and GameManager.gold >= gold_requirement and GameManager.bow >= bow_requirement and GameManager.weapon >= weapon_requirement 
+
+
+func deduct_requirements():
+	GameManager.iron -= iron_requirement
+	GameManager.wood -= wood_requirement
+	GameManager.stone -= stone_requirement
+	GameManager.food -= food_requirement
+	GameManager.gold -= gold_requirement
+	GameManager.bow -= bow_requirement
+	GameManager.weapon -= weapon_requirement
+	
+	GameManager.update_widget_labels()
+
+
 func set_sprite_opacity_low():
 	for sprite in building_sprites:
 		sprite.modulate.a = 0.25
 
 
 func build():
-	InputManager.remove_command_from_commands(build_command)
-	random_stream_player.play_random_build_sfx()
-	
-	for sprite in building_sprites:
-		sprite.modulate.a = 1
-	is_built = true
-	progress_bar.modulate.a = 1
-	
-	command_to_show = upgrade_command
-	update_label(command_to_show)
-	upgrade()
-	# TODO will start the timer once it has enough resources, then use those resources
-	# and start the process and call GameManager.update_widget_labels()
-	start_timer(timer_seconds)
-	
-	match self.name:
-		"apple_farm":
-			GameManager.is_apple_farm_built = true
-		"blacksmith":
-			GameManager.is_blacksmith_built = true
-		"fletcher":
-			GameManager.is_fletcher_built = true
-		"inn":
-			GameManager.is_inn_built = true
-		"iron_mine":
-			GameManager.is_iron_mine_built = true
-		"market":
-			GameManager.is_market_built = true
-		"quarry":
-			GameManager.is_quarry_built = true
-		"wheat_farm":
-			GameManager.is_wheat_farm_built = true
-		"woodcutter_camp":
-			GameManager.is_woodcutter_camp_built = true
-		_:
-			print("OH OH no boolean value was set to true in the is_xyz_built values!!!")
-	
-	if unit == null:
-		return
-	unit.visible = true
+	if can_upgrade_or_build():
+		deduct_requirements()
+		InputManager.remove_command_from_commands(build_command)
+		random_stream_player.play_random_build_sfx()
+		
+		for sprite in building_sprites:
+			sprite.modulate.a = 1
+		is_built = true
+		progress_bar.modulate.a = 1
+		
+		command_to_show = upgrade_command
+		update_label(command_to_show)
+		upgrade()
+		start_timer(timer_seconds)
+		
+		match self.name:
+			"apple_farm":
+				GameManager.is_apple_farm_built = true
+			"blacksmith":
+				GameManager.is_blacksmith_built = true
+			"fletcher":
+				GameManager.is_fletcher_built = true
+			"inn":
+				GameManager.is_inn_built = true
+			"iron_mine":
+				GameManager.is_iron_mine_built = true
+			"market":
+				GameManager.is_market_built = true
+			"quarry":
+				GameManager.is_quarry_built = true
+			"wheat_farm":
+				GameManager.is_wheat_farm_built = true
+			"woodcutter_camp":
+				GameManager.is_woodcutter_camp_built = true
+			_:
+				print("OH OH no boolean value was set to true in the is_xyz_built values!!!")
+		
+		if unit == null:
+			return
+		
+		unit.visible = true
 
 
 func upgrade():
-	random_stream_player.play_random_build_sfx()
-	
 	if is_fully_upgraded:
-		# TODO: show a message on the screen that the building is fully upgraded
+		#TODO: show a message on the screen that the building is fully upgraded
+		InputManager.remove_command_from_commands(upgrade_command)
 		return
 	
-	level += 1
-	if level == max_level:
-		is_fully_upgraded = true
+	if can_upgrade_or_build():
+		deduct_requirements()
+		random_stream_player.play_random_build_sfx()
+		
+		level += 1
+		if level == max_level:
+			is_fully_upgraded = true
 
 
 func produce():

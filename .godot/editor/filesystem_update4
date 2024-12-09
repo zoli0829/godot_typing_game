@@ -1,8 +1,6 @@
-res://scenes/components/random_stream_player_2d_component.tscn
-res://resources/theme/theme.tres
-res://scripts/random_stream_player_2d_component.gd
-res://scenes/game/game.tscn
-res://scenes/buildings/base_building/base_building.tscn
-res://scenes/buildings/fletcher/fletcher.tscn
-res://scripts/base_building.gd
 res://scenes/enemies/base_enemy.tscn
+res://resources/theme/theme.tres
+res://scripts/base_enemy.gd
+res://scenes/buildings/base_building/base_building.tscn
+res://scripts/base_building.gd
+res://scenes/game/game.tscn
